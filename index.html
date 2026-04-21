@@ -496,6 +496,255 @@ footer span{color:var(--v)}
   .pscore{border-bottom:1px solid var(--bd)}
   .pscore:last-child{border-bottom:none}
 }
+ 
+/* ── PERKS ENHANCED ── */
+.perks{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.perk{
+  display:flex;align-items:flex-start;gap:16px;
+  border-radius:var(--r);padding:20px 22px;
+  transition:all .25s;position:relative;overflow:hidden;
+  border:1px solid transparent;
+}
+.perk::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  border-radius:100px;transition:width .3s;
+}
+.perk:hover{transform:translateX(4px)}
+.perk:hover::before{width:4px}
+.perk-1{background:linear-gradient(135deg,#F0EEFF,#EDE8FE);border-color:var(--bd2)}
+.perk-1::before{background:var(--v)}
+.perk-2{background:linear-gradient(135deg,var(--teal-l),#E8F8F2);border-color:rgba(26,158,122,.2)}
+.perk-2::before{background:var(--teal)}
+.perk-3{background:linear-gradient(135deg,#FBF4E2,#FDF7E8);border-color:rgba(201,168,76,.2)}
+.perk-3::before{background:var(--gold)}
+.perk-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:300;line-height:1;
+  flex-shrink:0;margin-top:-2px;
+}
+.perk-1 .perk-num{color:rgba(123,91,245,.25)}
+.perk-2 .perk-num{color:rgba(26,158,122,.2)}
+.perk-3 .perk-num{color:rgba(201,168,76,.2)}
+.perk-body h4{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.perk-body p{font-size:12px;color:var(--ink3);line-height:1.6;margin-bottom:8px}
+.perk-tag{
+  display:inline-flex;align-items:center;
+  font-size:10px;font-weight:500;letter-spacing:.5px;
+  border-radius:100px;padding:3px 10px;
+}
+.perk-1 .perk-tag{background:var(--v3);color:var(--v);border:1px solid var(--bd2)}
+.perk-2 .perk-tag{background:var(--teal-l);color:var(--teal);border:1px solid rgba(26,158,122,.25)}
+.perk-3 .perk-tag{background:#FBF4E2;color:var(--gold);border:1px solid rgba(201,168,76,.25)}
+ 
+/* ── PROOF ENHANCED ── */
+.founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.fp-item{
+  display:flex;align-items:center;gap:12px;
+  padding:13px 16px;border-radius:var(--rs);
+  transition:all .2s;border:1px solid transparent;
+}
+.fp-item-1{background:var(--v5);border-color:var(--bd)}
+.fp-item-2{background:var(--teal-l);border-color:rgba(26,158,122,.15)}
+.fp-item-3{background:#FBF4E2;border-color:rgba(201,168,76,.15)}
+.fp-item:hover{transform:translateX(3px)}
+.fp-icon-wrap{
+  width:26px;height:26px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.fp-item-1 .fp-icon-wrap{background:var(--v3);border:1px solid var(--bd2)}
+.fp-item-2 .fp-icon-wrap{background:rgba(26,158,122,.15);border:1px solid rgba(26,158,122,.25)}
+.fp-item-3 .fp-icon-wrap{background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25)}
+.fp-check{font-size:12px;font-weight:600}
+.fp-item-1 .fp-check{color:var(--v)}
+.fp-item-2 .fp-check{color:var(--teal)}
+.fp-item-3 .fp-check{color:var(--gold)}
+.fp-txt{font-size:13px;color:var(--ink2);line-height:1.55}
+.fp-txt strong{font-weight:600}
+.fp-item-1 .fp-txt strong{color:var(--v)}
+.fp-item-2 .fp-txt strong{color:var(--teal)}
+.fp-item-3 .fp-txt strong{color:var(--gold)}
+ 
+/* ── PAIN CARDS ENHANCED ── */
+.pc{cursor:default}
+.pc:nth-child(1){border-left:3px solid var(--v)}
+.pc:nth-child(2){border-left:3px solid var(--gold)}
+.pc:nth-child(3){border-left:3px solid var(--teal)}
+.pc-n{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;
+  width:32px;height:32px;border-radius:50%}
+.pc:nth-child(1) .pc-n{background:var(--v3);color:var(--v)}
+.pc:nth-child(2) .pc-n{background:#FBF4E2;color:var(--gold)}
+.pc:nth-child(3) .pc-n{background:var(--teal-l);color:var(--teal)}
+ 
+/* ── HERO STATS ENHANCED ── */
+.sn{font-size:clamp(28px,5vw,38px)}
+.stat{position:relative}
+.stat:first-child .sn b{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+ 
+/* ── FUSION ENHANCED ── */
+.fc-icon{width:44px;height:44px;border-radius:14px;font-size:18px}
+.fc.c .fc-icon{background:linear-gradient(135deg,var(--v3),#DDD4FC)}
+.fc.p .fc-icon{background:linear-gradient(135deg,var(--teal-l),#C8F0E4)}
+.fc.m .fc-icon{background:linear-gradient(135deg,#FBF4E2,#F5E8C0)}
+ 
+/* ── VERBATIM CARDS ENHANCED ── */
+.vc{border-left:3px solid var(--v)}
+.vc:nth-child(2){border-left-color:var(--teal)}
+.vc:nth-child(3){border-left-color:var(--gold)}
+.vc:nth-child(4){border-left-color:var(--v2)}
+ 
+/* ── WAITLIST SECTION ENHANCED ── */
+.wl-h{
+  background:linear-gradient(135deg,var(--ink) 0%,var(--v) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.wl-h em{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+ 
+/* ── FORM CARD ENHANCED ── */
+.form-card{
+  position:relative;overflow:hidden;
+}
+.form-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(to right,var(--v),var(--v2),var(--teal));
+}
+.form-card::after{
+  content:'';position:absolute;
+  bottom:-60px;right:-60px;
+  width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(123,91,245,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.form-submit{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  position:relative;overflow:hidden;letter-spacing:.3px;
+}
+.form-submit::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,transparent,rgba(255,255,255,.08),transparent);
+  transform:translateX(-100%);transition:transform .4s;
+}
+.form-submit:hover::after{transform:translateX(100%)}
+.form-submit:hover{
+  background:linear-gradient(135deg,var(--ink),var(--v));
+  transform:translateY(-1px);
+  box-shadow:0 8px 28px rgba(123,91,245,.35);
+}
+ 
+/* ── SPOTS BAR ENHANCED ── */
+.spots-row{
+  background:linear-gradient(135deg,var(--v5),#EDE8FE);
+  border-color:var(--bd2);
+}
+.spots-fill{
+  background:linear-gradient(to right,var(--v),var(--v2));
+  box-shadow:0 0 8px rgba(123,91,245,.4);
+}
+.spots-txt strong{color:var(--v)}
+ 
+/* ── PROFILE CARD ENHANCED ── */
+.pcard-top{
+  background:linear-gradient(135deg,var(--v4),#EDE8FE);
+}
+.pcard-scores{
+  background:linear-gradient(135deg,var(--v5),var(--white));
+}
+ 
+/* ── HERO BADGE ENHANCED ── */
+.hero-badge{
+  box-shadow:0 4px 20px rgba(201,168,76,.15);
+}
+ 
+/* ── HERO CONTRAST ENHANCED ── */
+.hero-contrast{
+  box-shadow:0 4px 20px rgba(0,0,0,.06),0 0 0 1px rgba(123,91,245,.08);
+}
+.hcn em{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+ 
+/* ── SCORES ENHANCED ── */
+.vsn{
+  background:none;
+}
+.vs.g .vsn{
+  background:linear-gradient(135deg,var(--teal),#2BC89A);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.vs.v .vsn{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+ 
+/* ── SECTION EYEBROW ENHANCED ── */
+.ey{
+  font-size:10px;letter-spacing:3px;
+  display:inline-flex;
+}
+.ey::before{
+  content:'◆';margin-right:8px;font-size:7px;
+  color:var(--v);animation:pulse 2s infinite;
+}
+ 
+/* ── Q BOX ENHANCED ── */
+.qb{
+  background:linear-gradient(135deg,var(--v4),var(--v5));
+  border-color:var(--bd2);
+  position:relative;overflow:hidden;
+}
+.qb::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--v),var(--v2));
+}
+ 
+/* ── FUSION ARROW ENHANCED ── */
+.fusion-arrow{
+  background:linear-gradient(135deg,var(--ink),#1a1428);
+}
+.fa-text strong{
+  background:linear-gradient(135deg,var(--v2),#C4B5FD);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+ 
+/* ── TICKER ENHANCED ── */
+.tk{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+ 
+/* ── SCROLL HINT ENHANCED ── */
+.sh-arrow{
+  box-shadow:0 2px 8px rgba(123,91,245,.15);
+}
+ 
+/* ── AVIS CARDS ENHANCED ── */
+.avis-card{
+  border-left:3px solid var(--v);
+  transition:transform .2s;
+}
+.avis-track:hover .avis-card:hover{transform:scale(1.01)}
+ 
+/* ── RESPONSIVE FIXES ── */
+@media(max-width:900px){
+  .perk{flex-direction:column;gap:8px}
+  .perk-num{font-size:22px}
+  .perk::before{top:0;left:0;right:0;bottom:auto;height:3px;width:100%}
+  .perk:hover{transform:translateY(-2px)}
+}
 </style>
  
 </head>
@@ -870,16 +1119,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  
       <!-- PROOF REAL -->
       <div class="founded-proof">
-        <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div></div>
-        <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div></div>
-        <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div></div>
+        <div class="fp-item fp-item-1">
+          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
+          <div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div>
+        </div>
+        <div class="fp-item fp-item-2">
+          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
+          <div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div>
+        </div>
+        <div class="fp-item fp-item-3">
+          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
+          <div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div>
+        </div>
       </div>
  
       <div class="perks">
-        <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Première année d'accès gratuite</h4><p>Aucun abonnement. Vous testez, vous donnez votre retour.</p></div></div>
-        <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Tarif fondateur à vie — 2€ / profil</h4><p>Le tarif le plus bas que REVELIOM proposera jamais.</p></div></div>
-        <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Vous façonnez le produit</h4><p>Vos retours déterminent les prochaines fonctionnalités.</p></div></div>
-        <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Accès prioritaire au lancement</h4><p>Avant toute ouverture publique.</p></div></div>
+        <div class="perk perk-1">
+          <div class="perk-num">01</div>
+          <div class="perk-body">
+            <h4>Accès prioritaire à vie</h4>
+            <p>Votre accès est garanti avant toute ouverture publique — et le restera, quelle que soit la demande.</p>
+            <div class="perk-tag">Exclusif · Permanent</div>
+          </div>
+        </div>
+        <div class="perk perk-2">
+          <div class="perk-num">02</div>
+          <div class="perk-body">
+            <h4>Tarif fondateur figé à vie</h4>
+            <p>Le tarif que vous obtenez aujourd'hui est le tarif que vous conservez pour toujours — quelle que soit l'évolution des prix.</p>
+            <div class="perk-tag">Meilleur tarif · Garanti à vie</div>
+          </div>
+        </div>
+        <div class="perk perk-3">
+          <div class="perk-num">03</div>
+          <div class="perk-body">
+            <h4>Vous co-construisez REVELIOM</h4>
+            <p>Vos retours déterminent directement les prochaines fonctionnalités. Vous ne testez pas un produit — vous le façonnez.</p>
+            <div class="perk-tag">Impact direct · Influence réelle</div>
+          </div>
+        </div>
       </div>
       <div class="spots-row">
         <div class="spots-bar"><div class="spots-fill" id="sbar"></div></div>
