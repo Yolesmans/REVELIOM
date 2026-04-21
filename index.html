@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z2J6B8S');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>REVELIOM — Révèle l'alignement réel</title>
@@ -23,7 +30,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6}
 img{max-width:100%;display:block}
 button{font-family:'DM Sans',sans-serif;cursor:pointer}
-
+ 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;
   display:flex;align-items:center;justify-content:space-between;
@@ -38,7 +45,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .nav-cta{background:var(--v);color:#fff;border:none;border-radius:100px;
   padding:10px 22px;font-size:12px;font-weight:500;transition:all .2s}
 .nav-cta:hover{background:var(--ink)}
-
+ 
 /* STICKY */
 .sticky{position:fixed;bottom:20px;right:20px;z-index:400;
   opacity:0;transform:translateY(8px);transition:all .3s;pointer-events:none}
@@ -50,7 +57,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
   border:1px solid rgba(255,255,255,.08)}
 .sticky-btn:hover{background:var(--v)}
 .sdot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
-
+ 
 /* HERO */
 .hero{min-height:100svh;display:flex;flex-direction:column;
   align-items:center;justify-content:center;
@@ -96,7 +103,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .bg{background:transparent;color:var(--ink2);border:1px solid rgba(10,8,18,.15);
   border-radius:100px;padding:15px 28px;font-size:15px;font-weight:400;transition:all .2s}
 .bg:hover{background:var(--v3);border-color:var(--v);color:var(--v)}
-
+ 
 /* STATS */
 .hero-stats{display:flex;align-items:center;justify-content:center;
   gap:0;margin-top:52px;flex-wrap:wrap;
@@ -108,7 +115,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .sn b{color:var(--v)}
 .sl{font-size:10px;color:var(--ink3);margin-top:3px;letter-spacing:.3px}
 .sdiv{width:1px;height:32px;background:var(--bd2);flex-shrink:0}
-
+ 
 /* SCROLL HINT — centré */
 .scroll-hint{margin-top:40px;display:flex;flex-direction:column;
   align-items:center;gap:6px;animation:fadeUp 1s .9s ease both}
@@ -118,16 +125,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .sh-arrow::after{content:'';position:absolute;width:4px;height:4px;
   border-radius:50%;background:var(--v);left:50%;transform:translateX(-50%);
   top:4px;animation:scrollDot 1.5s ease-in-out infinite}
-
+ 
 /* SECTIONS */
 .sec{padding:72px 24px}
 .si{max-width:var(--maxw);margin:0 auto}
-
+ 
 .ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;
   color:var(--v);font-weight:500;margin-bottom:12px;
   display:flex;align-items:center;gap:8px}
 .ey::after{content:'';height:1px;background:linear-gradient(to right,var(--bd2),transparent);width:50px}
-
+ 
 .blk{background:var(--white);border:1px solid var(--bd);border-radius:24px;
   padding:40px 36px;margin-bottom:28px;
   opacity:0;transform:translateY(22px);
@@ -139,7 +146,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .bh em{color:var(--v);font-style:italic}
 .bp2{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:22px}
 .bp2 strong{color:var(--v);font-weight:500}
-
+ 
 /* THREAD */
 .tw{position:relative;max-width:800px;margin:0 auto;padding:0 24px}
 .tl{position:absolute;left:50%;top:0;bottom:0;width:1px;
@@ -148,7 +155,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .tb{width:12px;height:12px;border-radius:50%;background:var(--cream);
   border:2px solid var(--v);box-shadow:0 0 0 4px rgba(123,91,245,.1);
   margin:0 auto 0;position:relative;z-index:2}
-
+ 
 /* PAIN CARDS */
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
 .pc{background:var(--cream);border:1px solid var(--bd);border-radius:var(--r);
@@ -160,7 +167,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .pc h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:5px}
 .pc p{font-size:12px;color:var(--ink3);line-height:1.6}
 .pc-stat{font-size:11px;color:var(--v);font-weight:500;margin-top:8px;font-style:italic}
-
+ 
 /* Q BOX */
 .qb{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--rs);padding:16px 20px;margin-top:18px}
 .qt{font-size:14px;color:var(--ink);font-weight:500;margin-bottom:12px}
@@ -172,7 +179,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .qbtn.sel{background:var(--v);border-color:var(--v);color:#fff}
 .qrev{display:none;margin-top:10px;font-size:13px;color:var(--v);
   font-style:italic;line-height:1.6;animation:fadeUp .3s ease}
-
+ 
 /* FUSION VISUELLE */
 .fusion-wrap{margin:28px 0 0}
 .fusion-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
@@ -198,7 +205,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .fc.c ul li::before{background:var(--v)}
 .fc.p ul li::before{background:var(--teal)}
 .fc.m ul li::before{background:var(--gold)}
-
+ 
 /* FUSION ARROW */
 .fusion-arrow{display:flex;align-items:center;justify-content:center;gap:12px;
   background:var(--ink);border-radius:0 0 20px 20px;padding:20px 32px}
@@ -207,7 +214,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .fa-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;
   color:#fff;font-style:italic;text-align:center;line-height:1.4}
 .fa-text strong{color:var(--v2);font-style:normal;font-weight:500}
-
+ 
 /* PROFILES */
 .prof-sec{background:var(--cream)}
 .prof-head{margin-bottom:28px}
@@ -223,17 +230,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .proof-pill{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--ink2)}
 .proof-dot{width:5px;height:5px;border-radius:50%;background:var(--teal)}
 .proof-div{width:1px;height:14px;background:var(--bd2)}
-
+ 
 /* TABS */
 .ptabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
 .ptab{padding:9px 18px;border-radius:100px;border:1px solid var(--bd2);
   background:transparent;color:var(--ink3);font-size:12px;font-weight:500;transition:all .2s}
 .ptab.on{background:var(--v);border-color:var(--v);color:#fff}
 .ptab:hover:not(.on){background:var(--v3);color:var(--v)}
-
+ 
 .ppanel{display:none;animation:fadeUp .35s ease}
 .ppanel.on{display:block}
-
+ 
 /* PROFILE CARD */
 .pcard{background:var(--white);border:1px solid var(--bd2);
   border-radius:24px;overflow:hidden;box-shadow:var(--sh)}
@@ -243,7 +250,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
   background:var(--teal-l);border:1px solid rgba(26,158,122,.3);
   border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--teal)}
 .pbd{width:5px;height:5px;border-radius:50%;background:var(--teal)}
-
+ 
 /* HORIZONTAL SCROLL */
 .hscroll{overflow-x:auto;padding:24px 32px 20px;scroll-snap-type:x mandatory;
   display:flex;gap:14px;-webkit-overflow-scrolling:touch}
@@ -273,7 +280,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .scroll-hint-x{text-align:center;padding:0 32px 8px;font-size:11px;color:var(--ink3);
   display:flex;align-items:center;justify-content:center;gap:8px}
 .shx-line{width:32px;height:1px;background:var(--bd2)}
-
+ 
 /* SCORES */
 .pcard-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
   background:var(--bd);border-top:1px solid var(--bd)}
@@ -283,7 +290,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .pscore.v .pscoren{color:var(--v)}
 .pscore.o .pscoren{color:var(--gold)}
 .pscorel{font-size:10px;color:var(--ink3);line-height:1.4}
-
+ 
 /* VERDICT BADGE */
 .verdict{display:inline-flex;align-items:center;gap:7px;border-radius:100px;
   padding:6px 14px;font-size:11px;font-weight:500;margin:0 32px 0}
@@ -293,7 +300,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .vdot{width:5px;height:5px;border-radius:50%}
 .verdict.green .vdot{background:var(--teal)}
 .verdict.gold .vdot{background:var(--gold)}
-
+ 
 /* VERBATIMS */
 .vb-sec{background:var(--cream)}
 .vs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
@@ -307,7 +314,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .vs.v .vsn{color:var(--v)}
 .vs.w .vsn{color:#aaa}
 .vsl{font-size:11px;color:var(--ink3);line-height:1.5}
-
+ 
 .ticker-wrap{overflow:hidden;margin:16px 0;
   border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:11px 0;
   mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);
@@ -316,7 +323,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .ticker:hover{animation-play-state:paused}
 .tk{font-size:13px;color:var(--v);font-style:italic}
 .tks{font-size:7px;color:var(--bd2)}
-
+ 
 /* AVIS SCROLL VERTICAL */
 .avis-wrap{height:380px;overflow:hidden;position:relative;margin-top:20px}
 .avis-wrap::before,.avis-wrap::after{content:'';position:absolute;left:0;right:0;z-index:2;height:60px;pointer-events:none}
@@ -333,7 +340,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .ac-meta{display:flex;align-items:center;gap:7px}
 .ac-dot{width:5px;height:5px;border-radius:50%;background:var(--v)}
 .ac-src{font-size:10px;color:var(--ink3)}
-
+ 
 /* WAITLIST BLANC */
 .wl-sec{background:var(--white);padding:90px 24px;border-top:1px solid var(--bd)}
 .wl-inner{max-width:var(--maxw);margin:0 auto;
@@ -346,7 +353,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .wl-h em{color:var(--v);font-style:italic}
 .wl-sub{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:28px}
 .wl-sub strong{color:var(--ink2);font-weight:500}
-
+ 
 /* PROOF FOUNDED */
 .founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
 .fp-item{display:flex;align-items:flex-start;gap:10px;
@@ -354,7 +361,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .fp-icon{font-size:14px;flex-shrink:0;margin-top:1px}
 .fp-txt{font-size:13px;color:var(--ink2);line-height:1.55}
 .fp-txt strong{color:var(--v);font-weight:500}
-
+ 
 .perks{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
 .perk{display:flex;align-items:flex-start;gap:11px;
   background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);
@@ -365,7 +372,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .perk-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:#fff}
 .perk-body h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:2px}
 .perk-body p{font-size:11px;color:var(--ink3);line-height:1.5}
-
+ 
 .spots-row{display:flex;align-items:center;gap:12px;
   background:var(--v5);border:1px solid var(--bd);
   border-radius:var(--r);padding:12px 16px}
@@ -375,7 +382,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
   transition:width 2s cubic-bezier(.22,1,.36,1)}
 .spots-txt{font-size:11px;color:var(--ink3);white-space:nowrap}
 .spots-txt strong{color:var(--ink2)}
-
+ 
 /* FORM CARD */
 .form-card{background:var(--v5);border:2px solid var(--bd2);
   border-radius:24px;padding:32px;box-shadow:0 8px 40px rgba(123,91,245,.08)}
@@ -390,7 +397,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
   color:var(--ink);outline:none;width:100%;transition:all .2s}
 .fi::placeholder{color:var(--ink3)}
 .fi:focus{border-color:var(--v);background:var(--white);box-shadow:0 0 0 3px rgba(123,91,245,.08)}
-
+ 
 /* CHOIX RAPPEL */
 .recall-q{font-size:12px;color:var(--ink3);margin-bottom:6px;font-weight:500}
 .recall-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -406,7 +413,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .ro.on .ro-lbl{color:var(--v);font-weight:500}
 .phone-wrap{transition:all .2s}
 .phone-wrap.hide{display:none}
-
+ 
 .form-submit{background:var(--v);border:none;border-radius:var(--rs);
   padding:15px;font-size:14px;font-weight:500;color:#fff;
   width:100%;transition:all .2s;margin-top:2px}
@@ -420,14 +427,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .form-success h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;
   color:var(--ink);margin-bottom:8px}
 .form-success p{font-size:13px;color:var(--ink3);line-height:1.6}
-
+ 
 /* FOOTER */
 footer{background:var(--ink);padding:24px 24px;text-align:center;
   border-top:1px solid rgba(255,255,255,.05)}
 footer p{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:4px;
   text-transform:uppercase;color:rgba(255,255,255,.2)}
 footer span{color:var(--v)}
-
+ 
 /* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.5)}}
@@ -435,7 +442,7 @@ footer span{color:var(--v)}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes scrollDot{0%{top:4px;opacity:1}100%{top:20px;opacity:0}}
 @keyframes vScroll{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
-
+ 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:12px 18px}
@@ -481,19 +488,14 @@ footer span{color:var(--v)}
   .pscore:last-child{border-bottom:none}
 }
 </style>
-  <!-- Google Analytics — remplace G-XXXXXXXXXX par ton ID -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  -->
+ 
 </head>
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z2J6B8S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">REVEL<span>I</span>OM</div>
@@ -502,14 +504,14 @@ footer span{color:var(--v)}
     <button class="nav-cta" onclick="sf()">Rejoindre la waitlist</button>
   </div>
 </nav>
-
+ 
 <!-- STICKY -->
 <div class="sticky" id="sticky">
   <button class="sticky-btn" onclick="sf()">
     <div class="sdot"></div>Rejoindre les 50 premiers
   </button>
 </div>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
@@ -540,7 +542,7 @@ footer span{color:var(--v)}
     <div class="sh-arrow"></div>
   </div>
 </div>
-
+ 
 <!-- PAIN -->
 <section class="sec">
   <div class="si tw">
@@ -564,7 +566,7 @@ footer span{color:var(--v)}
         <div class="qrev" id="qpn">74% des recruteurs disent avoir fait au moins une erreur de recrutement. ↓</div>
       </div>
     </div>
-
+ 
     <!-- FUSION -->
     <div class="blk">
       <div class="ey">La méthode REVELIOM</div>
@@ -603,7 +605,7 @@ footer span{color:var(--v)}
     </div>
   </div>
 </section>
-
+ 
 <!-- PROFILES -->
 <section class="sec prof-sec" id="profiles">
   <div class="si">
@@ -619,14 +621,14 @@ footer span{color:var(--v)}
       </div>
       <p style="font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:580px">Ce ne sont pas des illustrations. REVELIOM a déjà analysé ces profils, réalisé ces matchings, permis ces recrutements. Le but est maintenant de le rendre accessible à tous.</p>
     </div>
-
+ 
     <div class="ptabs">
       <button class="ptab on" onclick="showP('c',this)">Profil Candidat</button>
       <button class="ptab" onclick="showP('m',this)">Portrait Manager</button>
       <button class="ptab" onclick="showP('p',this)">Analyse Poste</button>
       <button class="ptab" onclick="showP('x',this)">Matching Final</button>
     </div>
-
+ 
     <!-- CANDIDAT -->
     <div class="ppanel on" id="p-c">
       <div class="pcard">
@@ -669,7 +671,7 @@ footer span{color:var(--v)}
         </div>
       </div>
     </div>
-
+ 
     <!-- MANAGER -->
     <div class="ppanel" id="p-m">
       <div class="pcard">
@@ -712,7 +714,7 @@ footer span{color:var(--v)}
         </div>
       </div>
     </div>
-
+ 
     <!-- POSTE -->
     <div class="ppanel" id="p-p">
       <div class="pcard">
@@ -750,7 +752,7 @@ footer span{color:var(--v)}
         </div>
       </div>
     </div>
-
+ 
     <!-- MATCHING -->
     <div class="ppanel" id="p-x">
       <div class="pcard">
@@ -795,7 +797,7 @@ footer span{color:var(--v)}
     </div>
   </div>
 </section>
-
+ 
 <!-- VERBATIMS -->
 <section class="sec vb-sec">
   <div class="si">
@@ -848,7 +850,7 @@ footer span{color:var(--v)}
     </div>
   </div>
 </section>
-
+ 
 <!-- WAITLIST BLANC -->
 <div class="wl-sec" id="waitlist">
   <div class="wl-inner">
@@ -856,14 +858,14 @@ footer span{color:var(--v)}
       <div class="wl-ey">50 accès · Fondateurs</div>
       <h2 class="wl-h">Rejoignez les premiers.<br><em>Co-construisez.</em></h2>
       <p class="wl-sub">REVELIOM est en cours de finalisation. <strong>Nous ouvrons 50 accès fondateurs</strong> avant le lancement officiel.</p>
-
+ 
       <!-- PROOF REAL -->
       <div class="founded-proof">
         <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div></div>
         <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div></div>
         <div class="fp-item"><div class="fp-icon">✓</div><div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div></div>
       </div>
-
+ 
       <div class="perks">
         <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Première année d'accès gratuite</h4><p>Aucun abonnement. Vous testez, vous donnez votre retour.</p></div></div>
         <div class="perk"><div class="perk-dot"></div><div class="perk-body"><h4>Tarif fondateur à vie — 2€ / profil</h4><p>Le tarif le plus bas que REVELIOM proposera jamais.</p></div></div>
@@ -875,7 +877,7 @@ footer span{color:var(--v)}
         <div class="spots-txt">Limité à <strong>50 fondateurs</strong></div>
       </div>
     </div>
-
+ 
     <!-- FORM -->
     <div>
       <div class="form-card" id="fcard">
@@ -894,7 +896,7 @@ footer span{color:var(--v)}
             <input class="fi" id="fse" type="text" placeholder="Secteur"/>
           </div>
           <input class="fi" id="fph" type="tel" placeholder="Téléphone direct"/>
-
+ 
           <div class="recall-q">Une question avant ?</div>
           <div class="recall-opts">
             <div class="ro on" id="ro1" onclick="setRecall('rappel')">
@@ -906,7 +908,7 @@ footer span{color:var(--v)}
               <span class="ro-lbl">✉ Juste m'inscrire</span>
             </div>
           </div>
-
+ 
           <button class="form-submit" onclick="submitForm()">Réserver ma place sur la waitlist →</button>
           <p class="form-note">Pas de spam · Pas d'engagement · 50 places maximum</p>
         </div>
@@ -919,9 +921,9 @@ footer span{color:var(--v)}
     </div>
   </div>
 </div>
-
+ 
 <footer><p>REVEL<span>I</span>OM — reveliom.com</p></footer>
-
+ 
 <script>
 // Scroll reveal
 const obs=new IntersectionObserver(entries=>{
@@ -934,14 +936,14 @@ const obs=new IntersectionObserver(entries=>{
   });
 },{threshold:.07,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.blk').forEach(b=>obs.observe(b));
-
+ 
 function animCount(el){
   const t=parseInt(el.dataset.n),s=el.dataset.s||'%';
   if(t===0){el.textContent='0'+s;return;}
   let c=0,step=Math.max(1,Math.ceil(t/55));
   const iv=setInterval(()=>{c=Math.min(c+step,t);el.textContent=c+s;if(c>=t)clearInterval(iv);},25);
 }
-
+ 
 // Sticky
 window.addEventListener('scroll',()=>{
   const st=document.getElementById('sticky');
@@ -950,7 +952,7 @@ window.addEventListener('scroll',()=>{
   if(window.scrollY>400&&window.scrollY+window.innerHeight<ft+100)st.classList.add('show');
   else st.classList.remove('show');
 });
-
+ 
 // Spots bar
 const sobs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -961,7 +963,7 @@ const sobs=new IntersectionObserver(entries=>{
   });
 },{threshold:.5});
 const sb=document.getElementById('sbar');if(sb)sobs.observe(sb);
-
+ 
 // Nav
 function sf(){
   document.getElementById('waitlist').scrollIntoView({behavior:'smooth',block:'start'});
@@ -971,7 +973,7 @@ function sp(){
   document.getElementById('profiles').scrollIntoView({behavior:'smooth',block:'start'});
   if(typeof gtag!=='undefined') gtag('event','click_voir_profil',{event_category:'CTA'});
 }
-
+ 
 // Q
 function qS(gid,rid,btn){
   document.querySelectorAll('#'+gid+' .qbtn').forEach(b=>b.classList.remove('sel'));
@@ -979,7 +981,7 @@ function qS(gid,rid,btn){
   document.querySelectorAll('[id^="'+gid+'"].qrev').forEach(r=>r.style.display='none');
   const rv=document.getElementById(rid);if(rv)rv.style.display='block';
 }
-
+ 
 // Profiles
 function showP(id,btn){
   document.querySelectorAll('.ppanel').forEach(p=>p.classList.remove('on'));
@@ -987,7 +989,7 @@ function showP(id,btn){
   document.getElementById('p-'+id).classList.add('on');
   btn.classList.add('on');
 }
-
+ 
 // Recall
 var recall='rappel';
 function setRecall(m){
@@ -995,7 +997,7 @@ function setRecall(m){
   document.getElementById('ro1').classList.toggle('on',m==='rappel');
   document.getElementById('ro2').classList.toggle('on',m==='inscrit');
 }
-
+ 
 // Submit
 function submitForm(){
   const email=document.getElementById('fe').value;
