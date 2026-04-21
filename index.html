@@ -8,6 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5Z2J6B8S');</script>
 <!-- End Google Tag Manager -->
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-34J0PJJKDX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-34J0PJJKDX');
+</script>
+<!-- End Google Analytics -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>REVELIOM — Révèle l'alignement réel</title>
@@ -967,11 +976,11 @@ const sb=document.getElementById('sbar');if(sb)sobs.observe(sb);
 // Nav
 function sf(){
   document.getElementById('waitlist').scrollIntoView({behavior:'smooth',block:'start'});
-  if(typeof gtag!=='undefined') gtag('event','click_cta_waitlist',{event_category:'CTA'});
+  gtag('event','click_cta_waitlist',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
 }
 function sp(){
   document.getElementById('profiles').scrollIntoView({behavior:'smooth',block:'start'});
-  if(typeof gtag!=='undefined') gtag('event','click_voir_profil',{event_category:'CTA'});
+  gtag('event','click_voir_profil',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
 }
  
 // Q
@@ -1027,7 +1036,7 @@ function submitForm(){
     if(!r.ok) console.error('Formspree error', r.status);
   }).catch(err=>console.error('Submit error', err));
   document.getElementById('mainform').style.display='none';
-  if(typeof gtag!=='undefined') gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall});
+  gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall,send_to:'G-34J0PJJKDX'});
   const msg=document.getElementById('fsucc-msg');
   if(recall==='inscrit')msg.textContent='Vous êtes sur la liste. Nous vous contacterons avant le lancement officiel.';
   document.getElementById('fsuccess').style.display='block';
