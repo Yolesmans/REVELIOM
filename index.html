@@ -39,171 +39,88 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6}
 img{max-width:100%;display:block}
 button{font-family:'DM Sans',sans-serif;cursor:pointer}
- 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:500;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px 40px;background:rgba(250,250,248,.96);
-  backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:15px;
-  letter-spacing:6px;font-weight:500;color:var(--ink);text-transform:uppercase}
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:14px 40px;background:rgba(250,250,248,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:6px;font-weight:500;color:var(--ink);text-transform:uppercase}
 .nav-logo span{color:var(--v)}
 .nav-r{display:flex;align-items:center;gap:16px}
 .nav-badge{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--ink3)}
 .ndot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
-.nav-cta{background:var(--v);color:#fff;border:none;border-radius:100px;
-  padding:10px 22px;font-size:12px;font-weight:500;transition:all .2s}
+.nav-cta{background:var(--v);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-size:12px;font-weight:500;transition:all .2s}
 .nav-cta:hover{background:var(--ink)}
- 
-/* STICKY */
-.sticky{position:fixed;bottom:20px;right:20px;z-index:400;
-  opacity:0;transform:translateY(8px);transition:all .3s;pointer-events:none}
+.sticky{position:fixed;bottom:20px;right:20px;z-index:400;opacity:0;transform:translateY(8px);transition:all .3s;pointer-events:none}
 .sticky.show{opacity:1;transform:translateY(0);pointer-events:all}
-.sticky-btn{display:flex;align-items:center;gap:8px;
-  background:var(--ink);color:#fff;border:none;border-radius:100px;
-  padding:12px 22px;font-size:13px;font-weight:500;
-  box-shadow:0 8px 28px rgba(0,0,0,.22);transition:all .2s;
-  border:1px solid rgba(255,255,255,.08)}
+.sticky-btn{display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:100px;padding:12px 22px;font-size:13px;font-weight:500;box-shadow:0 8px 28px rgba(0,0,0,.22);transition:all .2s;border:1px solid rgba(255,255,255,.08)}
 .sticky-btn:hover{background:var(--v)}
 .sdot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
- 
-/* HERO */
-.hero{min-height:100svh;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  text-align:center;padding:110px 24px 80px;
-  position:relative;overflow:hidden;background:var(--cream)}
-.hero-bg{position:absolute;inset:0;z-index:0;
-  background:radial-gradient(ellipse 90vw 60vh at 50% 20%,rgba(123,91,245,.055) 0%,transparent 65%),
-    radial-gradient(ellipse 50vw 50vh at 10% 70%,rgba(123,91,245,.03) 0%,transparent 60%)}
-.hero-lines{position:absolute;inset:0;z-index:0;opacity:.03;
-  background-image:repeating-linear-gradient(0deg,transparent,transparent 80px,rgba(123,91,245,1) 80px,rgba(123,91,245,1) 81px)}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 80px;position:relative;overflow:hidden;background:var(--cream)}
+.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 90vw 60vh at 50% 20%,rgba(123,91,245,.055) 0%,transparent 65%),radial-gradient(ellipse 50vw 50vh at 10% 70%,rgba(123,91,245,.03) 0%,transparent 60%)}
+.hero-lines{position:absolute;inset:0;z-index:0;opacity:.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 80px,rgba(123,91,245,1) 80px,rgba(123,91,245,1) 81px)}
 .hero>*{position:relative;z-index:1}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;
-  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);
-  border-radius:100px;padding:7px 18px;font-size:11px;font-weight:500;
-  color:var(--gold);letter-spacing:.8px;text-transform:uppercase;
-  margin-bottom:28px;animation:fadeUp .8s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);border-radius:100px;padding:7px 18px;font-size:11px;font-weight:500;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;margin-bottom:28px;animation:fadeUp .8s ease both}
 .hbdot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
-.hero h1{font-family:'Cormorant Garamond',serif;
-  font-size:clamp(52px,11vw,115px);font-weight:300;line-height:.92;
-  letter-spacing:-3px;max-width:900px;margin:0 auto;
-  animation:fadeUp .8s .1s ease both;color:var(--ink)}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,11vw,115px);font-weight:300;line-height:.92;letter-spacing:-3px;max-width:900px;margin:0 auto;animation:fadeUp .8s .1s ease both;color:var(--ink)}
 .hero h1 em{color:var(--v);font-style:italic}
 .hero h1 .l2{display:block;font-weight:600;letter-spacing:-2px}
-.hero-sub{font-size:clamp(15px,2.5vw,18px);color:var(--ink3);
-  max-width:520px;line-height:1.8;font-weight:300;
-  margin:22px auto 40px;animation:fadeUp .8s .2s ease both}
-.hero-contrast{display:inline-flex;align-items:center;gap:14px;
-  background:var(--white);border:1px solid var(--bd);
-  border-radius:100px;padding:11px 26px;margin-bottom:44px;
-  animation:fadeUp .8s .25s ease both;
-  box-shadow:0 4px 24px rgba(0,0,0,.05)}
+.hero-sub{font-size:clamp(15px,2.5vw,18px);color:var(--ink3);max-width:520px;line-height:1.8;font-weight:300;margin:22px auto 40px;animation:fadeUp .8s .2s ease both}
+.hero-contrast{display:inline-flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--bd);border-radius:100px;padding:11px 26px;margin-bottom:44px;animation:fadeUp .8s .25s ease both;box-shadow:0 4px 24px rgba(0,0,0,.05)}
 .hco{font-size:13px;color:var(--ink3);text-decoration:line-through}
 .hca{font-size:17px;color:var(--v);animation:slide 1.5s ease-in-out infinite}
 .hcn{font-size:13px;font-weight:600;color:var(--ink)}
 .hcn em{color:var(--v);font-style:normal}
-.hero-btns{display:flex;align-items:center;gap:12px;justify-content:center;
-  flex-wrap:wrap;animation:fadeUp .8s .3s ease both}
-.bp{background:var(--v);color:#fff;border:none;border-radius:100px;
-  padding:15px 32px;font-size:15px;font-weight:500;transition:all .25s;
-  box-shadow:0 8px 28px rgba(123,91,245,.32);display:flex;align-items:center;gap:7px}
+.hero-btns{display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s .3s ease both}
+.bp{background:var(--v);color:#fff;border:none;border-radius:100px;padding:15px 32px;font-size:15px;font-weight:500;transition:all .25s;box-shadow:0 8px 28px rgba(123,91,245,.32);display:flex;align-items:center;gap:7px}
 .bp:hover{background:var(--ink);transform:translateY(-2px)}
 .bpdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);animation:pulse 2s infinite}
-.bg{background:transparent;color:var(--ink2);border:1px solid rgba(10,8,18,.15);
-  border-radius:100px;padding:15px 28px;font-size:15px;font-weight:400;transition:all .2s}
+.bg{background:transparent;color:var(--ink2);border:1px solid rgba(10,8,18,.15);border-radius:100px;padding:15px 28px;font-size:15px;font-weight:400;transition:all .2s}
 .bg:hover{background:var(--v3);border-color:var(--v);color:var(--v)}
- 
-/* STATS */
-.hero-stats{display:flex;align-items:center;justify-content:center;
-  gap:0;margin-top:52px;flex-wrap:wrap;
-  animation:fadeUp .8s .4s ease both;
-  background:var(--white);border:1px solid var(--bd);border-radius:100px;
-  padding:16px 32px;box-shadow:var(--sh)}
+.hero-stats{display:flex;align-items:center;justify-content:center;gap:0;margin-top:52px;flex-wrap:wrap;animation:fadeUp .8s .4s ease both;background:var(--white);border:1px solid var(--bd);border-radius:100px;padding:16px 32px;box-shadow:var(--sh)}
 .stat{text-align:center;padding:0 24px}
 .sn{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;line-height:1;color:var(--ink)}
 .sn b{color:var(--v)}
 .sl{font-size:10px;color:var(--ink3);margin-top:3px;letter-spacing:.3px}
 .sdiv{width:1px;height:32px;background:var(--bd2);flex-shrink:0}
- 
-/* SCROLL HINT — centré */
-.scroll-hint{margin-top:40px;display:flex;flex-direction:column;
-  align-items:center;gap:6px;animation:fadeUp 1s .9s ease both}
+.scroll-hint{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:6px;animation:fadeUp 1s .9s ease both}
 .sh-txt{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3)}
-.sh-arrow{width:18px;height:28px;border:1px solid var(--bd2);border-radius:100px;
-  position:relative;overflow:hidden;margin:0 auto}
-.sh-arrow::after{content:'';position:absolute;width:4px;height:4px;
-  border-radius:50%;background:var(--v);left:50%;transform:translateX(-50%);
-  top:4px;animation:scrollDot 1.5s ease-in-out infinite}
- 
-/* SECTIONS */
+.sh-arrow{width:18px;height:28px;border:1px solid var(--bd2);border-radius:100px;position:relative;overflow:hidden;margin:0 auto}
+.sh-arrow::after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background:var(--v);left:50%;transform:translateX(-50%);top:4px;animation:scrollDot 1.5s ease-in-out infinite}
 .sec{padding:72px 24px}
 .si{max-width:var(--maxw);margin:0 auto}
- 
-.ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;
-  color:var(--v);font-weight:500;margin-bottom:12px;
-  display:flex;align-items:center;gap:8px}
+.ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);font-weight:500;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .ey::after{content:'';height:1px;background:linear-gradient(to right,var(--bd2),transparent);width:50px}
- 
-.blk{background:var(--white);border:1px solid var(--bd);border-radius:24px;
-  padding:40px 36px;margin-bottom:28px;
-  opacity:0;transform:translateY(22px);
-  transition:opacity .65s ease,transform .65s ease;box-shadow:var(--sh)}
+.blk{background:var(--white);border:1px solid var(--bd);border-radius:24px;padding:40px 36px;margin-bottom:28px;opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease;box-shadow:var(--sh)}
 .blk.vis{opacity:1;transform:translateY(0)}
 .blk-alt{background:var(--v5);border-color:var(--bd2)}
-.bh{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,38px);
-  font-weight:400;line-height:1.15;margin-bottom:10px}
+.bh{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,38px);font-weight:400;line-height:1.15;margin-bottom:10px}
 .bh em{color:var(--v);font-style:italic}
 .bp2{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:22px}
 .bp2 strong{color:var(--v);font-weight:500}
- 
-/* THREAD */
 .tw{position:relative;max-width:800px;margin:0 auto;padding:0 24px}
-.tl{position:absolute;left:50%;top:0;bottom:0;width:1px;
-  background:linear-gradient(to bottom,var(--v),rgba(123,91,245,.08));
-  transform:translateX(-50%);pointer-events:none}
-.tb{width:12px;height:12px;border-radius:50%;background:var(--cream);
-  border:2px solid var(--v);box-shadow:0 0 0 4px rgba(123,91,245,.1);
-  margin:0 auto 0;position:relative;z-index:2}
- 
-/* PAIN CARDS */
+.tl{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--v),rgba(123,91,245,.08));transform:translateX(-50%);pointer-events:none}
+.tb{width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--v);box-shadow:0 0 0 4px rgba(123,91,245,.1);margin:0 auto 0;position:relative;z-index:2}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
-.pc{background:var(--cream);border:1px solid var(--bd);border-radius:var(--r);
-  padding:20px 16px;transition:all .2s}
+.pc{background:var(--cream);border:1px solid var(--bd);border-radius:var(--r);padding:20px 16px;transition:all .2s}
 .pc:hover{border-color:var(--bd2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(123,91,245,.07)}
-.pc-n{width:26px;height:26px;border-radius:50%;background:var(--v3);
-  display:flex;align-items:center;justify-content:center;
-  font-size:11px;font-weight:500;color:var(--v);margin-bottom:10px}
+.pc-n{width:26px;height:26px;border-radius:50%;background:var(--v3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--v);margin-bottom:10px}
 .pc h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:5px}
 .pc p{font-size:12px;color:var(--ink3);line-height:1.6}
 .pc-stat{font-size:11px;color:var(--v);font-weight:500;margin-top:8px;font-style:italic}
- 
-/* Q BOX */
 .qb{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--rs);padding:16px 20px;margin-top:18px}
 .qt{font-size:14px;color:var(--ink);font-weight:500;margin-bottom:12px}
 .qbtns{display:flex;gap:8px;flex-wrap:wrap}
-.qbtn{flex:1;min-width:140px;padding:10px;border-radius:var(--rs);
-  border:1px solid var(--bd2);background:var(--white);
-  font-size:13px;font-weight:500;color:var(--ink2);transition:all .15s}
+.qbtn{flex:1;min-width:140px;padding:10px;border-radius:var(--rs);border:1px solid var(--bd2);background:var(--white);font-size:13px;font-weight:500;color:var(--ink2);transition:all .15s}
 .qbtn:hover{border-color:var(--v);background:var(--v3);color:var(--v)}
 .qbtn.sel{background:var(--v);border-color:var(--v);color:#fff}
-.qrev{display:none;margin-top:10px;font-size:13px;color:var(--v);
-  font-style:italic;line-height:1.6;animation:fadeUp .3s ease}
- 
-/* FUSION VISUELLE */
+.qrev{display:none;margin-top:10px;font-size:13px;color:var(--v);font-style:italic;line-height:1.6;animation:fadeUp .3s ease}
 .fusion-wrap{margin:28px 0 0}
-.fusion-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--bd2);border-radius:20px;overflow:hidden;margin-bottom:0}
+.fusion-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd2);border-radius:20px;overflow:hidden;margin-bottom:0}
 .fc{background:var(--white);padding:32px 24px;position:relative;transition:background .3s}
 .fc:hover{background:var(--v5)}
-.fc-n{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;
-  line-height:1;color:rgba(123,91,245,.06);position:absolute;top:12px;right:16px;user-select:none}
-.fc-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;font-size:17px;margin-bottom:14px}
+.fc-n{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;line-height:1;color:rgba(123,91,245,.06);position:absolute;top:12px;right:16px;user-select:none}
+.fc-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:14px}
 .fc.c .fc-icon{background:var(--v3)}
 .fc.p .fc-icon{background:var(--teal-l)}
 .fc.m .fc-icon{background:#FBF4E2}
-.fc h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;
-  color:var(--ink);margin-bottom:8px}
+.fc h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:8px}
 .fc.c h4 span{color:var(--v)}
 .fc.p h4 span{color:var(--teal)}
 .fc.m h4 span{color:var(--gold)}
@@ -214,65 +131,41 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .fc.c ul li::before{background:var(--v)}
 .fc.p ul li::before{background:var(--teal)}
 .fc.m ul li::before{background:var(--gold)}
- 
-/* FUSION ARROW */
-.fusion-arrow{display:flex;align-items:center;justify-content:center;gap:12px;
-  background:var(--ink);border-radius:0 0 20px 20px;padding:20px 32px}
+.fusion-arrow{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);border-radius:0 0 20px 20px;padding:20px 32px}
 .fa-line{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,255,255,.15))}
 .fa-line.r{background:linear-gradient(to left,transparent,rgba(255,255,255,.15))}
-.fa-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;
-  color:#fff;font-style:italic;text-align:center;line-height:1.4}
+.fa-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:#fff;font-style:italic;text-align:center;line-height:1.4}
 .fa-text strong{color:var(--v2);font-style:normal;font-weight:500}
- 
-/* PROFILES */
 .prof-sec{background:var(--cream)}
 .prof-head{margin-bottom:28px}
 .prof-head .ey{color:var(--v)}
-.prof-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,42px);
-  font-weight:400;line-height:1.15;margin-bottom:8px}
+.prof-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,42px);font-weight:400;line-height:1.15;margin-bottom:8px}
 .prof-head h2 em{color:var(--v);font-style:italic}
 .prof-head p{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:580px}
-.proof-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;
-  margin:14px 0 28px;padding:14px 20px;
-  background:var(--white);border:1px solid var(--bd);border-radius:100px;
-  box-shadow:var(--sh);width:fit-content}
+.proof-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:14px 0 28px;padding:14px 20px;background:var(--white);border:1px solid var(--bd);border-radius:100px;box-shadow:var(--sh);width:fit-content}
 .proof-pill{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--ink2)}
 .proof-dot{width:5px;height:5px;border-radius:50%;background:var(--teal)}
 .proof-div{width:1px;height:14px;background:var(--bd2)}
- 
-/* TABS */
 .ptabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
-.ptab{padding:9px 18px;border-radius:100px;border:1px solid var(--bd2);
-  background:transparent;color:var(--ink3);font-size:12px;font-weight:500;transition:all .2s}
+.ptab{padding:9px 18px;border-radius:100px;border:1px solid var(--bd2);background:transparent;color:var(--ink3);font-size:12px;font-weight:500;transition:all .2s}
 .ptab.on{background:var(--v);border-color:var(--v);color:#fff}
 .ptab:hover:not(.on){background:var(--v3);color:var(--v)}
- 
 .ppanel{display:none;animation:fadeUp .35s ease}
 .ppanel.on{display:block}
- 
-/* PROFILE CARD */
-.pcard{background:var(--white);border:1px solid var(--bd2);
-  border-radius:24px;overflow:hidden;box-shadow:var(--sh)}
+.pcard{background:var(--white);border:1px solid var(--bd2);border-radius:24px;overflow:hidden;box-shadow:var(--sh)}
 .pcard-top{background:var(--v4);padding:24px 32px;border-bottom:1px solid var(--bd2)}
 .pcard-ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);margin-bottom:10px}
-.pcard-badge{display:inline-flex;align-items:center;gap:7px;
-  background:var(--teal-l);border:1px solid rgba(26,158,122,.3);
-  border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--teal)}
+.pcard-badge{display:inline-flex;align-items:center;gap:7px;background:var(--teal-l);border:1px solid rgba(26,158,122,.3);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--teal)}
 .pbd{width:5px;height:5px;border-radius:50%;background:var(--teal)}
- 
-/* HORIZONTAL SCROLL */
-.hscroll{overflow-x:auto;padding:24px 32px 20px;scroll-snap-type:x mandatory;
-  display:flex;gap:14px;-webkit-overflow-scrolling:touch}
+.hscroll{overflow-x:auto;padding:24px 32px 20px;scroll-snap-type:x mandatory;display:flex;gap:14px;-webkit-overflow-scrolling:touch}
 .hscroll::-webkit-scrollbar{height:3px}
 .hscroll::-webkit-scrollbar-track{background:var(--bd)}
 .hscroll::-webkit-scrollbar-thumb{background:var(--v3);border-radius:100px}
-.hcard{flex:0 0 280px;scroll-snap-align:start;
-  background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:22px}
+.hcard{flex:0 0 280px;scroll-snap-align:start;background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:22px}
 .hcard.red-card{background:var(--red-l);border-color:rgba(204,51,51,.15)}
 .hcard.teal-card{background:var(--teal-l);border-color:rgba(26,158,122,.2)}
 .hcard.gold-card{background:#FBF4E2;border-color:rgba(201,168,76,.2)}
-.hc-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;
-  font-weight:500;margin-bottom:10px}
+.hc-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:10px}
 .hcard .hc-title{color:var(--v)}
 .hcard.red-card .hc-title{color:var(--red)}
 .hcard.teal-card .hc-title{color:var(--teal)}
@@ -286,31 +179,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .htag.g{background:var(--teal-l);color:var(--teal);border:1px solid rgba(26,158,122,.2)}
 .htag.r{background:var(--red-l);color:var(--red);border:1px solid rgba(204,51,51,.15)}
 .htag.o{background:#FBF4E2;color:var(--gold);border:1px solid rgba(201,168,76,.2)}
-.scroll-hint-x{text-align:center;padding:0 32px 8px;font-size:11px;color:var(--ink3);
-  display:flex;align-items:center;justify-content:center;gap:8px}
+.scroll-hint-x{text-align:center;padding:0 32px 8px;font-size:11px;color:var(--ink3);display:flex;align-items:center;justify-content:center;gap:8px}
 .shx-line{width:32px;height:1px;background:var(--bd2)}
- 
-/* SCORES */
-.pcard-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--bd);border-top:1px solid var(--bd)}
+.pcard-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border-top:1px solid var(--bd)}
 .pscore{background:var(--white);padding:18px 12px;text-align:center}
 .pscoren{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;line-height:1;margin-bottom:3px}
 .pscore.g .pscoren{color:var(--teal)}
 .pscore.v .pscoren{color:var(--v)}
 .pscore.o .pscoren{color:var(--gold)}
 .pscorel{font-size:10px;color:var(--ink3);line-height:1.4}
- 
-/* VERDICT BADGE */
-.verdict{display:inline-flex;align-items:center;gap:7px;border-radius:100px;
-  padding:6px 14px;font-size:11px;font-weight:500;margin:0 32px 0}
+.verdict{display:inline-flex;align-items:center;gap:7px;border-radius:100px;padding:6px 14px;font-size:11px;font-weight:500;margin:0 32px 0}
 .verdict.green{background:var(--teal-l);border:1px solid rgba(26,158,122,.3);color:var(--teal)}
 .verdict.gold{background:#FBF4E2;border:1px solid rgba(201,168,76,.3);color:var(--gold)}
 .verdict.red{background:var(--red-l);border:1px solid rgba(204,51,51,.2);color:var(--red)}
 .vdot{width:5px;height:5px;border-radius:50%}
 .verdict.green .vdot{background:var(--teal)}
 .verdict.gold .vdot{background:var(--gold)}
- 
-/* VERBATIMS */
 .vb-sec{background:var(--cream)}
 .vs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
 .vs{text-align:center;padding:20px 12px;border-radius:var(--r);border:1px solid var(--bd);transition:transform .2s}
@@ -323,136 +207,84 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;
 .vs.v .vsn{color:var(--v)}
 .vs.w .vsn{color:#aaa}
 .vsl{font-size:11px;color:var(--ink3);line-height:1.5}
- 
-.ticker-wrap{overflow:hidden;margin:16px 0;
-  border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:11px 0;
-  mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);
-  -webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}
+.ticker-wrap{overflow:hidden;margin:16px 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:11px 0;mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}
 .ticker{display:flex;gap:20px;white-space:nowrap;animation:ticker 30s linear infinite}
 .ticker:hover{animation-play-state:paused}
 .tk{font-size:13px;color:var(--v);font-style:italic}
 .tks{font-size:7px;color:var(--bd2)}
- 
-/* AVIS SCROLL VERTICAL */
 .avis-wrap{height:380px;overflow:hidden;position:relative;margin-top:20px}
 .avis-wrap::before,.avis-wrap::after{content:'';position:absolute;left:0;right:0;z-index:2;height:60px;pointer-events:none}
 .avis-wrap::before{top:0;background:linear-gradient(to bottom,var(--white),transparent)}
 .avis-wrap::after{bottom:0;background:linear-gradient(to top,var(--white),transparent)}
 .avis-track{display:flex;flex-direction:column;gap:10px;animation:vScroll 24s linear infinite}
 .avis-track:hover{animation-play-state:paused}
-.avis-card{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);
-  padding:22px 20px;position:relative;overflow:hidden;flex-shrink:0}
-.ac-q{font-size:44px;color:var(--v);opacity:.08;font-family:'Cormorant Garamond',serif;
-  position:absolute;top:6px;left:12px;user-select:none;line-height:1}
-.ac-txt{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);
-  line-height:1.65;font-style:italic;position:relative;z-index:1;margin-bottom:12px}
+.avis-card{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:22px 20px;position:relative;overflow:hidden;flex-shrink:0}
+.ac-q{font-size:44px;color:var(--v);opacity:.08;font-family:'Cormorant Garamond',serif;position:absolute;top:6px;left:12px;user-select:none;line-height:1}
+.ac-txt{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);line-height:1.65;font-style:italic;position:relative;z-index:1;margin-bottom:12px}
 .ac-meta{display:flex;align-items:center;gap:7px}
 .ac-dot{width:5px;height:5px;border-radius:50%;background:var(--v)}
 .ac-src{font-size:10px;color:var(--ink3)}
- 
-/* WAITLIST BLANC */
 .wl-sec{background:var(--white);padding:90px 24px;border-top:1px solid var(--bd)}
-.wl-inner{max-width:var(--maxw);margin:0 auto;
-  display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
-.wl-ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);
-  margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.wl-inner{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.wl-ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .wl-ey::after{content:'';height:1px;background:linear-gradient(to right,var(--bd2),transparent);flex:1}
-.wl-h{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);
-  font-weight:400;color:var(--ink);line-height:1.1;margin-bottom:12px}
+.wl-h{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--ink);line-height:1.1;margin-bottom:12px}
 .wl-h em{color:var(--v);font-style:italic}
 .wl-sub{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:28px}
 .wl-sub strong{color:var(--ink2);font-weight:500}
- 
-/* PROOF FOUNDED */
 .founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
-.fp-item{display:flex;align-items:flex-start;gap:10px;
-  padding:12px 14px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--rs)}
+.fp-item{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--rs)}
 .fp-icon{font-size:14px;flex-shrink:0;margin-top:1px}
 .fp-txt{font-size:13px;color:var(--ink2);line-height:1.55}
 .fp-txt strong{color:var(--v);font-weight:500}
- 
 .perks{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
-.perk{display:flex;align-items:flex-start;gap:11px;
-  background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);
-  padding:14px 16px;transition:all .2s}
+.perk{display:flex;align-items:flex-start;gap:11px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;transition:all .2s}
 .perk:hover{background:var(--v3);border-color:var(--bd2)}
-.perk-dot{width:18px;height:18px;border-radius:50%;background:var(--v);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.perk-dot{width:18px;height:18px;border-radius:50%;background:var(--v);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .perk-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:#fff}
 .perk-body h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:2px}
 .perk-body p{font-size:11px;color:var(--ink3);line-height:1.5}
- 
-.spots-row{display:flex;align-items:center;gap:12px;
-  background:var(--v5);border:1px solid var(--bd);
-  border-radius:var(--r);padding:12px 16px}
+.spots-row{display:flex;align-items:center;gap:12px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);padding:12px 16px}
 .spots-bar{flex:1;height:3px;background:var(--bd2);border-radius:100px;overflow:hidden}
-.spots-fill{width:0;height:100%;
-  background:linear-gradient(to right,var(--v),var(--v2));border-radius:100px;
-  transition:width 2s cubic-bezier(.22,1,.36,1)}
+.spots-fill{width:0;height:100%;background:linear-gradient(to right,var(--v),var(--v2));border-radius:100px;transition:width 2s cubic-bezier(.22,1,.36,1)}
 .spots-txt{font-size:11px;color:var(--ink3);white-space:nowrap}
 .spots-txt strong{color:var(--ink2)}
- 
-/* FORM CARD */
-.form-card{background:var(--v5);border:2px solid var(--bd2);
-  border-radius:24px;padding:32px;box-shadow:0 8px 40px rgba(123,91,245,.08)}
+.form-card{background:var(--v5);border:2px solid var(--bd2);border-radius:24px;padding:32px;box-shadow:0 8px 40px rgba(123,91,245,.08)}
 .fc-head{padding-bottom:20px;border-bottom:1px solid var(--bd);margin-bottom:20px}
-.fc-head h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;
-  color:var(--ink);margin-bottom:5px}
+.fc-head h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:5px}
 .fc-head p{font-size:13px;color:var(--ink3);line-height:1.55}
 .form{display:flex;flex-direction:column;gap:9px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.fi{background:var(--white);border:1px solid var(--bd2);border-radius:var(--rs);
-  padding:12px 15px;font-family:'DM Sans',sans-serif;font-size:13px;
-  color:var(--ink);outline:none;width:100%;transition:all .2s}
+.fi{background:var(--white);border:1px solid var(--bd2);border-radius:var(--rs);padding:12px 15px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink);outline:none;width:100%;transition:all .2s}
 .fi::placeholder{color:var(--ink3)}
 .fi:focus{border-color:var(--v);background:var(--white);box-shadow:0 0 0 3px rgba(123,91,245,.08)}
- 
-/* CHOIX RAPPEL */
 .recall-q{font-size:12px;color:var(--ink3);margin-bottom:6px;font-weight:500}
 .recall-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.ro{display:flex;align-items:center;gap:9px;
-  background:var(--white);border:1.5px solid var(--bd2);border-radius:var(--rs);
-  padding:11px 13px;cursor:pointer;transition:all .2s}
+.ro{display:flex;align-items:center;gap:9px;background:var(--white);border:1.5px solid var(--bd2);border-radius:var(--rs);padding:11px 13px;cursor:pointer;transition:all .2s}
 .ro.on{background:var(--v3);border-color:var(--v)}
-.ro-dot{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--bd2);
-  flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.ro-dot{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--bd2);flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center}
 .ro.on .ro-dot{background:var(--v);border-color:var(--v)}
 .ro.on .ro-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:#fff}
 .ro-lbl{font-size:12px;color:var(--ink3);transition:color .2s}
 .ro.on .ro-lbl{color:var(--v);font-weight:500}
 .phone-wrap{transition:all .2s}
 .phone-wrap.hide{display:none}
- 
-.form-submit{background:var(--v);border:none;border-radius:var(--rs);
-  padding:15px;font-size:14px;font-weight:500;color:#fff;
-  width:100%;transition:all .2s;margin-top:2px}
-.form-submit:hover{background:var(--ink);transform:translateY(-1px);
-  box-shadow:0 8px 24px rgba(123,91,245,.35)}
+.form-submit{background:var(--v);border:none;border-radius:var(--rs);padding:15px;font-size:14px;font-weight:500;color:#fff;width:100%;transition:all .2s;margin-top:2px}
+.form-submit:hover{background:var(--ink);transform:translateY(-1px);box-shadow:0 8px 24px rgba(123,91,245,.35)}
 .form-note{font-size:10px;color:var(--ink3);text-align:center;margin-top:6px;line-height:1.5}
 .form-success{display:none;text-align:center;padding:40px 16px;animation:fadeUp .5s ease}
-.fs-icon{width:52px;height:52px;border-radius:50%;background:var(--teal-l);
-  border:1px solid rgba(26,158,122,.3);display:flex;align-items:center;
-  justify-content:center;font-size:20px;margin:0 auto 16px}
-.form-success h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;
-  color:var(--ink);margin-bottom:8px}
+.fs-icon{width:52px;height:52px;border-radius:50%;background:var(--teal-l);border:1px solid rgba(26,158,122,.3);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 16px}
+.form-success h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--ink);margin-bottom:8px}
 .form-success p{font-size:13px;color:var(--ink3);line-height:1.6}
- 
-/* FOOTER */
-footer{background:var(--ink);padding:24px 24px;text-align:center;
-  border-top:1px solid rgba(255,255,255,.05)}
-footer p{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:4px;
-  text-transform:uppercase;color:rgba(255,255,255,.2)}
+footer{background:var(--ink);padding:24px 24px;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
+footer p{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.2)}
 footer span{color:var(--v)}
- 
-/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.5)}}
 @keyframes slide{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes scrollDot{0%{top:4px;opacity:1}100%{top:20px;opacity:0}}
 @keyframes vScroll{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
- 
-/* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:12px 18px}
   .nav-badge{display:none}
@@ -496,19 +328,10 @@ footer span{color:var(--v)}
   .pscore{border-bottom:1px solid var(--bd)}
   .pscore:last-child{border-bottom:none}
 }
- 
-/* ── PERKS ENHANCED ── */
+/* PERKS ENHANCED */
 .perks{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.perk{
-  display:flex;align-items:flex-start;gap:16px;
-  border-radius:var(--r);padding:20px 22px;
-  transition:all .25s;position:relative;overflow:hidden;
-  border:1px solid transparent;
-}
-.perk::before{
-  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
-  border-radius:100px;transition:width .3s;
-}
+.perk{display:flex;align-items:flex-start;gap:16px;border-radius:var(--r);padding:20px 22px;transition:all .25s;position:relative;overflow:hidden;border:1px solid transparent}
+.perk::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:100px;transition:width .3s}
 .perk:hover{transform:translateX(4px)}
 .perk:hover::before{width:4px}
 .perk-1{background:linear-gradient(135deg,#F0EEFF,#EDE8FE);border-color:var(--bd2)}
@@ -517,41 +340,24 @@ footer span{color:var(--v)}
 .perk-2::before{background:var(--teal)}
 .perk-3{background:linear-gradient(135deg,#FBF4E2,#FDF7E8);border-color:rgba(201,168,76,.2)}
 .perk-3::before{background:var(--gold)}
-.perk-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:32px;font-weight:300;line-height:1;
-  flex-shrink:0;margin-top:-2px;
-}
+.perk-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;line-height:1;flex-shrink:0;margin-top:-2px}
 .perk-1 .perk-num{color:rgba(123,91,245,.25)}
 .perk-2 .perk-num{color:rgba(26,158,122,.2)}
 .perk-3 .perk-num{color:rgba(201,168,76,.2)}
 .perk-body h4{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px}
 .perk-body p{font-size:12px;color:var(--ink3);line-height:1.6;margin-bottom:8px}
-.perk-tag{
-  display:inline-flex;align-items:center;
-  font-size:10px;font-weight:500;letter-spacing:.5px;
-  border-radius:100px;padding:3px 10px;
-}
+.perk-tag{display:inline-flex;align-items:center;font-size:10px;font-weight:500;letter-spacing:.5px;border-radius:100px;padding:3px 10px}
 .perk-1 .perk-tag{background:var(--v3);color:var(--v);border:1px solid var(--bd2)}
 .perk-2 .perk-tag{background:var(--teal-l);color:var(--teal);border:1px solid rgba(26,158,122,.25)}
 .perk-3 .perk-tag{background:#FBF4E2;color:var(--gold);border:1px solid rgba(201,168,76,.25)}
- 
-/* ── PROOF ENHANCED ── */
+/* PROOF ENHANCED */
 .founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
-.fp-item{
-  display:flex;align-items:center;gap:12px;
-  padding:13px 16px;border-radius:var(--rs);
-  transition:all .2s;border:1px solid transparent;
-}
+.fp-item{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:var(--rs);transition:all .2s;border:1px solid transparent}
 .fp-item-1{background:var(--v5);border-color:var(--bd)}
 .fp-item-2{background:var(--teal-l);border-color:rgba(26,158,122,.15)}
 .fp-item-3{background:#FBF4E2;border-color:rgba(201,168,76,.15)}
 .fp-item:hover{transform:translateX(3px)}
-.fp-icon-wrap{
-  width:26px;height:26px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-}
+.fp-icon-wrap{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .fp-item-1 .fp-icon-wrap{background:var(--v3);border:1px solid var(--bd2)}
 .fp-item-2 .fp-icon-wrap{background:rgba(26,158,122,.15);border:1px solid rgba(26,158,122,.25)}
 .fp-item-3 .fp-icon-wrap{background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25)}
@@ -564,196 +370,202 @@ footer span{color:var(--v)}
 .fp-item-1 .fp-txt strong{color:var(--v)}
 .fp-item-2 .fp-txt strong{color:var(--teal)}
 .fp-item-3 .fp-txt strong{color:var(--gold)}
- 
-/* ── PAIN CARDS ENHANCED ── */
-.pc{cursor:default}
-.pc:nth-child(1){border-left:3px solid var(--v)}
-.pc:nth-child(2){border-left:3px solid var(--gold)}
-.pc:nth-child(3){border-left:3px solid var(--teal)}
-.pc-n{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;
-  width:32px;height:32px;border-radius:50%}
-.pc:nth-child(1) .pc-n{background:var(--v3);color:var(--v)}
-.pc:nth-child(2) .pc-n{background:#FBF4E2;color:var(--gold)}
-.pc:nth-child(3) .pc-n{background:var(--teal-l);color:var(--teal)}
- 
-/* ── HERO STATS ENHANCED ── */
-.sn{font-size:clamp(28px,5vw,38px)}
-.stat{position:relative}
-.stat:first-child .sn b{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-}
- 
-/* ── FUSION ENHANCED ── */
+/* FORM CARD ENHANCED */
+.form-card{position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2),var(--teal))}
+.form-submit{background:linear-gradient(135deg,var(--v),var(--v2));position:relative;overflow:hidden;letter-spacing:.3px}
+.form-submit::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.08),transparent);transform:translateX(-100%);transition:transform .4s}
+.form-submit:hover::after{transform:translateX(100%)}
+.form-submit:hover{background:linear-gradient(135deg,var(--ink),var(--v));transform:translateY(-1px);box-shadow:0 8px 28px rgba(123,91,245,.35)}
+/* SPOTS */
+.spots-row{background:linear-gradient(135deg,var(--v5),#EDE8FE);border-color:var(--bd2)}
+.spots-fill{background:linear-gradient(to right,var(--v),var(--v2));box-shadow:0 0 8px rgba(123,91,245,.4)}
+.spots-txt strong{color:var(--v)}
+/* PCARD */
+.pcard-top{background:linear-gradient(135deg,var(--v4),#EDE8FE)}
+/* HERO */
+.hero-badge{box-shadow:0 4px 20px rgba(201,168,76,.15)}
+.hero-contrast{box-shadow:0 4px 20px rgba(0,0,0,.06),0 0 0 1px rgba(123,91,245,.08)}
+/* SCORES */
+.vs.g .vsn{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.vs.v .vsn{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* TICKER */
+.tk{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* AVIS */
+.avis-card{border-left:3px solid var(--v)}
+/* FUSION */
 .fc-icon{width:44px;height:44px;border-radius:14px;font-size:18px}
 .fc.c .fc-icon{background:linear-gradient(135deg,var(--v3),#DDD4FC)}
 .fc.p .fc-icon{background:linear-gradient(135deg,var(--teal-l),#C8F0E4)}
 .fc.m .fc-icon{background:linear-gradient(135deg,#FBF4E2,#F5E8C0)}
- 
-/* ── VERBATIM CARDS ENHANCED ── */
-.vc{border-left:3px solid var(--v)}
-.vc:nth-child(2){border-left-color:var(--teal)}
-.vc:nth-child(3){border-left-color:var(--gold)}
-.vc:nth-child(4){border-left-color:var(--v2)}
- 
-/* ── WAITLIST SECTION ENHANCED ── */
-.wl-h{
-  background:linear-gradient(135deg,var(--ink) 0%,var(--v) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.wl-h em{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
- 
-/* ── FORM CARD ENHANCED ── */
-.form-card{
-  position:relative;overflow:hidden;
-}
-.form-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(to right,var(--v),var(--v2),var(--teal));
-}
-.form-card::after{
-  content:'';position:absolute;
-  bottom:-60px;right:-60px;
-  width:180px;height:180px;border-radius:50%;
-  background:radial-gradient(circle,rgba(123,91,245,.06) 0%,transparent 70%);
-  pointer-events:none;
-}
-.form-submit{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  position:relative;overflow:hidden;letter-spacing:.3px;
-}
-.form-submit::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,transparent,rgba(255,255,255,.08),transparent);
-  transform:translateX(-100%);transition:transform .4s;
-}
-.form-submit:hover::after{transform:translateX(100%)}
-.form-submit:hover{
-  background:linear-gradient(135deg,var(--ink),var(--v));
-  transform:translateY(-1px);
-  box-shadow:0 8px 28px rgba(123,91,245,.35);
-}
- 
-/* ── SPOTS BAR ENHANCED ── */
-.spots-row{
-  background:linear-gradient(135deg,var(--v5),#EDE8FE);
-  border-color:var(--bd2);
-}
-.spots-fill{
-  background:linear-gradient(to right,var(--v),var(--v2));
-  box-shadow:0 0 8px rgba(123,91,245,.4);
-}
-.spots-txt strong{color:var(--v)}
- 
-/* ── PROFILE CARD ENHANCED ── */
-.pcard-top{
-  background:linear-gradient(135deg,var(--v4),#EDE8FE);
-}
-.pcard-scores{
-  background:linear-gradient(135deg,var(--v5),var(--white));
-}
- 
-/* ── HERO BADGE ENHANCED ── */
-.hero-badge{
-  box-shadow:0 4px 20px rgba(201,168,76,.15);
-}
- 
-/* ── HERO CONTRAST ENHANCED ── */
-.hero-contrast{
-  box-shadow:0 4px 20px rgba(0,0,0,.06),0 0 0 1px rgba(123,91,245,.08);
-}
-.hcn em{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
- 
-/* ── SCORES ENHANCED ── */
-.vsn{
-  background:none;
-}
-.vs.g .vsn{
-  background:linear-gradient(135deg,var(--teal),#2BC89A);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.vs.v .vsn{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
- 
-/* ── SECTION EYEBROW ENHANCED ── */
-.ey{
-  font-size:10px;letter-spacing:3px;
-  display:inline-flex;
-}
-.ey::before{
-  content:'◆';margin-right:8px;font-size:7px;
-  color:var(--v);animation:pulse 2s infinite;
-}
- 
-/* ── Q BOX ENHANCED ── */
-.qb{
-  background:linear-gradient(135deg,var(--v4),var(--v5));
-  border-color:var(--bd2);
-  position:relative;overflow:hidden;
-}
-.qb::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(to right,var(--v),var(--v2));
-}
- 
-/* ── FUSION ARROW ENHANCED ── */
-.fusion-arrow{
-  background:linear-gradient(135deg,var(--ink),#1a1428);
-}
-.fa-text strong{
-  background:linear-gradient(135deg,var(--v2),#C4B5FD);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
- 
-/* ── TICKER ENHANCED ── */
-.tk{
-  background:linear-gradient(135deg,var(--v),var(--v2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
- 
-/* ── SCROLL HINT ENHANCED ── */
-.sh-arrow{
-  box-shadow:0 2px 8px rgba(123,91,245,.15);
-}
- 
-/* ── AVIS CARDS ENHANCED ── */
-.avis-card{
-  border-left:3px solid var(--v);
-  transition:transform .2s;
-}
-.avis-track:hover .avis-card:hover{transform:scale(1.01)}
- 
-/* ── RESPONSIVE FIXES ── */
+.fusion-arrow{background:linear-gradient(135deg,var(--ink),#1a1428)}
+.fa-text strong{background:linear-gradient(135deg,var(--v2),#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* RESPONSIVE FIXES */
 @media(max-width:900px){
   .perk{flex-direction:column;gap:8px}
   .perk-num{font-size:22px}
   .perk::before{top:0;left:0;right:0;bottom:auto;height:3px;width:100%}
   .perk:hover{transform:translateY(-2px)}
 }
+
+/* ── REVELIOM VISUAL ENHANCEMENTS ── */
+
+/* Orbes violet subtils hero */
+.hero{position:relative;overflow:hidden}
+.hero::before{
+  content:'';position:absolute;
+  top:-200px;left:-200px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(123,91,245,.06) 0%,transparent 60%);
+  pointer-events:none;z-index:0;
+  animation:orbFloat 10s ease-in-out infinite;
+}
+.hero::after{
+  content:'';position:absolute;
+  bottom:-150px;right:-150px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(123,91,245,.05) 0%,transparent 60%);
+  pointer-events:none;z-index:0;
+  animation:orbFloat 8s ease-in-out infinite reverse;
+}
+@keyframes orbFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-20px)}}
+.hero>*{position:relative;z-index:1}
+
+/* H1 em - pas de soulignement */
+.hero h1 em{position:relative}
+
+/* Stats dégradé sur les b */
+.sn b{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+/* Pain cards bordure gauche colorée */
+.pc:nth-child(1){border-left:3px solid var(--v)}
+.pc:nth-child(2){border-left:3px solid var(--v2)}
+.pc:nth-child(3){border-left:3px solid rgba(123,91,245,.4)}
+
+/* Fusion hover + icône rebond */
+.fc{transition:all .3s cubic-bezier(.22,1,.36,1)}
+.fc:hover{background:var(--v5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(123,91,245,.1)}
+.fc-icon{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.fc:hover .fc-icon{transform:scale(1.12) rotate(-4deg)}
+.fc-icon{width:44px;height:44px;border-radius:12px}
+.fc.c .fc-icon{background:linear-gradient(135deg,var(--v3),#DDD4FC)}
+.fc.p .fc-icon{background:linear-gradient(135deg,var(--teal-l),#C8F0E4)}
+.fc.m .fc-icon{background:linear-gradient(135deg,#FBF4E2,#F5E8C0)}
+.fusion-arrow{background:linear-gradient(135deg,var(--ink),#1a1428)}
+.fa-text strong{background:linear-gradient(135deg,var(--v2),#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Proof bar violette */
+.proof-bar{background:linear-gradient(135deg,var(--v3),var(--v4));border-color:var(--bd2)}
+.proof-pill{color:var(--v)}
+
+/* Prof callout */
+.prof-statement{
+  display:flex;align-items:flex-start;gap:12px;
+  margin:0 0 24px;padding:16px 20px;
+  background:linear-gradient(135deg,var(--v4),#EAE4FE);
+  border-radius:var(--r);border-left:4px solid var(--v);
+  border:1.5px solid var(--bd2);border-left:4px solid var(--v);
+}
+.ps-diamond{font-size:12px;color:var(--v);flex-shrink:0;animation:pulse 3s infinite;margin-top:2px}
+.prof-statement p{font-size:14px;color:var(--ink2);line-height:1.8;font-weight:300}
+.prof-statement p strong{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
+
+/* Tabs actif violet */
+.ptab.on{box-shadow:0 4px 14px rgba(123,91,245,.25)}
+
+/* Pcard top sombre */
+.pcard-top{background:linear-gradient(135deg,var(--ink),#1a1428)}
+.pcard-ey{color:rgba(255,255,255,.35)}
+.pcard-badge{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.6)}
+
+/* Hcard hover */
+.hcard{transition:all .2s}
+.hcard:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(123,91,245,.1)}
+
+/* Scores dégradé */
+.pscore.g .pscoren{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pscore.v .pscoren{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Ticker violet */
+.tk{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Avis border gauche */
+.avis-card{border-left:3px solid var(--v)}
+
+/* Verbatim scores */
+.vs.g .vsn{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.vs.v .vsn{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* WL section fond blanc */
+.wl-sec{background:var(--white)}
+.wl-ey::before{content:'◆';font-size:7px;color:var(--v);margin-right:8px;animation:pulse 2s infinite}
+.wl-h em{color:var(--v)}
+
+/* Perks améliorés */
+.perk{position:relative;border:1px solid var(--bd);background:var(--white);transition:all .2s}
+.perk::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--v),var(--v2))}
+.perk:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(123,91,245,.08);border-color:var(--bd2)}
+.perk-num{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:rgba(123,91,245,.15);flex-shrink:0;min-width:26px;line-height:1;margin-top:2px;transition:color .2s}
+.perk:hover .perk-num{color:rgba(123,91,245,.35)}
+.perk-body h4{font-size:14px;font-weight:600;transition:color .2s}
+.perk:hover .perk-body h4{color:var(--v)}
+.perk-tag{display:inline-flex;font-size:10px;font-weight:500;letter-spacing:.4px;border-radius:100px;padding:3px 10px;background:var(--v3);color:var(--v);border:1px solid var(--bd2);transition:all .2s}
+.perk:hover .perk-tag{background:var(--v);color:#fff}
+
+/* Proof items */
+.fp-item{border:1px solid var(--bd);background:var(--v5);transition:all .2s}
+.fp-item:hover{background:var(--v3);transform:translateX(3px)}
+.fp-icon-wrap{width:26px;height:26px;border-radius:50%;background:var(--v3);border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fp-check{font-size:12px;font-weight:700;color:var(--v)}
+.fp-txt strong{color:var(--v)}
+
+/* Form card */
+.form-card{position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2))}
+.form-submit{background:linear-gradient(135deg,var(--v),var(--v2));letter-spacing:.3px}
+.form-submit:hover{background:linear-gradient(135deg,var(--ink),var(--v));transform:translateY(-1px);box-shadow:0 8px 24px rgba(123,91,245,.35)}
+
+/* Spots */
+.spots-fill{background:linear-gradient(to right,var(--v),var(--v2));box-shadow:0 0 8px rgba(123,91,245,.3)}
+.spots-txt strong{color:var(--v)}
+
+/* Eyebrow ◆ */
+.ey::before{content:'◆';font-size:7px;color:var(--v);margin-right:8px;animation:pulse 2s infinite}
+
+/* Q box */
+.qb{position:relative;overflow:hidden}
+.qb::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--v),var(--v2))}
+
+/* Nav CTA violet */
+.nav-cta{box-shadow:0 4px 14px rgba(123,91,245,.25)}
+.nav-cta:hover{background:var(--ink)}
+
+
+/* ── SURLIGNAGES ÉDITORIAUX (style marker) ── */
+.hl{
+  background:linear-gradient(transparent 55%, rgba(123,91,245,.18) 55%);
+  padding:0 2px;
+}
+.hl-gold{
+  background:linear-gradient(transparent 55%, rgba(201,168,76,.2) 55%);
+  padding:0 2px;
+}
+.hl-teal{
+  background:linear-gradient(transparent 55%, rgba(26,158,122,.18) 55%);
+  padding:0 2px;
+}
+
 </style>
- 
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z2J6B8S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z2J6B8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
- 
+
 <!-- NAV -->
 <nav>
   <div class="nav-logo">REVEL<span>I</span>OM</div>
@@ -762,21 +574,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button class="nav-cta" onclick="sf()">Rejoindre la waitlist</button>
   </div>
 </nav>
- 
+
 <!-- STICKY -->
 <div class="sticky" id="sticky">
-  <button class="sticky-btn" onclick="sf()">
-    <div class="sdot"></div>Rejoindre les 50 premiers
-  </button>
+  <button class="sticky-btn" onclick="sf()"><div class="sdot"></div>Rejoindre les 50 premiers</button>
 </div>
- 
+
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
   <div class="hero-lines"></div>
   <div class="hero-badge"><div class="hbdot"></div>Accès Fondateur · 50 places · Bêta en cours</div>
   <h1>Le recrutement<br><em>qui révèle</em><span class="l2">la vérité.</span></h1>
-  <p class="hero-sub">REVELIOM analyse simultanément le candidat, le manager et le poste — pour révéler l'alignement réel avant que vous ne décidiez.</p>
+  <p class="hero-sub">REVELIOM analyse simultanément le candidat, le manager et le poste — pour révéler <span class="hl">l'alignement réel</span> avant que vous ne décidiez.</p>
   <div class="hero-contrast">
     <span class="hco">Les outils filtrent</span>
     <span class="hca">→</span>
@@ -795,12 +605,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="sdiv"></div>
     <div class="stat"><div class="sn">0<b>%</b></div><div class="sl">pénible</div></div>
   </div>
-  <div class="scroll-hint">
-    <span class="sh-txt">Découvrir</span>
-    <div class="sh-arrow"></div>
-  </div>
+  <div class="scroll-hint"><span class="sh-txt">Découvrir</span><div class="sh-arrow"></div></div>
 </div>
- 
+
 <!-- PAIN -->
 <section class="sec">
   <div class="si tw">
@@ -810,9 +617,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="bh">Ce que les outils classiques<br><em>ne voient pas.</em></h2>
       <p class="bp2">Ces situations existent partout. REVELIOM les adresse directement.</p>
       <div class="pgrid">
-        <div class="pc"><div class="pc-n">1</div><h4>Les no-shows</h4><p>Le candidat ne se présente pas à l'entretien ou le premier jour.</p><div class="pc-stat">60–70% des recrutements sur le marché</div></div>
-        <div class="pc"><div class="pc-n">2</div><h4>L'échec du tempérament</h4><p>Compétences validées, entretien réussi. Il part avant 18 mois. 89% des échecs = tempérament.</p><div class="pc-stat">Source : Leadership IQ — 20 000 recrutements</div></div>
-        <div class="pc"><div class="pc-n">3</div><h4>Le profil atypique éliminé</h4><p>Pas le bon diplôme. Filtré avant l'entretien. Le meilleur candidat jamais vu.</p><div class="pc-stat">43% des rejections ATS ≠ compétences</div></div>
+        <div class="pc"><div class="pc-n">1</div><h4><span class="hl">Les no-shows</span></h4><p>Le candidat ne se présente pas à l'entretien ou le premier jour.</p><div class="pc-stat">60–70% des recrutements sur le marché</div></div>
+        <div class="pc"><div class="pc-n">2</div><h4><span class="hl">L'échec du tempérament</span></h4><p>Compétences validées, entretien réussi. Il part avant 18 mois. <span class="hl">89% des échecs = tempérament</span>.</p><div class="pc-stat">Source : Leadership IQ — 20 000 recrutements</div></div>
+        <div class="pc"><div class="pc-n">3</div><h4><span class="hl-teal">Le profil atypique éliminé</span></h4><p>Pas le bon diplôme. Filtré avant l'entretien. Le meilleur candidat jamais vu.</p><div class="pc-stat">43% des rejections ATS ≠ compétences</div></div>
       </div>
       <div class="qb">
         <p class="qt"><strong>L'une de ces situations vous est familière ?</strong></p>
@@ -824,12 +631,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="qrev" id="qpn">74% des recruteurs disent avoir fait au moins une erreur de recrutement. ↓</div>
       </div>
     </div>
- 
-    <!-- FUSION -->
+
     <div class="blk">
       <div class="ey">La méthode REVELIOM</div>
       <h2 class="bh">Trois réalités que <em>personne<br>ne croise ensemble.</em></h2>
-      <p class="bp2">Les outils classiques regardent le candidat seul. <strong>REVELIOM triangule simultanément les trois dimensions</strong> qui déterminent si ça va tenir dans la durée.</p>
+      <p class="bp2">Les outils classiques regardent le candidat seul. <strong><span class="hl">REVELIOM triangule simultanément les trois dimensions</span></strong> qui déterminent si ça va tenir dans la durée.</p>
       <div class="fusion-wrap">
         <div class="fusion-cards">
           <div class="fc c">
@@ -863,7 +669,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
- 
+
 <!-- PROFILES -->
 <section class="sec prof-sec" id="profiles">
   <div class="si">
@@ -877,17 +683,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="proof-div"></div>
         <div class="proof-pill"><div class="proof-dot"></div>Déjà déployé · Déjà validé</div>
       </div>
-      <p style="font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:580px">Ce ne sont pas des illustrations. REVELIOM a déjà analysé ces profils, réalisé ces matchings, permis ces recrutements. Le but est maintenant de le rendre accessible à tous.</p>
+      <div class="prof-statement">
+        <span class="ps-diamond">◆</span>
+        <p>Ce ne sont pas des illustrations. <strong><span class="hl">REVELIOM a déjà analysé ces profils, réalisé ces matchings, permis ces recrutements.</span></strong> Le but est maintenant de le rendre accessible à tous.</p>
+      </div>
     </div>
- 
+
     <div class="ptabs">
       <button class="ptab on" onclick="showP('c',this)">Profil Candidat</button>
       <button class="ptab" onclick="showP('m',this)">Portrait Manager</button>
       <button class="ptab" onclick="showP('p',this)">Analyse Poste</button>
       <button class="ptab" onclick="showP('x',this)">Matching Final</button>
     </div>
- 
-    <!-- CANDIDAT -->
+
     <div class="ppanel on" id="p-c">
       <div class="pcard">
         <div class="pcard-top">
@@ -895,32 +703,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="pcard-badge"><div class="pbd"></div>Session réelle · Profil authentifié · Déjà déployé</div>
         </div>
         <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
-        <div class="hscroll" id="hs-c">
-          <div class="hcard teal-card">
-            <div class="hc-title">🔥 Ce qui le met en mouvement</div>
-            <div class="hc-txt">Ce qui le fait avancer, c'est le moment où il voit <strong>l'effet direct de ce qu'il transmet</strong> : quand quelqu'un comprend, progresse, réussit grâce à lui. Il se met en marche quand son action a un impact réel sur les autres.</div>
-            <div class="hc-tags"><span class="htag g">Impact humain</span><span class="htag g">Transmission</span></div>
-          </div>
-          <div class="hcard">
-            <div class="hc-title">🧱 Comment il tient dans le temps</div>
-            <div class="hc-txt">Il fonctionne par <em>phases d'intensité</em>, activées par un cadre clair et une responsabilité visible. Sans structure ou retour, son énergie retombe — non par manque de capacité, mais par <strong>absence de déclencheur.</strong></div>
-            <div class="hc-tags"><span class="htag v">Cadre requis</span><span class="htag v">Responsabilité visible</span></div>
-          </div>
-          <div class="hcard">
-            <div class="hc-title">🧩 Ce que révèlent ses projections</div>
-            <div class="hc-txt">Attiré par des univers complexes, structurés, où le pouvoir passe par <strong>la compréhension et la stratégie</strong>. Ce n'est pas la domination qui l'attire — <em>c'est la maîtrise silencieuse des systèmes.</em></div>
-            <div class="hc-tags"><span class="htag v">Stratégie</span><span class="htag v">Complexité</span></div>
-          </div>
-          <div class="hcard teal-card">
-            <div class="hc-title">🎯 Positionnement naturel</div>
-            <div class="hc-txt">Fonctionne comme <strong>pédagogue-structurant</strong> : comprend, explique, accompagne, organise autour de lui. Pas fait pour l'exécution brute solitaire — mais pour <em>former, encadrer, déléguer.</em></div>
-            <div class="hc-tags"><span class="htag g">Formation</span><span class="htag g">Encadrement</span></div>
-          </div>
-          <div class="hcard red-card">
-            <div class="hc-title">⚠️ Points de vigilance</div>
-            <div class="hc-txt">Sans cadre externe, <strong>l'automotivation pure est un risque réel.</strong> L'énergie retombe quand les objectifs sont abstraits et les retours absents. Ce n'est pas un défaut — c'est une structure à connaître.</div>
-            <div class="hc-tags"><span class="htag r">Sans structure = risque</span><span class="htag r">Automotivation limitée</span></div>
-          </div>
+        <div class="hscroll">
+          <div class="hcard teal-card"><div class="hc-title">🔥 Ce qui le met en mouvement</div><div class="hc-txt">Ce qui le fait avancer, c'est le moment où il voit <strong>l'effet direct de ce qu'il transmet</strong> : quand quelqu'un comprend, progresse, réussit grâce à lui. Il se met en marche quand son action a un impact réel sur les autres.</div><div class="hc-tags"><span class="htag g">Impact humain</span><span class="htag g">Transmission</span></div></div>
+          <div class="hcard"><div class="hc-title">🧱 Comment il tient dans le temps</div><div class="hc-txt">Il fonctionne par <em>phases d'intensité</em>, activées par un cadre clair et une responsabilité visible. Sans structure ou retour, son énergie retombe — non par manque de capacité, mais par <strong>absence de déclencheur.</strong></div><div class="hc-tags"><span class="htag v">Cadre requis</span><span class="htag v">Responsabilité visible</span></div></div>
+          <div class="hcard"><div class="hc-title">🧩 Ce que révèlent ses projections</div><div class="hc-txt">Attiré par des univers complexes, structurés, où le pouvoir passe par <strong>la compréhension et la stratégie</strong>. Ce n'est pas la domination qui l'attire — <em>c'est la maîtrise silencieuse des systèmes.</em></div><div class="hc-tags"><span class="htag v">Stratégie</span><span class="htag v">Complexité</span></div></div>
+          <div class="hcard teal-card"><div class="hc-title">🎯 Positionnement naturel</div><div class="hc-txt">Fonctionne comme <strong>pédagogue-structurant</strong> : comprend, explique, accompagne, organise autour de lui. Pas fait pour l'exécution brute solitaire — mais pour <em>former, encadrer, déléguer.</em></div><div class="hc-tags"><span class="htag g">Formation</span><span class="htag g">Encadrement</span></div></div>
+          <div class="hcard red-card"><div class="hc-title">⚠️ Points de vigilance</div><div class="hc-txt">Sans cadre externe, <strong>l'automotivation pure est un risque réel.</strong> L'énergie retombe quand les objectifs sont abstraits et les retours absents. Ce n'est pas un défaut — c'est une structure à connaître.</div><div class="hc-tags"><span class="htag r">Sans structure = risque</span><span class="htag r">Automotivation limitée</span></div></div>
         </div>
         <div class="pcard-scores">
           <div class="pscore g"><div class="pscoren" data-n="100" data-s="%">0%</div><div class="pscorel">reconnaissent leur profil<br>comme exact</div></div>
@@ -929,8 +717,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
- 
-    <!-- MANAGER -->
+
     <div class="ppanel" id="p-m">
       <div class="pcard">
         <div class="pcard-top">
@@ -939,31 +726,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
         <div class="hscroll">
-          <div class="hcard">
-            <div class="hc-title">🧠 ADN managérial dominant</div>
-            <div class="hc-txt"><strong>Décideur direct, orienté résultats.</strong> Incarne l'exigence par l'exemple. Les autres ressentent un cadre net, une attente élevée et une vraie opportunité de gagner — à condition de jouer le jeu.</div>
-            <div class="hc-tags"><span class="htag v">Exigence</span><span class="htag v">Direct</span></div>
-          </div>
-          <div class="hcard">
-            <div class="hc-title">⚡ Style de leadership réel</div>
-            <div class="hc-txt">Leadership par le cadre et l'exigence, soutenu par la logique et les faits. <em>Lecture en creux :</em> valorise l'autonomie, mais <strong>supporte mal l'approximation prolongée</strong> et les postures défensives.</div>
-            <div class="hc-tags"><span class="htag v">Résultats</span><span class="htag v">Autonomie</span></div>
-          </div>
-          <div class="hcard teal-card">
-            <div class="hc-title">✅ Profils compatibles</div>
-            <div class="hc-txt">Chasseurs autonomes · Bâtisseurs orientés action · Profils bruts mais engagés. <strong>Personnes à l'aise avec le terrain, l'incertitude et le challenge.</strong></div>
-            <div class="hc-tags"><span class="htag g">Autonomie</span><span class="htag g">Terrain</span><span class="htag g">Engagement</span></div>
-          </div>
-          <div class="hcard red-card">
-            <div class="hc-title">⚠️ Profils à risque</div>
-            <div class="hc-txt">Attentistes, dépendants du cadre · Profils prudents cherchant la sécurité avant l'effort · <strong>Personnes négatives ou expertes en rationalisation de l'échec.</strong></div>
-            <div class="hc-tags"><span class="htag r">Attentisme</span><span class="htag r">Négativité</span></div>
-          </div>
-          <div class="hcard gold-card">
-            <div class="hc-title">📊 Source scientifique</div>
-            <div class="hc-txt">Gallup (27M employés) : <strong>70% de la variance d'engagement = manager.</strong> L'échec d'un recrutement n'est pas l'échec d'un candidat — c'est l'échec d'une rencontre entre deux structures.</div>
-            <div class="hc-tags"><span class="htag o">Gallup 2015</span><span class="htag o">Théorie LMX</span></div>
-          </div>
+          <div class="hcard"><div class="hc-title">🧠 ADN managérial dominant</div><div class="hc-txt"><strong>Décideur direct, orienté résultats.</strong> Incarne l'exigence par l'exemple. Les autres ressentent un cadre net, une attente élevée et une vraie opportunité de gagner — à condition de jouer le jeu.</div><div class="hc-tags"><span class="htag v">Exigence</span><span class="htag v">Direct</span></div></div>
+          <div class="hcard"><div class="hc-title">⚡ Style de leadership réel</div><div class="hc-txt">Leadership par le cadre et l'exigence, soutenu par la logique et les faits. <em>Lecture en creux :</em> valorise l'autonomie, mais <strong>supporte mal l'approximation prolongée</strong> et les postures défensives.</div><div class="hc-tags"><span class="htag v">Résultats</span><span class="htag v">Autonomie</span></div></div>
+          <div class="hcard teal-card"><div class="hc-title">✅ Profils compatibles</div><div class="hc-txt">Chasseurs autonomes · Bâtisseurs orientés action · Profils bruts mais engagés. <strong>Personnes à l'aise avec le terrain, l'incertitude et le challenge.</strong></div><div class="hc-tags"><span class="htag g">Autonomie</span><span class="htag g">Terrain</span><span class="htag g">Engagement</span></div></div>
+          <div class="hcard red-card"><div class="hc-title">⚠️ Profils à risque</div><div class="hc-txt">Attentistes, dépendants du cadre · Profils prudents cherchant la sécurité avant l'effort · <strong>Personnes négatives ou expertes en rationalisation de l'échec.</strong></div><div class="hc-tags"><span class="htag r">Attentisme</span><span class="htag r">Négativité</span></div></div>
+          <div class="hcard gold-card"><div class="hc-title">📊 Source scientifique</div><div class="hc-txt">Gallup (27M employés) : <strong>70% de la variance d'engagement = manager.</strong> L'échec d'un recrutement n'est pas l'échec d'un candidat — c'est l'échec d'une rencontre entre deux structures.</div><div class="hc-tags"><span class="htag o">Gallup 2015</span><span class="htag o">Théorie LMX</span></div></div>
         </div>
         <div class="pcard-scores">
           <div class="pscore v"><div class="pscoren">70%</div><div class="pscorel">incompatibilités managériales<br>éliminées avant l'entretien</div></div>
@@ -972,8 +739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
- 
-    <!-- POSTE -->
+
     <div class="ppanel" id="p-p">
       <div class="pcard">
         <div class="pcard-top">
@@ -982,26 +748,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
         <div class="hscroll">
-          <div class="hcard">
-            <div class="hc-title">🎯 Vérité du poste</div>
-            <div class="hc-txt">Activité commerciale terrain basée sur la prospection. <strong>Le développement dépend directement du volume d'actions</strong> et de la capacité à maintenir une présence commerciale malgré les refus fréquents.</div>
-            <div class="hc-tags"><span class="htag v">Terrain</span><span class="htag v">Volume requis</span></div>
-          </div>
-          <div class="hcard">
-            <div class="hc-title">💪 Ce que le poste exige</div>
-            <div class="hc-txt">Prospecter régulièrement · <strong>Accepter refus et décisions différées</strong> · Maintenir un rythme constant · <em>Gérer seul la responsabilité des résultats.</em></div>
-            <div class="hc-tags"><span class="htag o">Résilience</span><span class="htag o">Rythme constant</span></div>
-          </div>
-          <div class="hcard teal-card">
-            <div class="hc-title">📈 Ce que le poste offre</div>
-            <div class="hc-txt">Des revenus directement liés aux contrats · <strong>Une autonomie forte dans l'organisation</strong> · La possibilité de construire progressivement un portefeuille stable.</div>
-            <div class="hc-tags"><span class="htag g">Autonomie forte</span><span class="htag g">Revenus variables</span></div>
-          </div>
-          <div class="hcard red-card">
-            <div class="hc-title">⚠️ Sources d'usure</div>
-            <div class="hc-txt">La répétition de la prospection · L'exposition régulière aux refus · Le volume d'actions nécessaire. <strong>La stabilité arrive quand le portefeuille se développe.</strong></div>
-            <div class="hc-tags"><span class="htag r">Usure progressive</span><span class="htag r">Long terme requis</span></div>
-          </div>
+          <div class="hcard"><div class="hc-title">🎯 Vérité du poste</div><div class="hc-txt">Activité commerciale terrain basée sur la prospection. <strong>Le développement dépend directement du volume d'actions</strong> et de la capacité à maintenir une présence commerciale malgré les refus fréquents.</div><div class="hc-tags"><span class="htag v">Terrain</span><span class="htag v">Volume requis</span></div></div>
+          <div class="hcard"><div class="hc-title">💪 Ce que le poste exige</div><div class="hc-txt">Prospecter régulièrement · <strong>Accepter refus et décisions différées</strong> · Maintenir un rythme constant · <em>Gérer seul la responsabilité des résultats.</em></div><div class="hc-tags"><span class="htag o">Résilience</span><span class="htag o">Rythme constant</span></div></div>
+          <div class="hcard teal-card"><div class="hc-title">📈 Ce que le poste offre</div><div class="hc-txt">Des revenus directement liés aux contrats · <strong>Une autonomie forte dans l'organisation</strong> · La possibilité de construire progressivement un portefeuille stable.</div><div class="hc-tags"><span class="htag g">Autonomie forte</span><span class="htag g">Revenus variables</span></div></div>
+          <div class="hcard red-card"><div class="hc-title">⚠️ Sources d'usure</div><div class="hc-txt">La répétition de la prospection · L'exposition régulière aux refus · Le volume d'actions nécessaire. <strong>La stabilité arrive quand le portefeuille se développe.</strong></div><div class="hc-tags"><span class="htag r">Usure progressive</span><span class="htag r">Long terme requis</span></div></div>
         </div>
         <div class="pcard-scores">
           <div class="pscore v"><div class="pscoren">JD-R</div><div class="pscorel">modèle Job Demands<br>Resources appliqué</div></div>
@@ -1010,8 +760,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
- 
-    <!-- MATCHING -->
+
     <div class="ppanel" id="p-x">
       <div class="pcard">
         <div class="pcard-top">
@@ -1020,31 +769,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
         <div class="hscroll">
-          <div class="hcard">
-            <div class="hc-title">📊 Verdict REVELIOM</div>
-            <div class="hc-txt">Le fonctionnement peut correspondre au poste, mais <strong>uniquement si certaines conditions sont réunies dès le départ.</strong> Ce matching n'est ni un oui automatique, ni un non définitif — c'est une boussole.</div>
-            <div class="hc-tags"><span class="htag o">Conditionnel</span><span class="htag o">Conditions claires</span></div>
-          </div>
-          <div class="hcard">
-            <div class="hc-title">🔎 Lecture de compatibilité</div>
-            <div class="hc-txt">Le moteur repose sur <strong>l'impact humain et la transmission</strong>. Le poste peut devenir cohérent à condition que l'exposition commerciale soit <em>acceptée comme passage nécessaire</em>, pas comme cœur identitaire.</div>
-            <div class="hc-tags"><span class="htag v">Impact humain</span><span class="htag v">Long terme</span></div>
-          </div>
-          <div class="hcard teal-card">
-            <div class="hc-title">🧭 Cadre requis pour réussir</div>
-            <div class="hc-txt">Cadre structurant et explicite · Objectifs clairs · Retour régulier · Responsabilités visibles. <strong>Sans ce cadre, la dispersion est un risque réel.</strong></div>
-            <div class="hc-tags"><span class="htag g">Cadre explicite</span><span class="htag g">Feedback</span></div>
-          </div>
-          <div class="hcard red-card">
-            <div class="hc-title">⚠️ Zone de friction identifiée</div>
-            <div class="hc-txt">Friction sur l'<strong>autonomie commerciale pure</strong> : le moteur n'est pas naturellement orienté vente frontale répétée. Risque de dispersion si les objectifs sont trop abstraits et les retours trop rares.</div>
-            <div class="hc-tags"><span class="htag r">Friction commerciale</span><span class="htag r">Autonomie limitée</span></div>
-          </div>
-          <div class="hcard gold-card">
-            <div class="hc-title">💼 Projection concrète</div>
-            <div class="hc-txt">La valeur se joue dans la <strong>capacité à structurer un portefeuille stable</strong>, puis à transmettre une méthode. Le levier financier devient réel quand il passe <em>de l'action individuelle à l'organisation collective.</em></div>
-            <div class="hc-tags"><span class="htag o">Long terme</span><span class="htag o">Transmission</span></div>
-          </div>
+          <div class="hcard"><div class="hc-title">📊 Verdict REVELIOM</div><div class="hc-txt">Le fonctionnement peut correspondre au poste, mais <strong>uniquement si certaines conditions sont réunies dès le départ.</strong> Ce matching n'est ni un oui automatique, ni un non définitif — c'est une boussole.</div><div class="hc-tags"><span class="htag o">Conditionnel</span><span class="htag o">Conditions claires</span></div></div>
+          <div class="hcard"><div class="hc-title">🔎 Lecture de compatibilité</div><div class="hc-txt">Le moteur repose sur <strong>l'impact humain et la transmission</strong>. Le poste peut devenir cohérent à condition que l'exposition commerciale soit <em>acceptée comme passage nécessaire</em>, pas comme cœur identitaire.</div><div class="hc-tags"><span class="htag v">Impact humain</span><span class="htag v">Long terme</span></div></div>
+          <div class="hcard teal-card"><div class="hc-title">🧭 Cadre requis pour réussir</div><div class="hc-txt">Cadre structurant et explicite · Objectifs clairs · Retour régulier · Responsabilités visibles. <strong>Sans ce cadre, la dispersion est un risque réel.</strong></div><div class="hc-tags"><span class="htag g">Cadre explicite</span><span class="htag g">Feedback</span></div></div>
+          <div class="hcard red-card"><div class="hc-title">⚠️ Zone de friction identifiée</div><div class="hc-txt">Friction sur l'<strong>autonomie commerciale pure</strong> : le moteur n'est pas naturellement orienté vente frontale répétée. Risque de dispersion si les objectifs sont trop abstraits et les retours trop rares.</div><div class="hc-tags"><span class="htag r">Friction commerciale</span><span class="htag r">Autonomie limitée</span></div></div>
+          <div class="hcard gold-card"><div class="hc-title">💼 Projection concrète</div><div class="hc-txt">La valeur se joue dans la <strong>capacité à structurer un portefeuille stable</strong>, puis à transmettre une méthode. Le levier financier devient réel quand il passe <em>de l'action individuelle à l'organisation collective.</em></div><div class="hc-tags"><span class="htag o">Long terme</span><span class="htag o">Transmission</span></div></div>
         </div>
         <div class="pcard-scores">
           <div class="pscore v"><div class="pscoren">0,70</div><div class="pscorel">corrélation REVELIOM<br>vs 0,18 entretien classique</div></div>
@@ -1055,7 +784,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
- 
+
 <!-- VERBATIMS -->
 <section class="sec vb-sec">
   <div class="si">
@@ -1064,7 +793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="bh">Ils l'ont vécu.<br><em>Voici leurs mots.</em></h2>
       <p class="bp2" style="margin-bottom:18px">REVELIOM crée quelque chose que les outils classiques ne créent pas — une expérience que les candidats recommandent spontanément.</p>
       <div class="vs-grid">
-        <div class="vs g"><div class="vsn" data-n="67" data-s="%">0%</div><div class="vsl">"Captivant — je n'ai pas vu le temps passer"</div></div>
+        <div class="vs g"><div class="vsn" data-n="67" data-s="%">0%</div><div class="vsl">"<span class="hl-teal">Captivant — je n'ai pas vu le temps passer</span>"</div></div>
         <div class="vs v"><div class="vsn" data-n="100" data-s="%">0%</div><div class="vsl">recommandent l'expérience</div></div>
         <div class="vs w"><div class="vsn" data-n="0" data-s="%">0%</div><div class="vsl">ont trouvé ça pénible</div></div>
       </div>
@@ -1088,9 +817,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tk">"On ne peut pas réduire une personne à un CV."</span><span class="tks">◆</span>
         </div>
       </div>
-      <!-- AVIS SCROLL VERTICAL -->
       <div class="avis-wrap">
-        <div class="avis-track" id="atrack">
+        <div class="avis-track">
           <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">J'ai eu l'impression d'avoir quelqu'un en face de moi qui me comprenait — et mieux encore qui m'apprenait à moi-même qui j'étais.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
           <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">L'approche est atypique. On enlève la pression du CV. Le questionnaire cherche vraiment à nous connaître — pas à nous trier.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
           <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Expérience unique. On ne peut pas réduire une personne à un CV. C'est comme ça que les recruteurs devraient agir.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
@@ -1108,70 +836,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
- 
-<!-- WAITLIST BLANC -->
+
+<!-- WAITLIST -->
 <div class="wl-sec" id="waitlist">
   <div class="wl-inner">
     <div class="wl-left">
       <div class="wl-ey">50 accès · Fondateurs</div>
       <h2 class="wl-h">Rejoignez les premiers.<br><em>Co-construisez.</em></h2>
       <p class="wl-sub">REVELIOM est en cours de finalisation. <strong>Nous ouvrons 50 accès fondateurs</strong> avant le lancement officiel.</p>
- 
-      <!-- PROOF REAL -->
       <div class="founded-proof">
-        <div class="fp-item fp-item-1">
-          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
-          <div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div>
-        </div>
-        <div class="fp-item fp-item-2">
-          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
-          <div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div>
-        </div>
-        <div class="fp-item fp-item-3">
-          <div class="fp-icon-wrap"><span class="fp-check">✓</span></div>
-          <div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div>
-        </div>
+        <div class="fp-item fp-item-1"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div></div>
+        <div class="fp-item fp-item-2"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div></div>
+        <div class="fp-item fp-item-3"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div></div>
       </div>
- 
       <div class="perks">
-        <div class="perk perk-1">
-          <div class="perk-num">01</div>
-          <div class="perk-body">
-            <h4>Accès prioritaire à vie</h4>
-            <p>Votre accès est garanti avant toute ouverture publique — et le restera, quelle que soit la demande.</p>
-            <div class="perk-tag">Exclusif · Permanent</div>
-          </div>
-        </div>
-        <div class="perk perk-2">
-          <div class="perk-num">02</div>
-          <div class="perk-body">
-            <h4>Tarif fondateur figé à vie</h4>
-            <p>Le tarif que vous obtenez aujourd'hui est le tarif que vous conservez pour toujours — quelle que soit l'évolution des prix.</p>
-            <div class="perk-tag">Meilleur tarif · Garanti à vie</div>
-          </div>
-        </div>
-        <div class="perk perk-3">
-          <div class="perk-num">03</div>
-          <div class="perk-body">
-            <h4>Vous co-construisez REVELIOM</h4>
-            <p>Vos retours déterminent directement les prochaines fonctionnalités. Vous ne testez pas un produit — vous le façonnez.</p>
-            <div class="perk-tag">Impact direct · Influence réelle</div>
-          </div>
-        </div>
+        <div class="perk perk-1"><div class="perk-num">01</div><div class="perk-body"><h4><span class="hl">Accès prioritaire à vie</span></h4><p>Votre accès est garanti avant toute ouverture publique — et le restera, quelle que soit la demande.</p><div class="perk-tag">Exclusif · Permanent</div></div></div>
+        <div class="perk perk-2"><div class="perk-num">02</div><div class="perk-body"><h4><span class="hl-gold">Tarif fondateur figé à vie</span></h4><p>Le tarif que vous obtenez aujourd'hui est le tarif que vous conservez pour toujours — quelle que soit l'évolution des prix.</p><div class="perk-tag">Meilleur tarif · Garanti à vie</div></div></div>
+        <div class="perk perk-3"><div class="perk-num">03</div><div class="perk-body"><h4>Vous co-construisez REVELIOM</h4><p>Vos retours déterminent directement les prochaines fonctionnalités. Vous ne testez pas un produit — vous le façonnez.</p><div class="perk-tag">Impact direct · Influence réelle</div></div></div>
       </div>
       <div class="spots-row">
         <div class="spots-bar"><div class="spots-fill" id="sbar"></div></div>
         <div class="spots-txt">Limité à <strong>50 fondateurs</strong></div>
       </div>
     </div>
- 
-    <!-- FORM -->
     <div>
       <div class="form-card" id="fcard">
-        <div class="fc-head">
-          <h3>Votre inscription.</h3>
-          <p>Rejoignez la liste d'accès fondateur. Accès limité — sur sélection.</p>
-        </div>
+        <div class="fc-head"><h3>Votre inscription.</h3><p>Rejoignez la liste d'accès fondateur. Accès limité — sur sélection.</p></div>
         <div class="form" id="mainform">
           <div class="frow">
             <input class="fi" id="fp" type="text" placeholder="Prénom"/>
@@ -1183,19 +873,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <input class="fi" id="fse" type="text" placeholder="Secteur"/>
           </div>
           <input class="fi" id="fph" type="tel" placeholder="Téléphone direct"/>
- 
           <div class="recall-q">Une question avant ?</div>
           <div class="recall-opts">
-            <div class="ro on" id="ro1" onclick="setRecall('rappel')">
-              <div class="ro-dot"></div>
-              <span class="ro-lbl">📞 James, appelez-moi</span>
-            </div>
-            <div class="ro" id="ro2" onclick="setRecall('inscrit')">
-              <div class="ro-dot"></div>
-              <span class="ro-lbl">✉ Juste m'inscrire</span>
-            </div>
+            <div class="ro on" id="ro1" onclick="setRecall('rappel')"><div class="ro-dot"></div><span class="ro-lbl">📞 James, appelez-moi</span></div>
+            <div class="ro" id="ro2" onclick="setRecall('inscrit')"><div class="ro-dot"></div><span class="ro-lbl">✉ Juste m'inscrire</span></div>
           </div>
- 
           <button class="form-submit" onclick="submitForm()">Réserver ma place sur la waitlist →</button>
           <p class="form-note">Pas de spam · Pas d'engagement · 50 places maximum</p>
         </div>
@@ -1208,11 +890,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
- 
+
 <footer><p>REVEL<span>I</span>OM — reveliom.com</p></footer>
- 
+
 <script>
-// Scroll reveal
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
@@ -1223,15 +904,12 @@ const obs=new IntersectionObserver(entries=>{
   });
 },{threshold:.07,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.blk').forEach(b=>obs.observe(b));
- 
 function animCount(el){
   const t=parseInt(el.dataset.n),s=el.dataset.s||'%';
   if(t===0){el.textContent='0'+s;return;}
   let c=0,step=Math.max(1,Math.ceil(t/55));
   const iv=setInterval(()=>{c=Math.min(c+step,t);el.textContent=c+s;if(c>=t)clearInterval(iv);},25);
 }
- 
-// Sticky
 window.addEventListener('scroll',()=>{
   const st=document.getElementById('sticky');
   const wl=document.getElementById('waitlist');
@@ -1239,60 +917,46 @@ window.addEventListener('scroll',()=>{
   if(window.scrollY>400&&window.scrollY+window.innerHeight<ft+100)st.classList.add('show');
   else st.classList.remove('show');
 });
- 
-// Spots bar
 const sobs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
-    if(e.isIntersecting){
-      setTimeout(()=>{document.getElementById('sbar').style.width='12%';},300);
-      sobs.unobserve(e.target);
-    }
+    if(e.isIntersecting){setTimeout(()=>{document.getElementById('sbar').style.width='12%';},300);sobs.unobserve(e.target);}
   });
 },{threshold:.5});
 const sb=document.getElementById('sbar');if(sb)sobs.observe(sb);
- 
-// Nav
 function sf(){
   document.getElementById('waitlist').scrollIntoView({behavior:'smooth',block:'start'});
-  gtag('event','click_cta_waitlist',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
+  if(typeof gtag!=='undefined')gtag('event','click_cta_waitlist',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
 }
 function sp(){
   document.getElementById('profiles').scrollIntoView({behavior:'smooth',block:'start'});
-  gtag('event','click_voir_profil',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
+  if(typeof gtag!=='undefined')gtag('event','click_voir_profil',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
 }
- 
-// Q
 function qS(gid,rid,btn){
   document.querySelectorAll('#'+gid+' .qbtn').forEach(b=>b.classList.remove('sel'));
   btn.classList.add('sel');
   document.querySelectorAll('[id^="'+gid+'"].qrev').forEach(r=>r.style.display='none');
   const rv=document.getElementById(rid);if(rv)rv.style.display='block';
 }
- 
-// Profiles
 function showP(id,btn){
   document.querySelectorAll('.ppanel').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('on'));
   document.getElementById('p-'+id).classList.add('on');
   btn.classList.add('on');
 }
- 
-// Recall
 var recall='rappel';
 function setRecall(m){
   recall=m;
   document.getElementById('ro1').classList.toggle('on',m==='rappel');
   document.getElementById('ro2').classList.toggle('on',m==='inscrit');
 }
- 
-// Submit
 function submitForm(){
   const email=document.getElementById('fe').value;
   if(!email){alert('Merci d\'entrer votre email.');return;}
   const data={
     prenom:document.getElementById('fp').value,
     nom:document.getElementById('fn').value,
-    email,entreprise:document.getElementById('fco').value,
+    email,
+    entreprise:document.getElementById('fco').value,
     secteur:document.getElementById('fse').value,
     telephone:document.getElementById('fph').value,
     rappel:recall==='rappel'?'Oui':'Non'
@@ -1301,20 +965,14 @@ function submitForm(){
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
-      prenom: data.prenom,
-      nom: data.nom,
-      email: data.email,
-      entreprise: data.entreprise,
-      secteur: data.secteur,
-      telephone: data.telephone,
-      rappel: data.rappel,
-      _subject: 'Nouvelle inscription REVELIOM Waitlist — ' + data.prenom + ' ' + data.nom
+      prenom:data.prenom,nom:data.nom,email:data.email,
+      entreprise:data.entreprise,secteur:data.secteur,
+      telephone:data.telephone,rappel:data.rappel,
+      _subject:'Nouvelle inscription REVELIOM Waitlist — '+data.prenom+' '+data.nom
     })
-  }).then(r=>{
-    if(!r.ok) console.error('Formspree error', r.status);
-  }).catch(err=>console.error('Submit error', err));
+  }).then(r=>{if(!r.ok)console.error('Formspree error',r.status);}).catch(err=>console.error('Submit error',err));
   document.getElementById('mainform').style.display='none';
-  gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall,send_to:'G-34J0PJJKDX'});
+  if(typeof gtag!=='undefined')gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall,send_to:'G-34J0PJJKDX'});
   const msg=document.getElementById('fsucc-msg');
   if(recall==='inscrit')msg.textContent='Vous êtes sur la liste. Nous vous contacterons avant le lancement officiel.';
   document.getElementById('fsuccess').style.display='block';
