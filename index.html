@@ -1,695 +1,1174 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5Z2J6B8S');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Analytics GA4 -->
+<!-- GTM -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z2J6B8S');</script>
+<!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-34J0PJJKDX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-34J0PJJKDX');
-</script>
-<!-- End Google Analytics -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-34J0PJJKDX');try{gtag('event','page_view',{page_title:'REVELIOM',page_location:window.location.href,send_to:'G-34J0PJJKDX'});}catch(e){}</script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>REVELIOM — Révèle l'alignement réel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="REVELIOM sélectionne votre candidat idéal. Zéro no-show, 100% recommandation. Rejoignez les 50 fondateurs.">
+<title>REVELIOM — Le recrutement qui révèle.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --v:#7B5BF5;--v2:#9B82F8;--v3:#EDE8FE;--v4:#F7F5FF;--v5:#FAFAFF;
-  --ink:#0A0812;--ink2:#2D2840;--ink3:#6B6585;
-  --cream:#FAFAF8;--white:#FFFFFF;
-  --gold:#C9A84C;--teal:#1A9E7A;--teal-l:#E0F5EE;
-  --red:#CC3333;--red-l:#FFF0F0;
-  --bd:rgba(123,91,245,.12);--bd2:rgba(123,91,245,.28);
-  --r:20px;--rs:12px;
-  --sh:0 4px 32px rgba(0,0,0,.04);
-  --maxw:1080px;
+  --v:#7B5BF5;--v2:#9B82F8;--v3:#EDE8FE;--v4:#F3F0FF;--vd:#5B3FD4;
+  --ink:#08060F;--ink2:#1E1A2E;--ink3:#6B6585;
+  --w:#FFFFFF;--off:#F8F7FF;
+  --teal:#1A9E7A;--tl:#E0F5EE;
+  --gold:#C9A84C;--gl:#FBF4E2;
+  --bd:rgba(123,91,245,.1);--bd2:rgba(123,91,245,.2);
+  --r:14px;--mx:1080px;
 }
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--w);color:var(--ink);overflow-x:hidden;line-height:1.6}
 button{font-family:'DM Sans',sans-serif;cursor:pointer}
-nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:14px 40px;background:rgba(250,250,248,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:6px;font-weight:500;color:var(--ink);text-transform:uppercase}
-.nav-logo span{color:var(--v)}
-.nav-r{display:flex;align-items:center;gap:16px}
-.nav-badge{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--ink3)}
-.ndot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
-.nav-cta{background:var(--v);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-size:12px;font-weight:500;transition:all .2s}
-.nav-cta:hover{background:var(--ink)}
+a{text-decoration:none}
+
+/* ════════════════════════════
+   1. NAVIGATION
+════════════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 40px;
+  background:rgba(255,255,255,.95);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--bd);transition:box-shadow .3s;
+}
+nav.scrolled{box-shadow:0 2px 20px rgba(123,91,245,.07)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:5px;font-weight:500;text-transform:uppercase;color:var(--ink)}
+.logo em{color:var(--v);font-style:italic}
+.nav-r{display:flex;align-items:center;gap:14px}
+.nav-pulse{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--ink3)}
+.pulse-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+.nav-cta{background:var(--v);color:#fff;border:none;border-radius:100px;padding:9px 22px;font-size:12px;font-weight:500;box-shadow:0 4px 14px rgba(123,91,245,.3);transition:all .2s}
+.nav-cta:hover{background:var(--vd);transform:translateY(-1px)}
 .sticky{position:fixed;bottom:20px;right:20px;z-index:400;opacity:0;transform:translateY(8px);transition:all .3s;pointer-events:none}
 .sticky.show{opacity:1;transform:translateY(0);pointer-events:all}
-.sticky-btn{display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:100px;padding:12px 22px;font-size:13px;font-weight:500;box-shadow:0 8px 28px rgba(0,0,0,.22);transition:all .2s;border:1px solid rgba(255,255,255,.08)}
-.sticky-btn:hover{background:var(--v)}
-.sdot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 80px;position:relative;overflow:hidden;background:var(--cream)}
-.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 90vw 60vh at 50% 20%,rgba(123,91,245,.055) 0%,transparent 65%),radial-gradient(ellipse 50vw 50vh at 10% 70%,rgba(123,91,245,.03) 0%,transparent 60%)}
-.hero-lines{position:absolute;inset:0;z-index:0;opacity:.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 80px,rgba(123,91,245,1) 80px,rgba(123,91,245,1) 81px)}
-.hero>*{position:relative;z-index:1}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);border-radius:100px;padding:7px 18px;font-size:11px;font-weight:500;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;margin-bottom:28px;animation:fadeUp .8s ease both}
-.hbdot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,11vw,115px);font-weight:300;line-height:.92;letter-spacing:-3px;max-width:900px;margin:0 auto;animation:fadeUp .8s .1s ease both;color:var(--ink)}
+.sticky button{display:flex;align-items:center;gap:7px;background:var(--ink);color:#fff;border:none;border-radius:100px;padding:12px 22px;font-size:12px;font-weight:500;box-shadow:0 8px 28px rgba(0,0,0,.2);transition:background .2s}
+.sticky button:hover{background:var(--v)}
+.s-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+
+/* ════════════════════════════
+   2. HERO / HEADER
+   Problème + Solution + Audience + Réassurance
+════════════════════════════ */
+.hero{
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-start;
+  padding:88px 24px 56px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.orb1{position:absolute;width:700px;height:700px;border-radius:50%;top:-250px;left:-250px;background:radial-gradient(circle,rgba(123,91,245,.07) 0%,transparent 60%);animation:o1 12s ease-in-out infinite;pointer-events:none}
+.orb2{position:absolute;width:500px;height:500px;border-radius:50%;bottom:-200px;right:-200px;background:radial-gradient(circle,rgba(123,91,245,.05) 0%,transparent 60%);animation:o2 10s ease-in-out infinite;pointer-events:none}
+.hero>*{position:relative;z-index:1;opacity:1 !important}
+
+/* badge audience */
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--v3),var(--v4));border:1px solid var(--bd2);border-radius:100px;padding:6px 18px;font-size:11px;font-weight:500;color:var(--v);margin-bottom:28px;letter-spacing:.3px}
+.bd{width:5px;height:5px;border-radius:50%;background:var(--v);animation:pulse 2s infinite}
+
+/* H1 — proposition de valeur */
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(52px,11vw,114px);font-weight:300;line-height:.88;
+  letter-spacing:-3px;color:var(--ink);margin-bottom:24px;max-width:860px;
+}
 .hero h1 em{color:var(--v);font-style:italic}
-.hero h1 .l2{display:block;font-weight:600;letter-spacing:-2px}
-.hero-sub{font-size:clamp(15px,2.5vw,18px);color:var(--ink3);max-width:520px;line-height:1.8;font-weight:300;margin:22px auto 40px;animation:fadeUp .8s .2s ease both}
-.hero-contrast{display:inline-flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--bd);border-radius:100px;padding:11px 26px;margin-bottom:44px;animation:fadeUp .8s .25s ease both;box-shadow:0 4px 24px rgba(0,0,0,.05)}
-.hco{font-size:13px;color:var(--ink3);text-decoration:line-through}
-.hca{font-size:17px;color:var(--v);animation:slide 1.5s ease-in-out infinite}
-.hcn{font-size:13px;font-weight:600;color:var(--ink)}
-.hcn em{color:var(--v);font-style:normal}
-.hero-btns{display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s .3s ease both}
-.bp{background:var(--v);color:#fff;border:none;border-radius:100px;padding:15px 32px;font-size:15px;font-weight:500;transition:all .25s;box-shadow:0 8px 28px rgba(123,91,245,.32);display:flex;align-items:center;gap:7px}
-.bp:hover{background:var(--ink);transform:translateY(-2px)}
-.bpdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);animation:pulse 2s infinite}
-.bg{background:transparent;color:var(--ink2);border:1px solid rgba(10,8,18,.15);border-radius:100px;padding:15px 28px;font-size:15px;font-weight:400;transition:all .2s}
-.bg:hover{background:var(--v3);border-color:var(--v);color:var(--v)}
-.hero-stats{display:flex;align-items:center;justify-content:center;gap:0;margin-top:52px;flex-wrap:wrap;animation:fadeUp .8s .4s ease both;background:var(--white);border:1px solid var(--bd);border-radius:100px;padding:16px 32px;box-shadow:var(--sh)}
-.stat{text-align:center;padding:0 24px}
-.sn{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;line-height:1;color:var(--ink)}
-.sn b{color:var(--v)}
-.sl{font-size:10px;color:var(--ink3);margin-top:3px;letter-spacing:.3px}
-.sdiv{width:1px;height:32px;background:var(--bd2);flex-shrink:0}
-.scroll-hint{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:6px;animation:fadeUp 1s .9s ease both}
-.sh-txt{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3)}
-.sh-arrow{width:18px;height:28px;border:1px solid var(--bd2);border-radius:100px;position:relative;overflow:hidden;margin:0 auto}
-.sh-arrow::after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background:var(--v);left:50%;transform:translateX(-50%);top:4px;animation:scrollDot 1.5s ease-in-out infinite}
-.sec{padding:72px 24px}
-.si{max-width:var(--maxw);margin:0 auto}
-.ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);font-weight:500;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.ey::after{content:'';height:1px;background:linear-gradient(to right,var(--bd2),transparent);width:50px}
-.blk{background:var(--white);border:1px solid var(--bd);border-radius:24px;padding:40px 36px;margin-bottom:28px;opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease;box-shadow:var(--sh)}
-.blk.vis{opacity:1;transform:translateY(0)}
-.blk-alt{background:var(--v5);border-color:var(--bd2)}
-.bh{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,38px);font-weight:400;line-height:1.15;margin-bottom:10px}
-.bh em{color:var(--v);font-style:italic}
-.bp2{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:22px}
-.bp2 strong{color:var(--v);font-weight:500}
-.tw{position:relative;max-width:800px;margin:0 auto;padding:0 24px}
-.tl{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--v),rgba(123,91,245,.08));transform:translateX(-50%);pointer-events:none}
-.tb{width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--v);box-shadow:0 0 0 4px rgba(123,91,245,.1);margin:0 auto 0;position:relative;z-index:2}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
-.pc{background:var(--cream);border:1px solid var(--bd);border-radius:var(--r);padding:20px 16px;transition:all .2s}
-.pc:hover{border-color:var(--bd2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(123,91,245,.07)}
-.pc-n{width:26px;height:26px;border-radius:50%;background:var(--v3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--v);margin-bottom:10px}
-.pc h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:5px}
-.pc p{font-size:12px;color:var(--ink3);line-height:1.6}
-.pc-stat{font-size:11px;color:var(--v);font-weight:500;margin-top:8px;font-style:italic}
-.qb{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--rs);padding:16px 20px;margin-top:18px}
-.qt{font-size:14px;color:var(--ink);font-weight:500;margin-bottom:12px}
-.qbtns{display:flex;gap:8px;flex-wrap:wrap}
-.qbtn{flex:1;min-width:140px;padding:10px;border-radius:var(--rs);border:1px solid var(--bd2);background:var(--white);font-size:13px;font-weight:500;color:var(--ink2);transition:all .15s}
-.qbtn:hover{border-color:var(--v);background:var(--v3);color:var(--v)}
-.qbtn.sel{background:var(--v);border-color:var(--v);color:#fff}
-.qrev{display:none;margin-top:10px;font-size:13px;color:var(--v);font-style:italic;line-height:1.6;animation:fadeUp .3s ease}
-.fusion-wrap{margin:28px 0 0}
-.fusion-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd2);border-radius:20px;overflow:hidden;margin-bottom:0}
-.fc{background:var(--white);padding:32px 24px;position:relative;transition:background .3s}
-.fc:hover{background:var(--v5)}
-.fc-n{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;line-height:1;color:rgba(123,91,245,.06);position:absolute;top:12px;right:16px;user-select:none}
-.fc-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:14px}
-.fc.c .fc-icon{background:var(--v3)}
-.fc.p .fc-icon{background:var(--teal-l)}
-.fc.m .fc-icon{background:#FBF4E2}
-.fc h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:8px}
-.fc.c h4 span{color:var(--v)}
-.fc.p h4 span{color:var(--teal)}
-.fc.m h4 span{color:var(--gold)}
-.fc>p{font-size:13px;color:var(--ink3);line-height:1.65;font-weight:300;margin-bottom:12px}
-.fc ul{padding:0;list-style:none}
-.fc ul li{font-size:12px;color:var(--ink3);line-height:1.7;padding-left:12px;position:relative}
-.fc ul li::before{content:'';position:absolute;left:0;top:9px;width:3px;height:3px;border-radius:50%}
-.fc.c ul li::before{background:var(--v)}
-.fc.p ul li::before{background:var(--teal)}
-.fc.m ul li::before{background:var(--gold)}
-.fusion-arrow{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);border-radius:0 0 20px 20px;padding:20px 32px}
-.fa-line{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,255,255,.15))}
-.fa-line.r{background:linear-gradient(to left,transparent,rgba(255,255,255,.15))}
-.fa-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:#fff;font-style:italic;text-align:center;line-height:1.4}
-.fa-text strong{color:var(--v2);font-style:normal;font-weight:500}
-.prof-sec{background:var(--cream)}
-.prof-head{margin-bottom:28px}
-.prof-head .ey{color:var(--v)}
-.prof-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,42px);font-weight:400;line-height:1.15;margin-bottom:8px}
-.prof-head h2 em{color:var(--v);font-style:italic}
-.prof-head p{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:580px}
-.proof-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:14px 0 28px;padding:14px 20px;background:var(--white);border:1px solid var(--bd);border-radius:100px;box-shadow:var(--sh);width:fit-content}
-.proof-pill{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--ink2)}
-.proof-dot{width:5px;height:5px;border-radius:50%;background:var(--teal)}
-.proof-div{width:1px;height:14px;background:var(--bd2)}
-.ptabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
-.ptab{padding:9px 18px;border-radius:100px;border:1px solid var(--bd2);background:transparent;color:var(--ink3);font-size:12px;font-weight:500;transition:all .2s}
-.ptab.on{background:var(--v);border-color:var(--v);color:#fff}
-.ptab:hover:not(.on){background:var(--v3);color:var(--v)}
-.ppanel{display:none;animation:fadeUp .35s ease}
-.ppanel.on{display:block}
-.pcard{background:var(--white);border:1px solid var(--bd2);border-radius:24px;overflow:hidden;box-shadow:var(--sh)}
-.pcard-top{background:var(--v4);padding:24px 32px;border-bottom:1px solid var(--bd2)}
-.pcard-ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);margin-bottom:10px}
-.pcard-badge{display:inline-flex;align-items:center;gap:7px;background:var(--teal-l);border:1px solid rgba(26,158,122,.3);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--teal)}
-.pbd{width:5px;height:5px;border-radius:50%;background:var(--teal)}
-.hscroll{overflow-x:auto;padding:24px 32px 20px;scroll-snap-type:x mandatory;display:flex;gap:14px;-webkit-overflow-scrolling:touch}
-.hscroll::-webkit-scrollbar{height:3px}
-.hscroll::-webkit-scrollbar-track{background:var(--bd)}
-.hscroll::-webkit-scrollbar-thumb{background:var(--v3);border-radius:100px}
-.hcard{flex:0 0 280px;scroll-snap-align:start;background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:22px}
-.hcard.red-card{background:var(--red-l);border-color:rgba(204,51,51,.15)}
-.hcard.teal-card{background:var(--teal-l);border-color:rgba(26,158,122,.2)}
-.hcard.gold-card{background:#FBF4E2;border-color:rgba(201,168,76,.2)}
-.hc-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:10px}
-.hcard .hc-title{color:var(--v)}
-.hcard.red-card .hc-title{color:var(--red)}
-.hcard.teal-card .hc-title{color:var(--teal)}
-.hcard.gold-card .hc-title{color:var(--gold)}
-.hc-txt{font-size:13px;color:var(--ink2);line-height:1.75;font-weight:300}
-.hc-txt strong{color:var(--ink);font-weight:500}
-.hc-txt em{font-style:italic}
-.hc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
-.htag{border-radius:100px;padding:3px 9px;font-size:10px;font-weight:500}
-.htag.v{background:var(--v3);color:var(--v);border:1px solid var(--bd2)}
-.htag.g{background:var(--teal-l);color:var(--teal);border:1px solid rgba(26,158,122,.2)}
-.htag.r{background:var(--red-l);color:var(--red);border:1px solid rgba(204,51,51,.15)}
-.htag.o{background:#FBF4E2;color:var(--gold);border:1px solid rgba(201,168,76,.2)}
-.scroll-hint-x{text-align:center;padding:0 32px 8px;font-size:11px;color:var(--ink3);display:flex;align-items:center;justify-content:center;gap:8px}
-.shx-line{width:32px;height:1px;background:var(--bd2)}
-.pcard-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border-top:1px solid var(--bd)}
-.pscore{background:var(--white);padding:18px 12px;text-align:center}
-.pscoren{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;line-height:1;margin-bottom:3px}
-.pscore.g .pscoren{color:var(--teal)}
-.pscore.v .pscoren{color:var(--v)}
-.pscore.o .pscoren{color:var(--gold)}
-.pscorel{font-size:10px;color:var(--ink3);line-height:1.4}
-.verdict{display:inline-flex;align-items:center;gap:7px;border-radius:100px;padding:6px 14px;font-size:11px;font-weight:500;margin:0 32px 0}
-.verdict.green{background:var(--teal-l);border:1px solid rgba(26,158,122,.3);color:var(--teal)}
-.verdict.gold{background:#FBF4E2;border:1px solid rgba(201,168,76,.3);color:var(--gold)}
-.verdict.red{background:var(--red-l);border:1px solid rgba(204,51,51,.2);color:var(--red)}
-.vdot{width:5px;height:5px;border-radius:50%}
-.verdict.green .vdot{background:var(--teal)}
-.verdict.gold .vdot{background:var(--gold)}
-.vb-sec{background:var(--cream)}
-.vs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
-.vs{text-align:center;padding:20px 12px;border-radius:var(--r);border:1px solid var(--bd);transition:transform .2s}
-.vs:hover{transform:translateY(-2px)}
-.vs.g{background:linear-gradient(135deg,var(--teal-l),#F0FBF5);border-color:rgba(26,158,122,.2)}
-.vs.v{background:linear-gradient(135deg,var(--v4),var(--v3));border-color:var(--bd2)}
-.vs.w{background:#F5F5F5;border-color:rgba(0,0,0,.06)}
-.vsn{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;line-height:1;margin-bottom:5px}
-.vs.g .vsn{color:var(--teal)}
-.vs.v .vsn{color:var(--v)}
-.vs.w .vsn{color:#aaa}
-.vsl{font-size:11px;color:var(--ink3);line-height:1.5}
-.ticker-wrap{overflow:hidden;margin:16px 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:11px 0;mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}
-.ticker{display:flex;gap:20px;white-space:nowrap;animation:ticker 30s linear infinite}
-.ticker:hover{animation-play-state:paused}
-.tk{font-size:13px;color:var(--v);font-style:italic}
+.hero h1 .l2{display:block;font-weight:600;letter-spacing:-4px}
+
+/* complément proposition */
+.hero-sub{font-size:clamp(15px,1.8vw,18px);color:var(--ink3);max-width:500px;line-height:1.8;font-weight:300;margin:0 auto 28px}
+.hero-sub strong{color:var(--v);font-weight:500}
+
+/* contraste problème → solution */
+.hero-contrast{display:inline-flex;align-items:center;gap:16px;background:var(--w);border:1px solid var(--bd2);border-radius:100px;padding:11px 26px;margin-bottom:36px;box-shadow:0 4px 20px rgba(123,91,245,.07)}
+.hc-off{font-size:13px;color:var(--ink3);text-decoration:line-through;text-decoration-color:rgba(204,51,51,.5)}
+.hc-arr{color:var(--v);font-size:16px;animation:arr 1.5s ease-in-out infinite}
+.hc-on{font-size:14px;font-weight:600;color:var(--ink)}
+.hc-on em{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal}
+
+/* call-to-benefit */
+.hero-btns{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:44px}
+.btn-v{display:flex;align-items:center;gap:8px;background:var(--v);color:#fff;border:none;border-radius:100px;padding:15px 34px;font-size:15px;font-weight:500;box-shadow:0 8px 28px rgba(123,91,245,.35);transition:all .3s cubic-bezier(.22,1,.36,1)}
+.btn-v:hover{background:var(--vd);transform:translateY(-2px);box-shadow:0 12px 36px rgba(123,91,245,.45)}
+.btn-v .bvd{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.5);animation:pulse 2s infinite}
+.btn-ghost{background:transparent;color:var(--ink2);border:1px solid rgba(0,0,0,.12);border-radius:100px;padding:15px 26px;font-size:15px;font-weight:400;transition:all .2s}
+.btn-ghost:hover{border-color:var(--v);color:var(--v);background:var(--v4)}
+
+/* réassurance immédiate */
+.hero-proof{display:flex;align-items:center;background:var(--w);border:1px solid var(--bd2);border-radius:100px;padding:14px 24px;box-shadow:0 4px 24px rgba(123,91,245,.08)}
+.hp{text-align:center;padding:0 20px}
+.hp-n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;line-height:1;letter-spacing:-1px;color:var(--ink)}
+.hp-n b{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:300}
+.hp-l{font-size:10px;color:var(--ink3);margin-top:3px;letter-spacing:.2px}
+.hdiv{width:1px;height:28px;background:var(--bd2)}
+
+/* ════════════════════════════
+   3. RÉASSURANCE N1 — Preuve sociale
+════════════════════════════ */
+.r1{padding:20px 24px;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--off)}
+.r1-in{max-width:var(--mx);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.r1-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink3);padding:8px 28px;border-right:1px solid var(--bd)}
+.r1-item:last-child{border-right:none}
+.r1-item strong{color:var(--v);font-weight:600}
+.r1-dot{width:4px;height:4px;border-radius:50%;background:var(--teal)}
+
+/* ════════════════════════════
+   4. BÉNÉFICES / FEATURES
+   Problème résolu + Preuves + Méthode
+════════════════════════════ */
+.sec{padding:80px 24px}
+.si{max-width:var(--mx);margin:0 auto}
+.sec-alt{padding:80px 24px;background:var(--off)}
+.sec-dark{padding:80px 24px;background:var(--ink2)}
+
+.ey{font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--v);font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-bottom:14px}
+.ey::before{content:'◆';font-size:6px;animation:pulse 2s infinite}
+.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4.5vw,46px);font-weight:400;line-height:1.08;letter-spacing:-1.2px;margin-bottom:14px;color:var(--ink)}
+.h2 em{color:var(--v);font-style:italic}
+.h2w{color:#fff}
+.lp{font-size:16px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:560px}
+.lp strong{color:var(--v);font-weight:500}
+.lpw{color:rgba(255,255,255,.5)}.lpw strong{color:var(--v2)}
+
+/* réveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.rv.on{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* PAIN — chiffres douleur F-pattern */
+.pain-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--bd2);border-radius:var(--r);overflow:hidden;margin:28px 0}
+.pc{background:var(--w);padding:32px 24px;position:relative;overflow:hidden;transition:background .25s;cursor:default}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.pc:hover{background:var(--v4)}.pc:hover::before{transform:scaleX(1)}
+.pc-n{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,8vw,68px);font-weight:300;line-height:1;letter-spacing:-2px;color:var(--ink);display:block;margin-bottom:8px;transition:color .25s}
+.pc:hover .pc-n{color:var(--v)}
+.pc-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--v);font-weight:600;margin-bottom:6px;display:block}
+.pc-desc{font-size:13px;color:var(--ink3);line-height:1.6;font-weight:300}
+.pc-src{font-size:10px;color:var(--ink3);margin-top:8px;display:block;font-style:italic;opacity:.6}
+
+/* MÉTHODE — 3 dimensions */
+.dims{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--bd2);border-radius:var(--r);overflow:hidden;margin-top:28px}
+.dim{background:var(--w);padding:30px 22px;position:relative;transition:all .3s cubic-bezier(.22,1,.36,1)}
+.dim:hover{background:var(--v4);transform:translateY(-3px);box-shadow:0 10px 28px rgba(123,91,245,.1);z-index:2;border-radius:var(--r)}
+.dim-n{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;color:rgba(123,91,245,.05);position:absolute;top:8px;right:12px;user-select:none;transition:color .3s}
+.dim:hover .dim-n{color:rgba(123,91,245,.12)}
+.dim-icon{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.dim:hover .dim-icon{transform:scale(1.12) rotate(-5deg)}
+.dim.c .dim-icon{background:rgba(123,91,245,.08);border:1px solid rgba(123,91,245,.2)}
+.dim.p .dim-icon{background:rgba(26,158,122,.07);border:1px solid rgba(26,158,122,.2)}
+.dim.m .dim-icon{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.2)}
+.dim h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:7px;transition:color .2s}
+.dim:hover h4{color:var(--v)}
+.dim.c h4 em{color:var(--v)}.dim.p h4 em{color:var(--teal)}.dim.m h4 em{color:var(--gold)}
+.dim h4 em{font-style:italic}
+.dim>p{font-size:12px;color:var(--ink3);line-height:1.65;font-weight:300;margin-bottom:12px;font-style:italic}
+.dim ul{list-style:none;display:flex;flex-direction:column;gap:4px}
+.dim ul li{font-size:12px;color:var(--ink3);padding:4px 8px 4px 14px;border-radius:6px;transition:all .15s;position:relative}
+.dim:hover ul li{background:rgba(123,91,245,.05);color:var(--ink2)}
+.dim ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:3px;height:3px;border-radius:50%}
+.dim.c ul li::before{background:var(--v)}.dim.p ul li::before{background:var(--teal)}.dim.m ul li::before{background:var(--gold)}
+
+.dim-band{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--ink),#1a1428);padding:18px 28px;border-radius:0 0 var(--r) var(--r);position:relative;overflow:hidden}
+.dim-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 100% at 50% 50%,rgba(123,91,245,.12),transparent 65%);pointer-events:none}
+.dim-line{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,255,255,.1))}
+.dim-line.r{background:linear-gradient(to left,transparent,rgba(255,255,255,.1))}
+.dim-txt{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:300;color:#fff;font-style:italic;text-align:center;line-height:1.4;position:relative;z-index:1}
+.dim-txt strong{background:linear-gradient(135deg,var(--v2),#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;font-weight:500}
+
+/* PROFILS */
+.prof-proof{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--v3),var(--v4));border:1px solid var(--bd2);border-radius:100px;padding:7px 16px;margin:10px 0 16px;flex-wrap:wrap}
+.pp-pill{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:500;color:var(--v)}
+.pp-dot{width:4px;height:4px;border-radius:50%;background:var(--v)}
+.pp-div{width:1px;height:12px;background:var(--bd2)}
+.prof-stmt{display:flex;align-items:flex-start;gap:12px;padding:16px 20px;background:var(--w);border:1.5px solid var(--bd2);border-left:4px solid var(--v);border-radius:var(--r);margin-bottom:22px;box-shadow:0 4px 14px rgba(123,91,245,.06)}
+.ps-d{color:var(--v);flex-shrink:0;margin-top:2px;animation:pulse 3s infinite}
+.prof-stmt p{font-size:14px;color:var(--ink2);line-height:1.8;font-weight:300}
+.prof-stmt p strong{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
+
+.ptabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.ptab{padding:8px 18px;border-radius:100px;border:1px solid var(--bd2);background:transparent;color:var(--ink3);font-size:12px;font-weight:500;transition:all .2s}
+.ptab.on{background:var(--v);border-color:var(--v);color:#fff;box-shadow:0 4px 14px rgba(123,91,245,.25)}
+.ptab:hover:not(.on){background:var(--v4);color:var(--v)}
+.ppanel{display:none;animation:fadeUp .3s ease}.ppanel.on{display:block}
+
+.pcard{background:var(--w);border:1px solid var(--bd2);border-radius:var(--r);overflow:hidden;box-shadow:0 8px 36px rgba(123,91,245,.07)}
+.pcard-top{background:linear-gradient(135deg,var(--ink),#1a1428);padding:20px 26px}
+.pcard-ey{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.3);display:block;margin-bottom:8px}
+.pcard-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:4px 12px;font-size:10px;color:rgba(255,255,255,.55)}
+.pb-dot{width:4px;height:4px;border-radius:50%;background:var(--teal)}
+.shx{display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 0 2px;font-size:10px;color:var(--ink3)}
+.shxl{width:24px;height:1px;background:var(--bd2)}
+.hs{overflow-x:auto;padding:16px 20px 12px;display:flex;gap:10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.hs::-webkit-scrollbar{height:2px}.hs::-webkit-scrollbar-track{background:var(--bd)}.hs::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:100px}
+.hc{flex:0 0 260px;scroll-snap-align:start;border-radius:var(--r);padding:20px;transition:all .2s;flex-shrink:0}
+.hc{background:var(--off);border:1px solid var(--bd)}.hc.tc{background:var(--tl);border-color:rgba(26,158,122,.15)}.hc.rc{background:#FEF2F2;border-color:rgba(204,51,51,.1)}.hc.gc{background:var(--gl);border-color:rgba(201,168,76,.15)}
+.hc:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(123,91,245,.08)}
+.hct{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:8px}
+.hc .hct{color:var(--v)}.hc.tc .hct{color:var(--teal)}.hc.rc .hct{color:#CC3333}.hc.gc .hct{color:var(--gold)}
+.hctxt{font-size:13px;color:var(--ink2);line-height:1.7;font-weight:300}
+.hctxt strong{color:var(--ink);font-weight:500}
+.htags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.ht{border-radius:100px;padding:3px 9px;font-size:10px;font-weight:500}
+.ht.v{background:var(--v3);color:var(--v);border:1px solid var(--bd2)}.ht.g{background:var(--tl);color:var(--teal);border:1px solid rgba(26,158,122,.2)}.ht.r{background:#FEF2F2;color:#CC3333;border:1px solid rgba(204,51,51,.1)}.ht.o{background:var(--gl);color:var(--gold);border:1px solid rgba(201,168,76,.2)}
+.pscores{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border-top:1px solid var(--bd)}
+.ps{background:var(--w);padding:16px 12px;text-align:center;transition:background .2s}.ps:hover{background:var(--v4)}
+.psn{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;line-height:1;display:block;margin-bottom:3px}
+.ps.gv .psn{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ps.vv .psn{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ps.ov .psn{color:var(--gold)}
+.psl{font-size:10px;color:var(--ink3);line-height:1.4}
+.verdict{display:inline-flex;align-items:center;gap:6px;border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;margin:8px 26px 0}
+.verdict.gold{background:var(--gl);border:1px solid rgba(201,168,76,.3);color:var(--gold)}
+.vd{width:4px;height:4px;border-radius:50%;background:var(--gold)}
+
+/* ════════════════════════════
+   5. PRICING / OFFRES
+   Nommer sans jugement
+════════════════════════════ */
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.pr-card{background:var(--w);border:1.5px solid var(--bd);border-radius:var(--r);padding:28px 22px;transition:all .3s;position:relative;overflow:hidden}
+.pr-card.feat{border-color:var(--v);box-shadow:0 8px 32px rgba(123,91,245,.15)}
+.pr-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:transparent;transition:background .3s}
+.pr-card.feat::before{background:linear-gradient(to right,var(--v),var(--v2))}
+.pr-card:hover{transform:translateY(-3px)}
+.pr-card:not(.feat):hover{box-shadow:0 8px 24px rgba(123,91,245,.08);border-color:var(--bd2)}
+.pr-badge{display:inline-block;background:var(--v);color:#fff;border-radius:100px;padding:3px 10px;font-size:10px;font-weight:500;margin-bottom:12px}
+.pr-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:6px;letter-spacing:-.3px}
+.pr-desc{font-size:13px;color:var(--ink3);line-height:1.6;font-weight:300;margin-bottom:16px}
+.pr-price{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;line-height:1;letter-spacing:-2px;margin-bottom:4px;color:var(--ink)}
+.pr-price b{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:300}
+.pr-unit{font-size:12px;color:var(--ink3);margin-bottom:16px}
+.pr-list{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.pr-list li{font-size:13px;color:var(--ink3);padding-left:16px;position:relative;line-height:1.5}
+.pr-list li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-size:11px;font-weight:700}
+.pr-btn{width:100%;padding:12px;border-radius:100px;border:none;font-size:13px;font-weight:500;transition:all .2s;cursor:pointer}
+.pr-btn.main{background:var(--v);color:#fff;box-shadow:0 4px 14px rgba(123,91,245,.3)}
+.pr-btn.main:hover{background:var(--vd);transform:translateY(-1px)}
+.pr-btn.out{background:transparent;color:var(--ink2);border:1px solid var(--bd2)}
+.pr-btn.out:hover{background:var(--v4);color:var(--v);border-color:var(--v)}
+.pr-note{font-size:10px;color:var(--ink3);text-align:center;margin-top:6px;font-style:italic}
+
+/* ════════════════════════════
+   6. RÉASSURANCE N2 — témoignages
+════════════════════════════ */
+.stats3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.s3{border-radius:var(--r);padding:24px 16px;text-align:center;border:1px solid var(--bd);transition:all .25s}
+.s3:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(123,91,245,.08)}
+.s3.g{background:linear-gradient(135deg,var(--tl),#F0FBF5);border-color:rgba(26,158,122,.2)}
+.s3.v{background:linear-gradient(135deg,var(--v3),var(--v4));border-color:var(--bd2)}
+.s3.w{background:#F5F5F5;border-color:rgba(0,0,0,.05)}
+.s3n{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;line-height:1;margin-bottom:5px;display:block}
+.s3.g .s3n{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s3.v .s3n{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s3.w .s3n{color:#aaa}
+.s3l{font-size:11px;color:var(--ink3);line-height:1.5;font-style:italic}
+
+.tkr{overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:10px 0;margin-bottom:18px;mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}
+.tkk{display:flex;gap:20px;white-space:nowrap;animation:ticker 28s linear infinite}
+.tkk:hover{animation-play-state:paused}
+.tk{font-size:13px;font-style:italic;background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .tks{font-size:7px;color:var(--bd2)}
-.avis-wrap{height:380px;overflow:hidden;position:relative;margin-top:20px}
-.avis-wrap::before,.avis-wrap::after{content:'';position:absolute;left:0;right:0;z-index:2;height:60px;pointer-events:none}
-.avis-wrap::before{top:0;background:linear-gradient(to bottom,var(--white),transparent)}
-.avis-wrap::after{bottom:0;background:linear-gradient(to top,var(--white),transparent)}
-.avis-track{display:flex;flex-direction:column;gap:10px;animation:vScroll 24s linear infinite}
-.avis-track:hover{animation-play-state:paused}
-.avis-card{background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:22px 20px;position:relative;overflow:hidden;flex-shrink:0}
-.ac-q{font-size:44px;color:var(--v);opacity:.08;font-family:'Cormorant Garamond',serif;position:absolute;top:6px;left:12px;user-select:none;line-height:1}
-.ac-txt{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);line-height:1.65;font-style:italic;position:relative;z-index:1;margin-bottom:12px}
-.ac-meta{display:flex;align-items:center;gap:7px}
-.ac-dot{width:5px;height:5px;border-radius:50%;background:var(--v)}
-.ac-src{font-size:10px;color:var(--ink3)}
-.wl-sec{background:var(--white);padding:90px 24px;border-top:1px solid var(--bd)}
-.wl-inner{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
-.wl-ey{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--v);margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.wl-ey::after{content:'';height:1px;background:linear-gradient(to right,var(--bd2),transparent);flex:1}
-.wl-h{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--ink);line-height:1.1;margin-bottom:12px}
+
+.avis-w{height:360px;overflow:hidden;position:relative}
+.avis-w::before,.avis-w::after{content:'';position:absolute;left:0;right:0;z-index:2;height:56px;pointer-events:none}
+.avis-w::before{top:0;background:linear-gradient(to bottom,var(--w),transparent)}
+.avis-w::after{bottom:0;background:linear-gradient(to top,var(--w),transparent)}
+.avis-t{display:flex;flex-direction:column;gap:8px;animation:vsc 24s linear infinite}
+.avis-t:hover{animation-play-state:paused}
+.av{background:var(--off);border:1px solid var(--bd2);border-left:3px solid var(--v);border-radius:var(--r);padding:18px;position:relative;overflow:hidden;flex-shrink:0}
+.av-q{font-size:44px;color:var(--v);opacity:.06;font-family:'Cormorant Garamond',serif;position:absolute;top:2px;left:8px;user-select:none;line-height:1}
+.av-txt{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--ink);line-height:1.65;font-style:italic;position:relative;z-index:1;margin-bottom:10px}
+.av-meta{display:flex;align-items:center;gap:6px}
+.av-dot{width:4px;height:4px;border-radius:50%;background:var(--v)}
+.av-src{font-size:10px;color:var(--ink3)}
+
+/* ════════════════════════════
+   7. RAPPEL CTA
+════════════════════════════ */
+.wl{background:var(--w);padding:96px 24px;border-top:1px solid var(--bd)}
+.wl-in{max-width:var(--mx);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+
+/* citation fondateur */
+.origin{background:linear-gradient(135deg,var(--ink),#1a1428);border-radius:var(--r);padding:24px;margin-bottom:24px;position:relative;overflow:hidden}
+.origin::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2),rgba(123,91,245,.2))}
+.origin::after{content:'';position:absolute;bottom:-40px;right:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(123,91,245,.15),transparent 65%);pointer-events:none}
+.origin-q{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,20px);font-weight:300;color:#fff;line-height:1.5;font-style:italic;position:relative;z-index:1;margin-bottom:8px}
+.origin-src{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:1px;text-transform:uppercase;position:relative;z-index:1}
+
+.wl-h{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,5vw,50px);font-weight:400;color:var(--ink);line-height:1.05;letter-spacing:-1.5px;margin-bottom:12px}
 .wl-h em{color:var(--v);font-style:italic}
-.wl-sub{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:28px}
+.wl-sub{font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:22px}
 .wl-sub strong{color:var(--ink2);font-weight:500}
-.founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
-.fp-item{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--rs)}
-.fp-icon{font-size:14px;flex-shrink:0;margin-top:1px}
-.fp-txt{font-size:13px;color:var(--ink2);line-height:1.55}
-.fp-txt strong{color:var(--v);font-weight:500}
-.perks{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
-.perk{display:flex;align-items:flex-start;gap:11px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;transition:all .2s}
-.perk:hover{background:var(--v3);border-color:var(--bd2)}
-.perk-dot{width:18px;height:18px;border-radius:50%;background:var(--v);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.perk-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:#fff}
-.perk-body h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:2px}
-.perk-body p{font-size:11px;color:var(--ink3);line-height:1.5}
-.spots-row{display:flex;align-items:center;gap:12px;background:var(--v5);border:1px solid var(--bd);border-radius:var(--r);padding:12px 16px}
+
+/* preuves scannables */
+.wl-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd2);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.wlpi{background:var(--w);padding:14px 12px;display:flex;flex-direction:column;gap:3px;transition:background .2s}
+.wlpi:hover{background:var(--v4)}
+.wlpn{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;line-height:1;background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-1px}
+.wlpt{font-size:11px;color:var(--ink3);line-height:1.4}
+
+/* perks */
+.perks{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.perk{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:var(--w);border:1px solid var(--bd);border-left:3px solid var(--v);border-radius:var(--r);transition:all .2s}
+.perk:hover{background:var(--v4);transform:translateX(3px);box-shadow:0 4px 14px rgba(123,91,245,.07)}
+.pk-n{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:rgba(123,91,245,.15);flex-shrink:0;min-width:20px;line-height:1;margin-top:1px;transition:color .2s}
+.perk:hover .pk-n{color:var(--v)}
+.perk strong{font-size:13px;font-weight:600;color:var(--ink);display:block;margin-bottom:2px}
+.perk p{font-size:12px;color:var(--ink3);line-height:1.45;margin:0}
+
+/* spots */
+.spots{display:flex;align-items:center;gap:12px;background:var(--v4);border:1px solid var(--bd2);border-radius:var(--r);padding:10px 14px}
 .spots-bar{flex:1;height:3px;background:var(--bd2);border-radius:100px;overflow:hidden}
-.spots-fill{width:0;height:100%;background:linear-gradient(to right,var(--v),var(--v2));border-radius:100px;transition:width 2s cubic-bezier(.22,1,.36,1)}
+.spots-fill{width:0;height:100%;background:linear-gradient(to right,var(--v),var(--v2));border-radius:100px;transition:width 2s cubic-bezier(.22,1,.36,1);box-shadow:0 0 6px rgba(123,91,245,.4)}
 .spots-txt{font-size:11px;color:var(--ink3);white-space:nowrap}
-.spots-txt strong{color:var(--ink2)}
-.form-card{background:var(--v5);border:2px solid var(--bd2);border-radius:24px;padding:32px;box-shadow:0 8px 40px rgba(123,91,245,.08)}
-.fc-head{padding-bottom:20px;border-bottom:1px solid var(--bd);margin-bottom:20px}
-.fc-head h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:5px}
-.fc-head p{font-size:13px;color:var(--ink3);line-height:1.55}
-.form{display:flex;flex-direction:column;gap:9px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.fi{background:var(--white);border:1px solid var(--bd2);border-radius:var(--rs);padding:12px 15px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink);outline:none;width:100%;transition:all .2s}
-.fi::placeholder{color:var(--ink3)}
-.fi:focus{border-color:var(--v);background:var(--white);box-shadow:0 0 0 3px rgba(123,91,245,.08)}
-.recall-q{font-size:12px;color:var(--ink3);margin-bottom:6px;font-weight:500}
-.recall-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.ro{display:flex;align-items:center;gap:9px;background:var(--white);border:1.5px solid var(--bd2);border-radius:var(--rs);padding:11px 13px;cursor:pointer;transition:all .2s}
-.ro.on{background:var(--v3);border-color:var(--v)}
-.ro-dot{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--bd2);flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center}
-.ro.on .ro-dot{background:var(--v);border-color:var(--v)}
-.ro.on .ro-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:#fff}
-.ro-lbl{font-size:12px;color:var(--ink3);transition:color .2s}
-.ro.on .ro-lbl{color:var(--v);font-weight:500}
-.phone-wrap{transition:all .2s}
-.phone-wrap.hide{display:none}
-.form-submit{background:var(--v);border:none;border-radius:var(--rs);padding:15px;font-size:14px;font-weight:500;color:#fff;width:100%;transition:all .2s;margin-top:2px}
-.form-submit:hover{background:var(--ink);transform:translateY(-1px);box-shadow:0 8px 24px rgba(123,91,245,.35)}
-.form-note{font-size:10px;color:var(--ink3);text-align:center;margin-top:6px;line-height:1.5}
-.form-success{display:none;text-align:center;padding:40px 16px;animation:fadeUp .5s ease}
-.fs-icon{width:52px;height:52px;border-radius:50%;background:var(--teal-l);border:1px solid rgba(26,158,122,.3);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 16px}
-.form-success h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--ink);margin-bottom:8px}
-.form-success p{font-size:13px;color:var(--ink3);line-height:1.6}
-footer{background:var(--ink);padding:24px 24px;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
-footer p{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.2)}
-footer span{color:var(--v)}
+.spots-txt strong{color:var(--v)}
+
+/* formulaire */
+.form-w{background:var(--w);border:2px solid var(--bd2);border-radius:var(--r);padding:28px;box-shadow:0 8px 36px rgba(123,91,245,.1);position:relative;overflow:hidden}
+.form-w::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2),var(--teal))}
+.fh{padding-bottom:14px;border-bottom:1px solid var(--bd);margin-bottom:16px}
+.fh h3{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;color:var(--ink);margin-bottom:3px;letter-spacing:-.3px}
+.fh p{font-size:13px;color:var(--ink3);line-height:1.5}
+.form{display:flex;flex-direction:column;gap:8px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fi{background:var(--off);border:1.5px solid var(--bd2);border-radius:var(--r);padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink);outline:none;width:100%;transition:all .2s}
+.fi::placeholder{color:var(--ink3);font-size:12px}
+.fi:focus{border-color:var(--v);background:var(--w);box-shadow:0 0 0 3px rgba(123,91,245,.07)}
+.rq{font-size:12px;color:var(--ink3);margin-bottom:6px;font-weight:500}
+.ro-wrap{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.ro{display:flex;align-items:center;gap:8px;background:var(--off);border:1.5px solid var(--bd2);border-radius:var(--r);padding:10px 12px;cursor:pointer;transition:all .2s}
+.ro.on{background:var(--v4);border-color:var(--v)}
+.ro-d{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--bd2);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.ro.on .ro-d{background:var(--v);border-color:var(--v)}
+.ro.on .ro-d::after{content:'';width:4px;height:4px;border-radius:50%;background:#fff}
+.ro-l{font-size:12px;color:var(--ink3);transition:color .2s}
+.ro.on .ro-l{color:var(--v);font-weight:500}
+.fsub{background:linear-gradient(135deg,var(--v),var(--vd));border:none;border-radius:var(--r);padding:14px;font-size:14px;font-weight:500;color:#fff;width:100%;margin-top:2px;cursor:pointer;transition:all .25s cubic-bezier(.22,1,.36,1);box-shadow:0 4px 18px rgba(123,91,245,.3)}
+.fsub:hover{transform:translateY(-1px);box-shadow:0 8px 26px rgba(123,91,245,.45)}
+.fnote{font-size:10px;color:var(--ink3);text-align:center;margin-top:5px;line-height:1.5}
+.fok{display:none;text-align:center;padding:36px 16px;animation:fadeUp .5s ease}
+.fok-icon{width:48px;height:48px;border-radius:50%;background:var(--tl);border:1px solid rgba(26,158,122,.3);display:flex;align-items:center;justify-content:center;font-size:18px;margin:0 auto 14px}
+.fok h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:7px}
+.fok p{font-size:13px;color:var(--ink3);line-height:1.6}
+
+/* ════════════════════════════
+   8. FOOTER
+════════════════════════════ */
+footer{background:var(--ink);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.04)}
+.f-logo{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.f-logo em{color:rgba(123,91,245,.5);font-style:italic}
+.f-right{font-size:10px;color:rgba(255,255,255,.15);letter-spacing:.5px}
+
+/* surlignages éditoriaux */
+.hl{background:linear-gradient(transparent 55%,rgba(123,91,245,.18) 55%);padding:0 3px}
+.hl-t{background:linear-gradient(transparent 55%,rgba(26,158,122,.18) 55%);padding:0 3px}
+.hl-g{background:linear-gradient(transparent 55%,rgba(201,168,76,.2) 55%);padding:0 3px}
+
+/* animations */
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.5)}}
-@keyframes slide{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.4)}}
+@keyframes arr{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes scrollDot{0%{top:4px;opacity:1}100%{top:20px;opacity:0}}
-@keyframes vScroll{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+@keyframes vsc{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+@keyframes o1{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-20px)}}
+@keyframes o2{0%,100%{transform:translate(0,0)}50%{transform:translate(-20px,25px)}}
+
+/* responsive */
 @media(max-width:900px){
-  nav{padding:12px 18px}
-  .nav-badge{display:none}
-  .hero{padding:88px 18px 60px}
-  .hero-stats{border-radius:16px;padding:14px 16px;gap:0}
-  .stat{padding:0 14px}
-  .sn{font-size:26px}
-  .sdiv{height:24px}
-  .hero-contrast{flex-wrap:wrap;gap:8px;border-radius:14px;padding:12px 20px;justify-content:center}
-  .hero-btns{width:100%}
-  .bp,.bg{width:100%;justify-content:center}
-  .sec{padding:52px 18px}
-  .blk{padding:28px 20px;border-radius:18px}
-  .pgrid{grid-template-columns:1fr}
-  .fusion-cards{grid-template-columns:1fr}
-  .fc{border-right:none;border-bottom:1px solid var(--bd2)}
-  .fc:last-child{border-bottom:none}
-  .fc-n{display:none}
-  .fusion-arrow{border-radius:0 0 18px 18px;padding:16px 20px}
-  .fa-text{font-size:15px}
-  .wl-inner{grid-template-columns:1fr;gap:36px}
-  .wl-sec{padding:68px 18px}
-  .frow{grid-template-columns:1fr}
-  .recall-opts{grid-template-columns:1fr}
-  .pcard-scores{grid-template-columns:repeat(3,1fr)}
-  .vs-grid{grid-template-columns:1fr}
-  .ptabs{gap:4px}
-  .ptab{font-size:11px;padding:8px 14px}
-  .tw{padding:0 8px}
-  .tl{display:none}
-  .tb{display:none}
-  .proof-bar{border-radius:12px;padding:12px 16px}
+  nav{padding:13px 18px}.nav-pulse{display:none}
+  footer{padding:16px 18px;flex-direction:column;gap:6px;text-align:center}
+  .hero{padding:88px 18px 56px}
+  .hero-proof{flex-wrap:nowrap;overflow-x:auto;border-radius:14px;padding:12px 14px}
+  .hero-proof::-webkit-scrollbar{display:none}
+  .hp{flex-shrink:0;padding:0 12px}.hdiv{flex-shrink:0}
+  .r1-item{border-right:none;border-bottom:1px solid var(--bd);width:100%;padding:8px 18px}
+  .r1-item:last-child{border-bottom:none}
+  .sec{padding:56px 18px}.sec-alt{padding:56px 18px}.sec-dark{padding:56px 18px}.wl{padding:60px 18px}
+  .pain-row{grid-template-columns:1fr}.pc{border-bottom:1px solid var(--bd)}.pc:last-child{border-bottom:none}
+  .dims{grid-template-columns:1fr}.dim{border-bottom:1px solid var(--bd2)}.dim:last-child{border-bottom:none}.dim-n{display:none}
+  .stats3{grid-template-columns:1fr}
+  .wl-in{grid-template-columns:1fr;gap:32px}
+  .fr2{grid-template-columns:1fr}
+  .ro-wrap{grid-template-columns:1fr}
+  .wl-proof{grid-template-columns:1fr}.wlpi{border-bottom:1px solid var(--bd2)}.wlpi:last-child{border-bottom:none}
+  .pricing{grid-template-columns:1fr;gap:8px}
+  .pscores{grid-template-columns:1fr}.ps{border-bottom:1px solid var(--bd)}.ps:last-child{border-bottom:none}
 }
 @media(max-width:480px){
-  .hero h1{font-size:clamp(44px,14vw,68px);letter-spacing:-2px}
-  .hero-stats{flex-wrap:nowrap;overflow-x:auto;border-radius:12px;justify-content:flex-start;padding:12px 14px}
-  .hero-stats::-webkit-scrollbar{display:none}
-  .stat{flex-shrink:0;padding:0 12px}
-  .sdiv{flex-shrink:0}
-  .pcard-scores{grid-template-columns:1fr;gap:0}
-  .pscore{border-bottom:1px solid var(--bd)}
-  .pscore:last-child{border-bottom:none}
-}
-/* PERKS ENHANCED */
-.perks{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.perk{display:flex;align-items:flex-start;gap:16px;border-radius:var(--r);padding:20px 22px;transition:all .25s;position:relative;overflow:hidden;border:1px solid transparent}
-.perk::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:100px;transition:width .3s}
-.perk:hover{transform:translateX(4px)}
-.perk:hover::before{width:4px}
-.perk-1{background:linear-gradient(135deg,#F0EEFF,#EDE8FE);border-color:var(--bd2)}
-.perk-1::before{background:var(--v)}
-.perk-2{background:linear-gradient(135deg,var(--teal-l),#E8F8F2);border-color:rgba(26,158,122,.2)}
-.perk-2::before{background:var(--teal)}
-.perk-3{background:linear-gradient(135deg,#FBF4E2,#FDF7E8);border-color:rgba(201,168,76,.2)}
-.perk-3::before{background:var(--gold)}
-.perk-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;line-height:1;flex-shrink:0;margin-top:-2px}
-.perk-1 .perk-num{color:rgba(123,91,245,.25)}
-.perk-2 .perk-num{color:rgba(26,158,122,.2)}
-.perk-3 .perk-num{color:rgba(201,168,76,.2)}
-.perk-body h4{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px}
-.perk-body p{font-size:12px;color:var(--ink3);line-height:1.6;margin-bottom:8px}
-.perk-tag{display:inline-flex;align-items:center;font-size:10px;font-weight:500;letter-spacing:.5px;border-radius:100px;padding:3px 10px}
-.perk-1 .perk-tag{background:var(--v3);color:var(--v);border:1px solid var(--bd2)}
-.perk-2 .perk-tag{background:var(--teal-l);color:var(--teal);border:1px solid rgba(26,158,122,.25)}
-.perk-3 .perk-tag{background:#FBF4E2;color:var(--gold);border:1px solid rgba(201,168,76,.25)}
-/* PROOF ENHANCED */
-.founded-proof{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
-.fp-item{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:var(--rs);transition:all .2s;border:1px solid transparent}
-.fp-item-1{background:var(--v5);border-color:var(--bd)}
-.fp-item-2{background:var(--teal-l);border-color:rgba(26,158,122,.15)}
-.fp-item-3{background:#FBF4E2;border-color:rgba(201,168,76,.15)}
-.fp-item:hover{transform:translateX(3px)}
-.fp-icon-wrap{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.fp-item-1 .fp-icon-wrap{background:var(--v3);border:1px solid var(--bd2)}
-.fp-item-2 .fp-icon-wrap{background:rgba(26,158,122,.15);border:1px solid rgba(26,158,122,.25)}
-.fp-item-3 .fp-icon-wrap{background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25)}
-.fp-check{font-size:12px;font-weight:600}
-.fp-item-1 .fp-check{color:var(--v)}
-.fp-item-2 .fp-check{color:var(--teal)}
-.fp-item-3 .fp-check{color:var(--gold)}
-.fp-txt{font-size:13px;color:var(--ink2);line-height:1.55}
-.fp-txt strong{font-weight:600}
-.fp-item-1 .fp-txt strong{color:var(--v)}
-.fp-item-2 .fp-txt strong{color:var(--teal)}
-.fp-item-3 .fp-txt strong{color:var(--gold)}
-/* FORM CARD ENHANCED */
-.form-card{position:relative;overflow:hidden}
-.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2),var(--teal))}
-.form-submit{background:linear-gradient(135deg,var(--v),var(--v2));position:relative;overflow:hidden;letter-spacing:.3px}
-.form-submit::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.08),transparent);transform:translateX(-100%);transition:transform .4s}
-.form-submit:hover::after{transform:translateX(100%)}
-.form-submit:hover{background:linear-gradient(135deg,var(--ink),var(--v));transform:translateY(-1px);box-shadow:0 8px 28px rgba(123,91,245,.35)}
-/* SPOTS */
-.spots-row{background:linear-gradient(135deg,var(--v5),#EDE8FE);border-color:var(--bd2)}
-.spots-fill{background:linear-gradient(to right,var(--v),var(--v2));box-shadow:0 0 8px rgba(123,91,245,.4)}
-.spots-txt strong{color:var(--v)}
-/* PCARD */
-.pcard-top{background:linear-gradient(135deg,var(--v4),#EDE8FE)}
-/* HERO */
-.hero-badge{box-shadow:0 4px 20px rgba(201,168,76,.15)}
-.hero-contrast{box-shadow:0 4px 20px rgba(0,0,0,.06),0 0 0 1px rgba(123,91,245,.08)}
-/* SCORES */
-.vs.g .vsn{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.vs.v .vsn{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-/* TICKER */
-.tk{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-/* AVIS */
-.avis-card{border-left:3px solid var(--v)}
-/* FUSION */
-.fc-icon{width:44px;height:44px;border-radius:14px;font-size:18px}
-.fc.c .fc-icon{background:linear-gradient(135deg,var(--v3),#DDD4FC)}
-.fc.p .fc-icon{background:linear-gradient(135deg,var(--teal-l),#C8F0E4)}
-.fc.m .fc-icon{background:linear-gradient(135deg,#FBF4E2,#F5E8C0)}
-.fusion-arrow{background:linear-gradient(135deg,var(--ink),#1a1428)}
-.fa-text strong{background:linear-gradient(135deg,var(--v2),#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-/* RESPONSIVE FIXES */
-@media(max-width:900px){
-  .perk{flex-direction:column;gap:8px}
-  .perk-num{font-size:22px}
-  .perk::before{top:0;left:0;right:0;bottom:auto;height:3px;width:100%}
-  .perk:hover{transform:translateY(-2px)}
+  .hero h1{font-size:clamp(42px,13vw,62px);letter-spacing:-2px}
+  .hero-contrast{flex-wrap:wrap;gap:6px;border-radius:12px;justify-content:center}
+  .hero-btns{flex-direction:column;width:100%}
+  .btn-v,.btn-ghost{width:100%;justify-content:center}
 }
 
-/* ── REVELIOM VISUAL ENHANCEMENTS ── */
-
-/* Orbes violet subtils hero */
-.hero{position:relative;overflow:hidden}
-.hero::before{
-  content:'';position:absolute;
-  top:-200px;left:-200px;
-  width:500px;height:500px;border-radius:50%;
-  background:radial-gradient(circle,rgba(123,91,245,.06) 0%,transparent 60%);
-  pointer-events:none;z-index:0;
-  animation:orbFloat 10s ease-in-out infinite;
+/* ── PARETO VISUAL ── */
+.pareto-visual{
+  background:var(--off);border:1px solid var(--bd2);
+  border-radius:var(--r);padding:28px;
+  margin-top:24px;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;gap:12px;
 }
-.hero::after{
-  content:'';position:absolute;
-  bottom:-150px;right:-150px;
-  width:400px;height:400px;border-radius:50%;
-  background:radial-gradient(circle,rgba(123,91,245,.05) 0%,transparent 60%);
-  pointer-events:none;z-index:0;
-  animation:orbFloat 8s ease-in-out infinite reverse;
+.pareto-visual::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2))}
+.pv-section-title{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.pv-track{display:flex;gap:4px;height:72px}
+.pv-block{display:flex}
+.pv-block-bar{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:0 16px;border-radius:var(--r);
+  gap:4px;transition:flex .8s cubic-bezier(.22,1,.36,1);
 }
-@keyframes orbFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-20px)}}
-.hero>*{position:relative;z-index:1}
+.pv-block-main .pv-block-bar{background:linear-gradient(135deg,var(--v),var(--v2))}
+.pv-bar-grey{background:rgba(0,0,0,.06)}
+.pv-bar-red{background:linear-gradient(135deg,rgba(204,51,51,.7),rgba(204,51,51,.5))}
+.pv-bar-teal{background:linear-gradient(135deg,var(--teal),#2BC89A)}
+.pv-big-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:300;line-height:1;letter-spacing:-1px;
+  color:#fff;
+}
+.pv-num-grey{color:var(--ink3)}
+.pv-num-red{color:#fff}
+.pv-num-teal{color:#fff}
+.pv-block-label{font-size:11px;color:rgba(255,255,255,.85);font-weight:400;line-height:1.3}
+.pv-label-grey{color:var(--ink3)}
+.pv-vs-row{display:flex;align-items:center;gap:12px;padding:4px 0}
+.pv-vs-line{flex:1;height:1px;background:var(--bd2)}
+.pv-vs-msg{font-size:11px;color:var(--ink3);font-style:italic;white-space:nowrap;letter-spacing:.2px}
+.pv-conclusion{
+  background:rgba(204,51,51,.06);border:1px solid rgba(204,51,51,.15);
+  border-left:3px solid #CC3333;
+  border-radius:var(--r);padding:10px 16px;
+  font-size:13px;color:var(--ink2);font-weight:500;line-height:1.5;
+}
+.pareto-concl{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(16px,2.2vw,20px);font-weight:300;
+  color:var(--ink3);line-height:1.6;font-style:italic;
+  margin-top:20px;max-width:600px;
+  padding:16px 20px;
+  border-left:3px solid var(--v);
+  background:var(--v4);
+  border-radius:0 var(--r) var(--r) 0;
+}
+.pareto-concl em{color:var(--v);font-style:italic}
 
-/* H1 em - pas de soulignement */
-.hero h1 em{position:relative}
 
-/* Stats dégradé sur les b */
-.sn b{
+@media(max-width:768px){
+  .pv-block-label{display:none}
+  .pv-big-num{font-size:20px}
+  .pv-track{height:56px}
+  .pv-vs-msg{font-size:10px;white-space:normal;text-align:center}
+}
+
+
+/* ══════ STORYTELLING SECTIONS ══════ */
+.story{padding:88px 24px;position:relative}
+.story-1{background:var(--w)}
+.story-2{background:var(--off)}
+.story-3.story-dark{background:linear-gradient(135deg,var(--ink),#1a1428);color:#fff;padding:96px 24px}
+.story-4{background:var(--w)}
+.story-5.story-alt{background:var(--off)}
+
+.step-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:64px;font-weight:300;color:rgba(123,91,245,.12);
+  line-height:.9;letter-spacing:-2px;margin-bottom:8px;
+}
+.step-num-w{color:rgba(255,255,255,.1)}
+.ey-w{color:var(--v2)}
+
+.story-grid{
+  display:grid;grid-template-columns:1fr 1.05fr;gap:64px;
+  align-items:center;max-width:var(--mx);margin:0 auto;
+}
+.story-text .h2{margin-bottom:20px}
+.lp-emph{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-style:italic;color:var(--ink);
+  border-left:3px solid var(--v);padding:6px 16px;margin-top:14px;
+}
+
+/* ── EINSTEIN QUOTE (étape 1) ── */
+.einstein{
+  position:relative;font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:300;font-style:italic;color:var(--ink);
+  line-height:1.55;padding:20px 28px 20px 32px;margin:20px 0;
+  background:var(--v4);border-radius:var(--r);
+}
+.einstein .eq{
+  font-size:48px;color:var(--v);opacity:.25;
+  position:absolute;top:8px;left:10px;line-height:1;
+}
+.einstein cite{
+  display:block;font-size:11px;font-style:normal;
+  font-family:'DM Sans',sans-serif;letter-spacing:2px;
+  text-transform:uppercase;color:var(--v);margin-top:8px;font-weight:500;
+}
+
+/* ── COINFLIP VISUAL (étape 1) ── */
+.coinflip{
+  background:linear-gradient(135deg,var(--w),var(--v4));
+  border:1px solid var(--bd2);border-radius:20px;
+  padding:32px 28px;text-align:center;
+  box-shadow:0 12px 40px rgba(123,91,245,.08);
+}
+.coin-row{display:flex;gap:14px;justify-content:center;margin-bottom:20px}
+.coin{
+  flex:1;padding:18px 14px;border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  transition:transform .3s cubic-bezier(.22,1,.36,1);
+}
+.coin-fail{background:rgba(204,51,51,.07);border:1.5px dashed rgba(204,51,51,.3)}
+.coin-success{background:rgba(26,158,122,.07);border:1.5px solid rgba(26,158,122,.25)}
+.coin:hover{transform:translateY(-3px)}
+.coin-icon{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:600;
+}
+.coin-fail .coin-icon{background:#CC3333;color:#fff}
+.coin-success .coin-icon{background:var(--teal);color:#fff}
+.coin-label{font-size:11px;color:var(--ink3);line-height:1.4;font-weight:500}
+.coin-stat{
+  padding:14px 0;border-top:1px solid var(--bd2);
+  display:flex;flex-direction:column;gap:2px;
+}
+.coin-pct{
+  font-family:'Cormorant Garamond',serif;
+  font-size:48px;font-weight:300;line-height:1;letter-spacing:-2px;
   background:linear-gradient(135deg,var(--v),var(--v2));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
   background-clip:text;
 }
-
-/* Pain cards bordure gauche colorée */
-.pc:nth-child(1){border-left:3px solid var(--v)}
-.pc:nth-child(2){border-left:3px solid var(--v2)}
-.pc:nth-child(3){border-left:3px solid rgba(123,91,245,.4)}
-
-/* Fusion hover + icône rebond */
-.fc{transition:all .3s cubic-bezier(.22,1,.36,1)}
-.fc:hover{background:var(--v5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(123,91,245,.1)}
-.fc-icon{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
-.fc:hover .fc-icon{transform:scale(1.12) rotate(-4deg)}
-.fc-icon{width:44px;height:44px;border-radius:12px}
-.fc.c .fc-icon{background:linear-gradient(135deg,var(--v3),#DDD4FC)}
-.fc.p .fc-icon{background:linear-gradient(135deg,var(--teal-l),#C8F0E4)}
-.fc.m .fc-icon{background:linear-gradient(135deg,#FBF4E2,#F5E8C0)}
-.fusion-arrow{background:linear-gradient(135deg,var(--ink),#1a1428)}
-.fa-text strong{background:linear-gradient(135deg,var(--v2),#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
-/* Proof bar violette */
-.proof-bar{background:linear-gradient(135deg,var(--v3),var(--v4));border-color:var(--bd2)}
-.proof-pill{color:var(--v)}
-
-/* Prof callout */
-.prof-statement{
-  display:flex;align-items:flex-start;gap:12px;
-  margin:0 0 24px;padding:16px 20px;
-  background:linear-gradient(135deg,var(--v4),#EAE4FE);
-  border-radius:var(--r);border-left:4px solid var(--v);
-  border:1.5px solid var(--bd2);border-left:4px solid var(--v);
+.coin-pct-l{font-size:11px;color:var(--ink3);font-weight:500;letter-spacing:.3px}
+.coin-caption{
+  font-size:12px;color:var(--ink3);font-style:italic;
+  margin-top:10px;padding-top:12px;border-top:1px dashed var(--bd2);
 }
-.ps-diamond{font-size:12px;color:var(--v);flex-shrink:0;animation:pulse 3s infinite;margin-top:2px}
-.prof-statement p{font-size:14px;color:var(--ink2);line-height:1.8;font-weight:300}
-.prof-statement p strong{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
 
-/* Tabs actif violet */
-.ptab.on{box-shadow:0 4px 14px rgba(123,91,245,.25)}
-
-/* Pcard top sombre */
-.pcard-top{background:linear-gradient(135deg,var(--ink),#1a1428)}
-.pcard-ey{color:rgba(255,255,255,.35)}
-.pcard-badge{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.6)}
-
-/* Hcard hover */
-.hcard{transition:all .2s}
-.hcard:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(123,91,245,.1)}
-
-/* Scores dégradé */
-.pscore.g .pscoren{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.pscore.v .pscoren{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
-/* Ticker violet */
-.tk{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
-/* Avis border gauche */
-.avis-card{border-left:3px solid var(--v)}
-
-/* Verbatim scores */
-.vs.g .vsn{background:linear-gradient(135deg,var(--teal),#2BC89A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.vs.v .vsn{background:linear-gradient(135deg,var(--v),var(--v2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
-/* WL section fond blanc */
-.wl-sec{background:var(--white)}
-.wl-ey::before{content:'◆';font-size:7px;color:var(--v);margin-right:8px;animation:pulse 2s infinite}
-.wl-h em{color:var(--v)}
-
-/* Perks améliorés */
-.perk{position:relative;border:1px solid var(--bd);background:var(--white);transition:all .2s}
-.perk::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--v),var(--v2))}
-.perk:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(123,91,245,.08);border-color:var(--bd2)}
-.perk-num{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:rgba(123,91,245,.15);flex-shrink:0;min-width:26px;line-height:1;margin-top:2px;transition:color .2s}
-.perk:hover .perk-num{color:rgba(123,91,245,.35)}
-.perk-body h4{font-size:14px;font-weight:600;transition:color .2s}
-.perk:hover .perk-body h4{color:var(--v)}
-.perk-tag{display:inline-flex;font-size:10px;font-weight:500;letter-spacing:.4px;border-radius:100px;padding:3px 10px;background:var(--v3);color:var(--v);border:1px solid var(--bd2);transition:all .2s}
-.perk:hover .perk-tag{background:var(--v);color:#fff}
-
-/* Proof items */
-.fp-item{border:1px solid var(--bd);background:var(--v5);transition:all .2s}
-.fp-item:hover{background:var(--v3);transform:translateX(3px)}
-.fp-icon-wrap{width:26px;height:26px;border-radius:50%;background:var(--v3);border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.fp-check{font-size:12px;font-weight:700;color:var(--v)}
-.fp-txt strong{color:var(--v)}
-
-/* Form card */
-.form-card{position:relative;overflow:hidden}
-.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--v),var(--v2))}
-.form-submit{background:linear-gradient(135deg,var(--v),var(--v2));letter-spacing:.3px}
-.form-submit:hover{background:linear-gradient(135deg,var(--ink),var(--v));transform:translateY(-1px);box-shadow:0 8px 24px rgba(123,91,245,.35)}
-
-/* Spots */
-.spots-fill{background:linear-gradient(to right,var(--v),var(--v2));box-shadow:0 0 8px rgba(123,91,245,.3)}
-.spots-txt strong{color:var(--v)}
-
-/* Eyebrow ◆ */
-.ey::before{content:'◆';font-size:7px;color:var(--v);margin-right:8px;animation:pulse 2s infinite}
-
-/* Q box */
-.qb{position:relative;overflow:hidden}
-.qb::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--v),var(--v2))}
-
-/* Nav CTA violet */
-.nav-cta{box-shadow:0 4px 14px rgba(123,91,245,.25)}
-.nav-cta:hover{background:var(--ink)}
-
-
-/* ── SURLIGNAGES ÉDITORIAUX (style marker) ── */
-.hl{
-  background:linear-gradient(transparent 55%, rgba(123,91,245,.18) 55%);
-  padding:0 2px;
+/* ── PARETO NEW (étape 2) ══ */
+.pareto-new{
+  background:var(--w);border:1px solid var(--bd2);
+  border-radius:20px;padding:32px;
+  max-width:760px;margin:0 auto;
+  box-shadow:0 12px 40px rgba(123,91,245,.08);
 }
-.hl-gold{
-  background:linear-gradient(transparent 55%, rgba(201,168,76,.2) 55%);
-  padding:0 2px;
+.pareto-line{margin-bottom:8px}
+.pl-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:8px}
+.pl-title{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.2px}
+.pl-tag{font-size:10px;font-weight:600;border-radius:100px;padding:3px 10px;letter-spacing:.5px;text-transform:uppercase}
+.pl-tag-red{background:rgba(204,51,51,.08);color:#CC3333;border:1px solid rgba(204,51,51,.15)}
+.pl-tag-orange{background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.2)}
+.pl-bars{display:flex;gap:6px;height:64px}
+.pl-bar{
+  height:100%;display:flex;flex-direction:column;justify-content:center;
+  padding:8px 16px;border-radius:12px;gap:2px;
+  transition:width 1.5s cubic-bezier(.22,1,.36,1);
 }
-.hl-teal{
-  background:linear-gradient(transparent 55%, rgba(26,158,122,.18) 55%);
-  padding:0 2px;
+.pl-bar-big{
+  flex:0 0 89%;
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  box-shadow:0 4px 16px rgba(123,91,245,.25);
+}
+.pl-bar-small{flex:0 0 calc(11% - 6px);background:rgba(0,0,0,.06)}
+.pl-bar-error{
+  flex:0 0 90%;
+  background:linear-gradient(135deg,#CC3333,#E04848);
+  box-shadow:0 4px 16px rgba(204,51,51,.2);
+}
+.pl-bar-tiny{flex:0 0 calc(10% - 6px);background:rgba(26,158,122,.15);border:1px solid rgba(26,158,122,.3)}
+.pl-bar-pct{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:400;line-height:1;color:#fff;letter-spacing:-.5px;
+}
+.pl-bar-small .pl-bar-pct,.pl-bar-tiny .pl-bar-pct{color:var(--ink2);font-size:16px}
+.pl-bar-lbl{font-size:10px;color:rgba(255,255,255,.85);font-weight:400;line-height:1.2}
+.pl-bar-small .pl-bar-lbl,.pl-bar-tiny .pl-bar-lbl{color:var(--ink3)}
+
+.pareto-arrow{
+  display:flex;align-items:center;gap:10px;
+  padding:14px 0 10px;
+}
+.pa-line{flex:1;height:1px;background:linear-gradient(to right,transparent,var(--bd2),transparent)}
+.pa-msg{
+  font-size:11px;font-style:italic;color:var(--ink3);
+  white-space:nowrap;letter-spacing:.5px;
+}
+.pa-icon{
+  width:24px;height:24px;border-radius:50%;
+  background:var(--v);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;animation:bouncedown 2s ease-in-out infinite;
+}
+@keyframes bouncedown{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+
+.pareto-punch{
+  display:flex;align-items:center;gap:14px;
+  background:linear-gradient(135deg,#FFF5F5,#FFE8E8);
+  border:1.5px solid rgba(204,51,51,.2);
+  border-left:4px solid #CC3333;
+  border-radius:12px;padding:14px 18px;margin-top:16px;
+}
+.pp-icon{font-size:24px;flex-shrink:0}
+.pareto-punch p{
+  font-size:14px;color:var(--ink2);line-height:1.5;font-weight:400;
+}
+.pareto-punch strong{color:#CC3333;font-weight:700}
+
+/* ── DOCTRINE (étape 3) ── */
+.doctrine-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+  max-width:920px;margin:0 auto 28px;
+}
+.dx{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:24px 16px;text-align:center;
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+}
+.dx:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.dx-good{
+  background:linear-gradient(135deg,rgba(123,91,245,.18),rgba(123,91,245,.08));
+  border:1.5px solid rgba(123,91,245,.4);
+  box-shadow:0 8px 24px rgba(123,91,245,.15);
+}
+.dx-not{
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(255,255,255,.08);color:rgba(255,255,255,.4);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;margin:0 auto 10px;font-weight:600;
+}
+.dx-yes{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--v);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;margin:0 auto 10px;font-weight:700;
+  box-shadow:0 4px 14px rgba(123,91,245,.4);
+}
+.dx-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:4px;font-weight:500}
+.dx-good .dx-label{color:rgba(255,255,255,.6)}
+.dx-thing{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:400;color:rgba(255,255,255,.65);letter-spacing:-.3px;
+}
+.dx-good .dx-thing{color:#fff;font-weight:500}
+.dx:not(.dx-good) .dx-thing{text-decoration:line-through;text-decoration-color:rgba(255,255,255,.25)}
+.dark-caption{
+  text-align:center;color:rgba(255,255,255,.55);font-size:15px;
+  font-weight:300;max-width:520px;margin:0 auto;
+}
+.dark-caption strong{color:#fff;font-weight:500}
+
+/* ── MATH BLOCK (étape 4) ── */
+.math-block{
+  background:linear-gradient(135deg,var(--w),var(--off));
+  border:1px solid var(--bd2);border-radius:20px;
+  padding:28px;box-shadow:0 12px 40px rgba(123,91,245,.08);
+}
+.math-row{
+  display:flex;align-items:center;gap:14px;margin-bottom:22px;
+}
+.math-cell{
+  flex:1;background:var(--w);border:1px solid var(--bd);
+  border-radius:14px;padding:18px 16px;text-align:center;
+  transition:transform .3s;
+}
+.math-cell:hover{transform:translateY(-2px)}
+.math-cell-real{
+  border-color:var(--v);background:var(--v4);
+  box-shadow:0 6px 20px rgba(123,91,245,.12);
+}
+.mc-icon{font-size:24px;margin-bottom:6px}
+.mc-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;font-weight:300;color:var(--ink);
+  letter-spacing:-1.5px;line-height:1;
+}
+.math-cell-real .mc-val{
+  background:linear-gradient(135deg,var(--v),var(--v2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.mc-lbl{font-size:11px;color:var(--ink3);line-height:1.3;margin-top:4px}
+.math-op{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;color:var(--ink3);font-style:italic;
+}
+.math-equation{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:18px 0;border-top:1px dashed var(--bd2);
+  border-bottom:1px dashed var(--bd2);margin-bottom:14px;
+}
+.me-block{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:8px 12px;border-radius:10px;background:var(--off);
+}
+.me-result{
+  background:linear-gradient(135deg,#FFF5F5,#FFE8E8);
+  border:1.5px solid rgba(204,51,51,.25);
+}
+.me-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:400;color:var(--ink);line-height:1;letter-spacing:-.5px;
+}
+.me-result .me-n{color:#CC3333;font-weight:500}
+.me-l{font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.me-op{font-size:14px;color:var(--ink3);font-weight:500}
+.math-verdict{
+  text-align:center;font-size:14px;font-weight:600;color:#CC3333;
+  padding:8px 14px;background:rgba(204,51,51,.06);
+  border-radius:100px;display:inline-block;
+  width:100%;letter-spacing:.3px;
+}
+
+/* ── FLOW DIAGRAM (étape 5) ── */
+.flow-diagram{
+  max-width:780px;margin:0 auto;
+  background:var(--w);border:1px solid var(--bd2);
+  border-radius:20px;padding:36px 28px;
+  box-shadow:0 12px 40px rgba(123,91,245,.08);
+}
+.fd-inputs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:0}
+.fd-input{
+  background:var(--off);border:1px solid var(--bd2);
+  border-radius:14px;padding:18px 14px;text-align:center;
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+}
+.fd-input:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(123,91,245,.1);background:var(--w)}
+.fd-i-icon{
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin:0 auto 10px;
+}
+.fd-i-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:500;color:var(--ink);margin-bottom:3px;
+}
+.fd-i-desc{font-size:11px;color:var(--ink3);line-height:1.4}
+
+.fd-arrows{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  padding:6px 0;
+}
+.fd-arrow{
+  height:24px;
+  background:linear-gradient(to bottom,var(--bd2),var(--v));
+  width:2px;margin:0 auto;border-radius:2px;
+  position:relative;
+}
+.fd-arrow::after{
+  content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid var(--v);
+}
+
+.fd-engine{
+  position:relative;
+  background:linear-gradient(135deg,var(--v),var(--vd));
+  border-radius:14px;padding:18px;text-align:center;
+  color:#fff;margin:0 auto;max-width:280px;
+  box-shadow:0 10px 28px rgba(123,91,245,.35);
+  overflow:hidden;
+}
+.fd-engine-pulse{
+  position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.2),transparent 60%);
+  animation:pulseEngine 2s ease-in-out infinite;
+}
+@keyframes pulseEngine{0%,100%{opacity:.4}50%{opacity:1}}
+.fd-engine-label{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;font-weight:500;letter-spacing:2px;
+  position:relative;z-index:1;
+}
+.fd-engine-sub{
+  font-size:10px;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(255,255,255,.7);margin-top:2px;position:relative;z-index:1;
+}
+
+.fd-output{margin-top:6px;text-align:center}
+.fd-arrow-down{
+  font-size:18px;color:var(--v);margin:6px 0;animation:bouncedown 2s ease-in-out infinite;
+}
+.fd-result{
+  background:linear-gradient(135deg,var(--tl),#F0FBF5);
+  border:1.5px solid rgba(26,158,122,.3);
+  border-radius:14px;padding:20px;
+}
+.fd-r-tag{
+  font-size:10px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--teal);font-weight:600;margin-bottom:8px;
+}
+.fd-r-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:17px;font-weight:400;color:var(--ink);
+  line-height:1.4;margin-bottom:10px;letter-spacing:-.2px;
+}
+.fd-r-meta{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  font-size:11px;color:var(--ink3);font-weight:500;
+}
+.fd-r-meta span{display:flex;align-items:center}
+.fd-dot{color:var(--bd2)}
+
+/* ══ Responsive Storytelling ══ */
+@media(max-width:900px){
+  .story{padding:64px 18px}
+  .story-grid{grid-template-columns:1fr;gap:32px}
+  .doctrine-grid{grid-template-columns:repeat(2,1fr)}
+  .pareto-new{padding:20px}
+  .pl-header{flex-direction:column;align-items:flex-start;gap:4px}
+  .pl-bars{height:54px}
+  .pl-bar-pct{font-size:18px}
+  .pl-bar-lbl{display:none}
+  .pareto-arrow{padding:10px 0 6px}
+  .pa-msg{font-size:10px}
+  .math-row{flex-direction:column}
+  .math-op{transform:rotate(90deg)}
+  .math-equation{flex-wrap:wrap;gap:6px}
+  .me-n{font-size:18px}
+  .flow-diagram{padding:24px 18px}
+  .fd-inputs{grid-template-columns:1fr;gap:8px}
+  .fd-arrows{display:none}
+  .fd-input{display:flex;align-items:center;text-align:left;gap:14px;padding:14px}
+  .fd-i-icon{margin:0;flex-shrink:0}
 }
 
 </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z2J6B8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">REVEL<span>I</span>OM</div>
+<!-- ════ 1. NAVIGATION ════ -->
+<nav id="nav">
+  <div class="logo">REVEL<em>I</em>OM</div>
   <div class="nav-r">
-    <div class="nav-badge"><div class="ndot"></div>Bêta · 50 fondateurs</div>
+    <div class="nav-pulse"><div class="pulse-dot"></div>Bêta · 50 fondateurs</div>
     <button class="nav-cta" onclick="sf()">Rejoindre la waitlist</button>
   </div>
 </nav>
 
-<!-- STICKY -->
 <div class="sticky" id="sticky">
-  <button class="sticky-btn" onclick="sf()"><div class="sdot"></div>Rejoindre les 50 premiers</button>
+  <button onclick="sf()"><div class="s-dot"></div>Rejoindre les 50 premiers</button>
 </div>
 
-<!-- HERO -->
+<!-- ════ 2. HERO ════ -->
+<!-- Problème + Solution + Audience + Réassurance -->
 <div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-lines"></div>
-  <div class="hero-badge"><div class="hbdot"></div>Accès Fondateur · 50 places · Bêta en cours</div>
-  <h1>Le recrutement<br><em>qui révèle</em><span class="l2">la vérité.</span></h1>
-  <p class="hero-sub">REVELIOM analyse simultanément le candidat, le manager et le poste — pour révéler <span class="hl">l'alignement réel</span> avant que vous ne décidiez.</p>
+  <div class="orb1"></div><div class="orb2"></div>
+
+  <!-- Audience -->
+  <div class="hero-badge"><div class="bd"></div>Pour les recruteurs TPE/PME · Bêta en cours</div>
+
+  <!-- Proposition de valeur -->
+  <h1>Le recrutement<br>qui <em>révèle</em><span class="l2">la vérité.</span></h1>
+
+  <!-- Complément -->
+  <p class="hero-sub"><strong>46% des embauches échouent</strong> en moins de 18 mois. Près d'un sur deux. REVELIOM règle ça — pas avec un meilleur filtre, avec <strong>un meilleur alignement.</strong></p>
+
+  <!-- Problème → Solution -->
   <div class="hero-contrast">
-    <span class="hco">Les outils filtrent</span>
-    <span class="hca">→</span>
-    <span class="hcn">REVELIOM <em>révèle</em></span>
+    <span class="hc-off">Le meilleur CV</span>
+    <span class="hc-arr">→</span>
+    <span class="hc-on">Votre candidat <em>idéal</em></span>
   </div>
+
+  <!-- Call-to-benefit -->
   <div class="hero-btns">
-    <button class="bp" onclick="sf()"><div class="bpdot"></div>Rejoindre les 50 premiers</button>
-    <button class="bg" onclick="sp()">Voir un profil REVELIOM</button>
+    <button class="btn-v" onclick="sf()"><div class="bvd"></div>Rejoindre les 50 premiers</button>
+    <button class="btn-ghost" onclick="sp()">Voir un profil REVELIOM</button>
   </div>
-  <div class="hero-stats">
-    <div class="stat"><div class="sn">150<b>+</b></div><div class="sl">profils analysés</div></div>
-    <div class="sdiv"></div>
-    <div class="stat"><div class="sn">100<b>%</b></div><div class="sl">de recommandation</div></div>
-    <div class="sdiv"></div>
-    <div class="stat"><div class="sn">−80<b>%</b></div><div class="sl">de no-shows</div></div>
-    <div class="sdiv"></div>
-    <div class="stat"><div class="sn">0<b>%</b></div><div class="sl">pénible</div></div>
+
+  <!-- Réassurance immédiate -->
+  <div class="hero-proof">
+    <div class="hp"><div class="hp-n">150<b>+</b></div><div class="hp-l">profils analysés</div></div>
+    <div class="hdiv"></div>
+    <div class="hp"><div class="hp-n">100<b>%</b></div><div class="hp-l">de recommandation</div></div>
+    <div class="hdiv"></div>
+    <div class="hp"><div class="hp-n">−80<b>%</b></div><div class="hp-l">de no-shows</div></div>
+    <div class="hdiv"></div>
+    <div class="hp"><div class="hp-n">0<b>%</b></div><div class="hp-l">pénible</div></div>
   </div>
-  <div class="scroll-hint"><span class="sh-txt">Découvrir</span><div class="sh-arrow"></div></div>
 </div>
 
-<!-- PAIN -->
-<section class="sec">
-  <div class="si tw">
-    <div class="tl"></div><div class="tb"></div>
-    <div class="blk blk-alt">
-      <div class="ey">La réalité du marché</div>
-      <h2 class="bh">Ce que les outils classiques<br><em>ne voient pas.</em></h2>
-      <p class="bp2">Ces situations existent partout. REVELIOM les adresse directement.</p>
-      <div class="pgrid">
-        <div class="pc"><div class="pc-n">1</div><h4><span class="hl">Les no-shows</span></h4><p>Le candidat ne se présente pas à l'entretien ou le premier jour.</p><div class="pc-stat">60–70% des recrutements sur le marché</div></div>
-        <div class="pc"><div class="pc-n">2</div><h4><span class="hl">L'échec du tempérament</span></h4><p>Compétences validées, entretien réussi. Il part avant 18 mois. <span class="hl">89% des échecs = tempérament</span>.</p><div class="pc-stat">Source : Leadership IQ — 20 000 recrutements</div></div>
-        <div class="pc"><div class="pc-n">3</div><h4><span class="hl-teal">Le profil atypique éliminé</span></h4><p>Pas le bon diplôme. Filtré avant l'entretien. Le meilleur candidat jamais vu.</p><div class="pc-stat">43% des rejections ATS ≠ compétences</div></div>
-      </div>
-      <div class="qb">
-        <p class="qt"><strong>L'une de ces situations vous est familière ?</strong></p>
-        <div class="qbtns" id="qp">
-          <button class="qbtn" onclick="qS('qp','qpy',this)">Oui — ça m'est arrivé</button>
-          <button class="qbtn" onclick="qS('qp','qpn',this)">Pas encore</button>
-        </div>
-        <div class="qrev" id="qpy">C'est exactement pour ça que REVELIOM existe. ↓</div>
-        <div class="qrev" id="qpn">74% des recruteurs disent avoir fait au moins une erreur de recrutement. ↓</div>
-      </div>
-    </div>
+<!-- ════ 3. RÉASSURANCE N1 ════ -->
+<!-- Clients, presse, awards, chiffres terrain -->
+<div class="r1">
+  <div class="r1-in">
+    <div class="r1-item"><div class="r1-dot"></div><strong>150+</strong> sessions réelles · validé terrain</div>
+    <div class="r1-item"><div class="r1-dot"></div>Déployé chez <strong>ElgaEnergy</strong> · résultats mesurés</div>
+    <div class="r1-item"><div class="r1-dot"></div>Corrélation prédictive <strong>0,70</strong> vs 0,18 classique</div>
+    <div class="r1-item"><div class="r1-dot"></div>Accompagné par <strong>Lamashine · Starter la Mêlée</strong></div>
+  </div>
+</div>
 
-    <div class="blk">
-      <div class="ey">La méthode REVELIOM</div>
-      <h2 class="bh">Trois réalités que <em>personne<br>ne croise ensemble.</em></h2>
-      <p class="bp2">Les outils classiques regardent le candidat seul. <strong><span class="hl">REVELIOM triangule simultanément les trois dimensions</span></strong> qui déterminent si ça va tenir dans la durée.</p>
-      <div class="fusion-wrap">
-        <div class="fusion-cards">
-          <div class="fc c">
-            <div class="fc-n">01</div>
-            <div class="fc-icon">👤</div>
-            <h4>Le <span>Candidat</span></h4>
-            <p>Son fonctionnement réel — pas son discours préparé pour l'entretien.</p>
-            <ul><li>Moteurs internes réels</li><li>Structure de fonctionnement</li><li>Valeurs et projections</li><li>Limites structurelles</li></ul>
+<!-- ════ 4. BÉNÉFICES / NARRATION 6 ÉTAPES ════ -->
+
+<!-- ─── ÉTAPE 1 : LE CONSTAT (Hook Einstein) ─── -->
+<section class="story story-1">
+  <div class="si">
+    <div class="story-grid rv">
+      <div class="story-text">
+        <div class="step-num">01</div>
+        <div class="ey">Le constat</div>
+        <h2 class="h2">1 recrutement sur 2<br><em>échoue.</em></h2>
+        <p class="lp"><strong>Du pile ou face.</strong> Près d'un sur deux se solde par un départ en moins de 18 mois. Et à chaque fois, ça coûte une fortune.</p>
+        <blockquote class="einstein">
+          <span class="eq">"</span>
+          On ne peut pas mesurer l'intelligence d'un poisson<br>à sa capacité à grimper à un arbre.
+          <cite>— Einstein</cite>
+        </blockquote>
+        <p class="lp lp-emph">Dans le recrutement aujourd'hui — c'est exactement ce qu'on fait.</p>
+      </div>
+      <div class="story-visual rv d1">
+        <!-- Schéma pièce/pile-face -->
+        <div class="coinflip">
+          <div class="coin-row">
+            <div class="coin coin-fail">
+              <div class="coin-icon">✕</div>
+              <div class="coin-label">Échec<br>&lt; 18 mois</div>
+            </div>
+            <div class="coin coin-success">
+              <div class="coin-icon">✓</div>
+              <div class="coin-label">Tient<br>la durée</div>
+            </div>
           </div>
-          <div class="fc p">
-            <div class="fc-n">02</div>
-            <div class="fc-icon">🎯</div>
-            <h4>Le <span>Poste</span></h4>
-            <p>Sa réalité terrain — pas la fiche de poste marketing qui attire.</p>
-            <ul><li>Exigences psychologiques réelles</li><li>Sources d'usure identifiées</li><li>Rythme et pression quotidiens</li><li>Conditions de stabilité</li></ul>
+          <div class="coin-stat">
+            <span class="coin-pct">46%</span>
+            <span class="coin-pct-l">des embauches échouent</span>
           </div>
-          <div class="fc m">
-            <div class="fc-n">03</div>
-            <div class="fc-icon">🏢</div>
-            <h4>Le <span>Manager</span></h4>
-            <p>Son style réel — pas la vision idéale qu'il a de lui-même.</p>
-            <ul><li>ADN managérial dominant</li><li>Profils compatibles réels</li><li>Lignes rouges identifiées</li><li>Cadre de réception</li></ul>
-          </div>
-        </div>
-        <div class="fusion-arrow">
-          <div class="fa-line"></div>
-          <p class="fa-text"><strong>REVELIOM</strong> — l'alignement entre les trois,<br><em>révélé avant que vous ne décidiez.</em></p>
-          <div class="fa-line r"></div>
+          <p class="coin-caption">Recruter aujourd'hui = jouer à pile ou face</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROFILES -->
-<section class="sec prof-sec" id="profiles">
+<!-- ─── ÉTAPE 2 : LA DOULEUR + PARETO ─── -->
+<section class="story story-2">
   <div class="si">
-    <div class="prof-head">
-      <div class="ey">Production réelle</div>
-      <h2>Voici ce que REVELIOM<br><em style="color:var(--v);font-style:italic">produit réellement.</em></h2>
-      <div class="proof-bar">
-        <div class="proof-pill"><div class="proof-dot"></div>Sessions authentifiées</div>
-        <div class="proof-div"></div>
-        <div class="proof-pill"><div class="proof-dot"></div>Vrais candidats · vrais managers</div>
-        <div class="proof-div"></div>
-        <div class="proof-pill"><div class="proof-dot"></div>Déjà déployé · Déjà validé</div>
+    <div class="rv" style="text-align:center;margin-bottom:40px">
+      <div class="step-num">02</div>
+      <div class="ey">La loi de Pareto, inversée</div>
+      <h2 class="h2" style="max-width:760px;margin:0 auto">Tout le monde jure par Pareto.<br><em>Personne ne l'applique au recrutement.</em></h2>
+    </div>
+
+    <!-- SCHÉMA PARETO INVERSÉ : 2 lignes claires côte à côte -->
+    <div class="pareto-new rv d1">
+
+      <!-- LIGNE 1 : Causes d'échec -->
+      <div class="pareto-line">
+        <div class="pl-header">
+          <span class="pl-title">⚠️ Ce qui cause les échecs</span>
+          <span class="pl-tag pl-tag-red">La réalité</span>
+        </div>
+        <div class="pl-bars">
+          <div class="pl-bar pl-bar-big" style="--w:89%">
+            <span class="pl-bar-pct">89%</span>
+            <span class="pl-bar-lbl">L'humain — Cadre · Manager · Tempérament</span>
+          </div>
+          <div class="pl-bar pl-bar-small" style="--w:11%">
+            <span class="pl-bar-pct">11%</span>
+            <span class="pl-bar-lbl">Les compétences</span>
+          </div>
+        </div>
       </div>
-      <div class="prof-statement">
-        <span class="ps-diamond">◆</span>
-        <p>Ce ne sont pas des illustrations. <strong><span class="hl">REVELIOM a déjà analysé ces profils, réalisé ces matchings, permis ces recrutements.</span></strong> Le but est maintenant de le rendre accessible à tous.</p>
+
+      <!-- FLÈCHE TRANSITION -->
+      <div class="pareto-arrow">
+        <div class="pa-line"></div>
+        <div class="pa-msg">Pourtant on fait l'inverse</div>
+        <div class="pa-icon">↓</div>
+      </div>
+
+      <!-- LIGNE 2 : Où va l'énergie -->
+      <div class="pareto-line">
+        <div class="pl-header">
+          <span class="pl-title">🎯 Où va l'énergie du recruteur</span>
+          <span class="pl-tag pl-tag-orange">L'erreur</span>
+        </div>
+        <div class="pl-bars">
+          <div class="pl-bar pl-bar-error" style="--w:90%">
+            <span class="pl-bar-pct">90%</span>
+            <span class="pl-bar-lbl">Sur les CV et les compétences</span>
+          </div>
+          <div class="pl-bar pl-bar-tiny" style="--w:10%">
+            <span class="pl-bar-pct">10%</span>
+            <span class="pl-bar-lbl">Sur l'humain</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCLUSION CHOC -->
+      <div class="pareto-punch">
+        <div class="pp-icon">🎯</div>
+        <p><strong>90% de l'énergie</strong> investie sur ce qui cause <strong>seulement 11% des échecs.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ÉTAPE 3 : LA DOCTRINE ─── -->
+<section class="story story-3 story-dark">
+  <div class="si">
+    <div class="rv" style="text-align:center;margin-bottom:40px">
+      <div class="step-num step-num-w">03</div>
+      <div class="ey ey-w">La doctrine REVELIOM</div>
+      <h2 class="h2 h2-w">Il n'y a pas de mauvais candidats.<br><em>Il n'y a que de mauvais alignements.</em></h2>
+    </div>
+
+    <!-- Triade visuelle de la doctrine -->
+    <div class="doctrine-grid rv d1">
+      <div class="dx">
+        <div class="dx-not">✕</div>
+        <div class="dx-label">Bons ou mauvais</div>
+        <div class="dx-thing">Candidats</div>
+      </div>
+      <div class="dx">
+        <div class="dx-not">✕</div>
+        <div class="dx-label">Bons ou mauvais</div>
+        <div class="dx-thing">Managers</div>
+      </div>
+      <div class="dx">
+        <div class="dx-not">✕</div>
+        <div class="dx-label">Bons ou mauvais</div>
+        <div class="dx-thing">Postes</div>
+      </div>
+      <div class="dx dx-good">
+        <div class="dx-yes">✓</div>
+        <div class="dx-label">Seuls existent</div>
+        <div class="dx-thing">Les alignements</div>
       </div>
     </div>
 
-    <div class="ptabs">
+    <p class="dark-caption rv d2">La réponse est simple : <strong>pas le temps. Pas les moyens.</strong></p>
+  </div>
+</section>
+
+<!-- ─── ÉTAPE 4 : LE MUR (math impossible) ─── -->
+<section class="story story-4">
+  <div class="si">
+    <div class="story-grid rv">
+      <div class="story-text">
+        <div class="step-num">04</div>
+        <div class="ey">Le mur</div>
+        <h2 class="h2">Le calcul que personne<br><em>ne fait jamais.</em></h2>
+        <p class="lp">Pour vraiment comprendre l'humain derrière chaque CV, il faudrait <strong>2 heures par candidat</strong>. Sur 50 candidatures, c'est 100 heures. Humainement impossible.</p>
+        <p class="lp lp-emph">C'est pour ça que tout le monde se rabat sur 8 secondes par CV. Et que rien ne change.</p>
+      </div>
+      <div class="story-visual rv d1">
+        <!-- Schéma du calcul absurde -->
+        <div class="math-block">
+          <div class="math-row">
+            <div class="math-cell">
+              <div class="mc-icon">📄</div>
+              <div class="mc-val">8 sec</div>
+              <div class="mc-lbl">par CV<br>en moyenne</div>
+            </div>
+            <div class="math-op">vs</div>
+            <div class="math-cell math-cell-real">
+              <div class="mc-icon">🧠</div>
+              <div class="mc-val">2h</div>
+              <div class="mc-lbl">pour vraiment<br>analyser l'humain</div>
+            </div>
+          </div>
+          <div class="math-equation">
+            <div class="me-block"><span class="me-n">50</span><span class="me-l">candidatures</span></div>
+            <div class="me-op">×</div>
+            <div class="me-block"><span class="me-n">2h</span><span class="me-l">par profil</span></div>
+            <div class="me-op">=</div>
+            <div class="me-block me-result"><span class="me-n">100h</span><span class="me-l">de travail</span></div>
+          </div>
+          <div class="math-verdict">⛔ Humainement impossible</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ÉTAPE 5 : LA RÉVÉLATION (Comment ça marche) ─── -->
+<section class="story story-5 story-alt">
+  <div class="si">
+    <div class="rv" style="text-align:center;margin-bottom:40px">
+      <div class="step-num">05</div>
+      <div class="ey">La révélation</div>
+      <h2 class="h2">REVELIOM fait ce que vous<br><em>n'avez pas le temps de faire.</em></h2>
+      <p class="lp" style="max-width:580px;margin:14px auto 0">Analyse simultanée des trois dimensions. Matching impartial, sans biais, sans temps de votre part.</p>
+    </div>
+
+    <!-- Schéma : 3 inputs → 1 verdict -->
+    <div class="flow-diagram rv d1">
+      <div class="fd-inputs">
+        <div class="fd-input">
+          <div class="fd-i-icon" style="background:rgba(123,91,245,.1);color:var(--v)">👤</div>
+          <div class="fd-i-title">Candidat</div>
+          <div class="fd-i-desc">Ce qui l'anime vraiment</div>
+        </div>
+        <div class="fd-input">
+          <div class="fd-i-icon" style="background:rgba(26,158,122,.1);color:var(--teal)">🎯</div>
+          <div class="fd-i-title">Poste</div>
+          <div class="fd-i-desc">La réalité du terrain</div>
+        </div>
+        <div class="fd-input">
+          <div class="fd-i-icon" style="background:rgba(201,168,76,.1);color:var(--gold)">🏢</div>
+          <div class="fd-i-title">Manager</div>
+          <div class="fd-i-desc">Son style réel</div>
+        </div>
+      </div>
+
+      <div class="fd-arrows">
+        <div class="fd-arrow"></div>
+        <div class="fd-arrow"></div>
+        <div class="fd-arrow"></div>
+      </div>
+
+      <div class="fd-engine">
+        <div class="fd-engine-pulse"></div>
+        <div class="fd-engine-label">REVELIOM</div>
+        <div class="fd-engine-sub">Triangulation</div>
+      </div>
+
+      <div class="fd-output">
+        <div class="fd-arrow-down">↓</div>
+        <div class="fd-result">
+          <div class="fd-r-tag">VERDICT</div>
+          <div class="fd-r-text">Les candidats compatibles avec votre cadre — révélés</div>
+          <div class="fd-r-meta">
+            <span>Impartial</span>
+            <span class="fd-dot">·</span>
+            <span>Sans biais</span>
+            <span class="fd-dot">·</span>
+            <span>Sans temps de votre part</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILS — mise en image du produit -->
+<section class="sec-alt" id="profiles">
+  <div class="si">
+    <div class="rv">
+      <div class="ey">Le produit en action</div>
+      <h2 class="h2">Ce que REVELIOM<br><em>produit réellement.</em></h2>
+      <div class="prof-proof">
+        <div class="pp-pill"><div class="pp-dot"></div>Sessions authentifiées</div>
+        <div class="pp-div"></div>
+        <div class="pp-pill"><div class="pp-dot"></div>Vrais candidats · vrais managers</div>
+        <div class="pp-div"></div>
+        <div class="pp-pill"><div class="pp-dot"></div>Déjà déployé · Déjà validé</div>
+      </div>
+      <div class="prof-stmt">
+        <span class="ps-d">◆</span>
+        <p>Ce ne sont <span class="hl">pas des illustrations.</span> <strong>REVELIOM a déjà analysé ces profils, réalisé ces matchings, permis ces recrutements.</strong> Le but est maintenant de le rendre accessible à tous.</p>
+      </div>
+    </div>
+
+    <div class="ptabs rv d1">
       <button class="ptab on" onclick="showP('c',this)">Profil Candidat</button>
       <button class="ptab" onclick="showP('m',this)">Portrait Manager</button>
       <button class="ptab" onclick="showP('p',this)">Analyse Poste</button>
@@ -699,21 +1178,21 @@ footer span{color:var(--v)}
     <div class="ppanel on" id="p-c">
       <div class="pcard">
         <div class="pcard-top">
-          <div class="pcard-ey">REVELIOM · Profil Candidat · Bloc 10 — Synthèse Finale</div>
-          <div class="pcard-badge"><div class="pbd"></div>Session réelle · Profil authentifié · Déjà déployé</div>
+          <span class="pcard-ey">REVELIOM · Profil Candidat · Bloc 10 — Synthèse Finale</span>
+          <div class="pcard-badge"><div class="pb-dot"></div>Session réelle · Profil authentifié · Déjà déployé</div>
         </div>
-        <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
-        <div class="hscroll">
-          <div class="hcard teal-card"><div class="hc-title">🔥 Ce qui le met en mouvement</div><div class="hc-txt">Ce qui le fait avancer, c'est le moment où il voit <strong>l'effet direct de ce qu'il transmet</strong> : quand quelqu'un comprend, progresse, réussit grâce à lui. Il se met en marche quand son action a un impact réel sur les autres.</div><div class="hc-tags"><span class="htag g">Impact humain</span><span class="htag g">Transmission</span></div></div>
-          <div class="hcard"><div class="hc-title">🧱 Comment il tient dans le temps</div><div class="hc-txt">Il fonctionne par <em>phases d'intensité</em>, activées par un cadre clair et une responsabilité visible. Sans structure ou retour, son énergie retombe — non par manque de capacité, mais par <strong>absence de déclencheur.</strong></div><div class="hc-tags"><span class="htag v">Cadre requis</span><span class="htag v">Responsabilité visible</span></div></div>
-          <div class="hcard"><div class="hc-title">🧩 Ce que révèlent ses projections</div><div class="hc-txt">Attiré par des univers complexes, structurés, où le pouvoir passe par <strong>la compréhension et la stratégie</strong>. Ce n'est pas la domination qui l'attire — <em>c'est la maîtrise silencieuse des systèmes.</em></div><div class="hc-tags"><span class="htag v">Stratégie</span><span class="htag v">Complexité</span></div></div>
-          <div class="hcard teal-card"><div class="hc-title">🎯 Positionnement naturel</div><div class="hc-txt">Fonctionne comme <strong>pédagogue-structurant</strong> : comprend, explique, accompagne, organise autour de lui. Pas fait pour l'exécution brute solitaire — mais pour <em>former, encadrer, déléguer.</em></div><div class="hc-tags"><span class="htag g">Formation</span><span class="htag g">Encadrement</span></div></div>
-          <div class="hcard red-card"><div class="hc-title">⚠️ Points de vigilance</div><div class="hc-txt">Sans cadre externe, <strong>l'automotivation pure est un risque réel.</strong> L'énergie retombe quand les objectifs sont abstraits et les retours absents. Ce n'est pas un défaut — c'est une structure à connaître.</div><div class="hc-tags"><span class="htag r">Sans structure = risque</span><span class="htag r">Automotivation limitée</span></div></div>
+        <div class="shx"><div class="shxl"></div><span>Faites défiler →</span><div class="shxl"></div></div>
+        <div class="hs">
+          <div class="hc tc"><div class="hct">🔥 Ce qui le met en mouvement</div><div class="hctxt">Ce qui le fait avancer, c'est le moment où il voit <strong>l'effet direct de ce qu'il transmet</strong> : quand quelqu'un comprend, progresse, réussit grâce à lui.</div><div class="htags"><span class="ht g">Impact humain</span><span class="ht g">Transmission</span></div></div>
+          <div class="hc"><div class="hct">🧱 Comment il tient dans le temps</div><div class="hctxt">Il fonctionne par phases d'intensité activées par un cadre clair. Sans structure, son énergie retombe — non par manque de capacité, mais par <strong>absence de déclencheur.</strong></div><div class="htags"><span class="ht v">Cadre requis</span><span class="ht v">Responsabilité visible</span></div></div>
+          <div class="hc"><div class="hct">🧩 Ce que révèlent ses projections</div><div class="hctxt">Attiré par des univers complexes où le pouvoir passe par <strong>la compréhension et la stratégie</strong>. La maîtrise silencieuse des systèmes.</div><div class="htags"><span class="ht v">Stratégie</span><span class="ht v">Complexité</span></div></div>
+          <div class="hc tc"><div class="hct">🎯 Positionnement naturel</div><div class="hctxt">Fonctionne comme <strong>pédagogue-structurant</strong> : comprend, explique, accompagne, organise. Pas fait pour l'exécution brute solitaire.</div><div class="htags"><span class="ht g">Formation</span><span class="ht g">Encadrement</span></div></div>
+          <div class="hc rc"><div class="hct">⚠️ Points de vigilance</div><div class="hctxt">Sans cadre externe, <strong>l'automotivation pure est un risque réel.</strong> L'énergie retombe quand les objectifs sont abstraits.</div><div class="htags"><span class="ht r">Sans structure = risque</span></div></div>
         </div>
-        <div class="pcard-scores">
-          <div class="pscore g"><div class="pscoren" data-n="100" data-s="%">0%</div><div class="pscorel">reconnaissent leur profil<br>comme exact</div></div>
-          <div class="pscore v"><div class="pscoren">0,70</div><div class="pscorel">corrélation prédictive<br>vs 0,18 classique</div></div>
-          <div class="pscore o"><div class="pscoren">15×</div><div class="pscorel">plus fiable que<br>le recrutement au feeling</div></div>
+        <div class="pscores">
+          <div class="ps gv"><span class="psn" data-n="100" data-s="%">0%</span><span class="psl">reconnaissent leur profil comme exact</span></div>
+          <div class="ps vv"><span class="psn">0,70</span><span class="psl">corrélation prédictive vs 0,18 classique</span></div>
+          <div class="ps ov"><span class="psn">15×</span><span class="psl">plus fiable que le recrutement au feeling</span></div>
         </div>
       </div>
     </div>
@@ -721,21 +1200,21 @@ footer span{color:var(--v)}
     <div class="ppanel" id="p-m">
       <div class="pcard">
         <div class="pcard-top">
-          <div class="pcard-ey">REVELIOM · Portrait Manager · Bloc 10 — Synthèse Finale</div>
-          <div class="pcard-badge"><div class="pbd"></div>Session réelle · ADN managérial complet · Boussole matching</div>
+          <span class="pcard-ey">REVELIOM · Portrait Manager · Bloc 10 — Synthèse Finale</span>
+          <div class="pcard-badge"><div class="pb-dot"></div>Session réelle · ADN managérial complet</div>
         </div>
-        <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
-        <div class="hscroll">
-          <div class="hcard"><div class="hc-title">🧠 ADN managérial dominant</div><div class="hc-txt"><strong>Décideur direct, orienté résultats.</strong> Incarne l'exigence par l'exemple. Les autres ressentent un cadre net, une attente élevée et une vraie opportunité de gagner — à condition de jouer le jeu.</div><div class="hc-tags"><span class="htag v">Exigence</span><span class="htag v">Direct</span></div></div>
-          <div class="hcard"><div class="hc-title">⚡ Style de leadership réel</div><div class="hc-txt">Leadership par le cadre et l'exigence, soutenu par la logique et les faits. <em>Lecture en creux :</em> valorise l'autonomie, mais <strong>supporte mal l'approximation prolongée</strong> et les postures défensives.</div><div class="hc-tags"><span class="htag v">Résultats</span><span class="htag v">Autonomie</span></div></div>
-          <div class="hcard teal-card"><div class="hc-title">✅ Profils compatibles</div><div class="hc-txt">Chasseurs autonomes · Bâtisseurs orientés action · Profils bruts mais engagés. <strong>Personnes à l'aise avec le terrain, l'incertitude et le challenge.</strong></div><div class="hc-tags"><span class="htag g">Autonomie</span><span class="htag g">Terrain</span><span class="htag g">Engagement</span></div></div>
-          <div class="hcard red-card"><div class="hc-title">⚠️ Profils à risque</div><div class="hc-txt">Attentistes, dépendants du cadre · Profils prudents cherchant la sécurité avant l'effort · <strong>Personnes négatives ou expertes en rationalisation de l'échec.</strong></div><div class="hc-tags"><span class="htag r">Attentisme</span><span class="htag r">Négativité</span></div></div>
-          <div class="hcard gold-card"><div class="hc-title">📊 Source scientifique</div><div class="hc-txt">Gallup (27M employés) : <strong>70% de la variance d'engagement = manager.</strong> L'échec d'un recrutement n'est pas l'échec d'un candidat — c'est l'échec d'une rencontre entre deux structures.</div><div class="hc-tags"><span class="htag o">Gallup 2015</span><span class="htag o">Théorie LMX</span></div></div>
+        <div class="shx"><div class="shxl"></div><span>Faites défiler →</span><div class="shxl"></div></div>
+        <div class="hs">
+          <div class="hc"><div class="hct">🧠 ADN managérial dominant</div><div class="hctxt"><strong>Décideur direct, orienté résultats.</strong> Incarne l'exigence par l'exemple. Les autres ressentent un cadre net et une vraie opportunité de gagner.</div><div class="htags"><span class="ht v">Exigence</span><span class="ht v">Direct</span></div></div>
+          <div class="hc"><div class="hct">⚡ Style de leadership réel</div><div class="hctxt">Leadership par le cadre et l'exigence. Valorise l'autonomie, mais <strong>supporte mal l'approximation prolongée</strong> et les postures défensives.</div><div class="htags"><span class="ht v">Résultats</span></div></div>
+          <div class="hc tc"><div class="hct">✅ Profils compatibles</div><div class="hctxt">Chasseurs autonomes · Bâtisseurs orientés action · <strong>Personnes à l'aise avec le terrain et le challenge.</strong></div><div class="htags"><span class="ht g">Autonomie</span><span class="ht g">Terrain</span></div></div>
+          <div class="hc rc"><div class="hct">⚠️ Profils à risque</div><div class="hctxt">Attentistes, dépendants du cadre · <strong>Experts en rationalisation de l'échec.</strong></div><div class="htags"><span class="ht r">Attentisme</span></div></div>
+          <div class="hc gc"><div class="hct">📊 Source</div><div class="hctxt">Gallup (27M employés) : <strong>70% de la variance d'engagement = manager.</strong></div><div class="htags"><span class="ht o">Gallup 2015</span></div></div>
         </div>
-        <div class="pcard-scores">
-          <div class="pscore v"><div class="pscoren">70%</div><div class="pscorel">incompatibilités managériales<br>éliminées avant l'entretien</div></div>
-          <div class="pscore g"><div class="pscoren">Gallup</div><div class="pscorel">70% variance engagement<br>= manager</div></div>
-          <div class="pscore o"><div class="pscoren">LMX</div><div class="pscorel">compatibilité manager<br>prédit rétention 18 mois</div></div>
+        <div class="pscores">
+          <div class="ps vv"><span class="psn">70%</span><span class="psl">incompatibilités éliminées avant l'entretien</span></div>
+          <div class="ps gv"><span class="psn">Gallup</span><span class="psl">70% variance engagement = manager</span></div>
+          <div class="ps ov"><span class="psn">LMX</span><span class="psl">compatibilité manager prédit rétention 18 mois</span></div>
         </div>
       </div>
     </div>
@@ -743,20 +1222,20 @@ footer span{color:var(--v)}
     <div class="ppanel" id="p-p">
       <div class="pcard">
         <div class="pcard-top">
-          <div class="pcard-ey">REVELIOM · Analyse Poste · Bloc 7 — Synthèse + Points Matching</div>
-          <div class="pcard-badge"><div class="pbd"></div>Session réelle · Vérité du poste · Matrice de survie documentée</div>
+          <span class="pcard-ey">REVELIOM · Analyse Poste · Bloc 7 — Synthèse</span>
+          <div class="pcard-badge"><div class="pb-dot"></div>Session réelle · Vérité du poste documentée</div>
         </div>
-        <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
-        <div class="hscroll">
-          <div class="hcard"><div class="hc-title">🎯 Vérité du poste</div><div class="hc-txt">Activité commerciale terrain basée sur la prospection. <strong>Le développement dépend directement du volume d'actions</strong> et de la capacité à maintenir une présence commerciale malgré les refus fréquents.</div><div class="hc-tags"><span class="htag v">Terrain</span><span class="htag v">Volume requis</span></div></div>
-          <div class="hcard"><div class="hc-title">💪 Ce que le poste exige</div><div class="hc-txt">Prospecter régulièrement · <strong>Accepter refus et décisions différées</strong> · Maintenir un rythme constant · <em>Gérer seul la responsabilité des résultats.</em></div><div class="hc-tags"><span class="htag o">Résilience</span><span class="htag o">Rythme constant</span></div></div>
-          <div class="hcard teal-card"><div class="hc-title">📈 Ce que le poste offre</div><div class="hc-txt">Des revenus directement liés aux contrats · <strong>Une autonomie forte dans l'organisation</strong> · La possibilité de construire progressivement un portefeuille stable.</div><div class="hc-tags"><span class="htag g">Autonomie forte</span><span class="htag g">Revenus variables</span></div></div>
-          <div class="hcard red-card"><div class="hc-title">⚠️ Sources d'usure</div><div class="hc-txt">La répétition de la prospection · L'exposition régulière aux refus · Le volume d'actions nécessaire. <strong>La stabilité arrive quand le portefeuille se développe.</strong></div><div class="hc-tags"><span class="htag r">Usure progressive</span><span class="htag r">Long terme requis</span></div></div>
+        <div class="shx"><div class="shxl"></div><span>Faites défiler →</span><div class="shxl"></div></div>
+        <div class="hs">
+          <div class="hc"><div class="hct">🎯 Vérité du poste</div><div class="hctxt">Activité commerciale terrain. <strong>Le développement dépend du volume d'actions</strong> et de la capacité à tenir malgré les refus.</div><div class="htags"><span class="ht v">Terrain</span></div></div>
+          <div class="hc"><div class="hct">💪 Ce que le poste exige</div><div class="hctxt">Prospecter régulièrement · <strong>Accepter refus et décisions différées</strong> · Gérer seul la responsabilité des résultats.</div><div class="htags"><span class="ht o">Résilience</span></div></div>
+          <div class="hc tc"><div class="hct">📈 Ce que le poste offre</div><div class="hctxt">Revenus liés aux contrats · <strong>Autonomie forte</strong> · Possibilité de construire un portefeuille stable progressivement.</div><div class="htags"><span class="ht g">Autonomie forte</span></div></div>
+          <div class="hc rc"><div class="hct">⚠️ Sources d'usure</div><div class="hctxt">La répétition de la prospection. <strong>La stabilité arrive quand le portefeuille se développe.</strong></div><div class="htags"><span class="ht r">Long terme requis</span></div></div>
         </div>
-        <div class="pcard-scores">
-          <div class="pscore v"><div class="pscoren">JD-R</div><div class="pscorel">modèle Job Demands<br>Resources appliqué</div></div>
-          <div class="pscore g"><div class="pscoren">100%</div><div class="pscorel">vérité du poste documentée<br>sans jargon RH</div></div>
-          <div class="pscore o"><div class="pscoren">6 mois</div><div class="pscorel">délai stabilisation<br>portefeuille prédit</div></div>
+        <div class="pscores">
+          <div class="ps vv"><span class="psn">JD-R</span><span class="psl">modèle Job Demands Resources appliqué</span></div>
+          <div class="ps gv"><span class="psn">100%</span><span class="psl">vérité du poste documentée sans jargon RH</span></div>
+          <div class="ps ov"><span class="psn">6 mois</span><span class="psl">délai stabilisation portefeuille prédit</span></div>
         </div>
       </div>
     </div>
@@ -764,178 +1243,266 @@ footer span{color:var(--v)}
     <div class="ppanel" id="p-x">
       <div class="pcard">
         <div class="pcard-top">
-          <div class="pcard-ey">REVELIOM · Matching Final · Triangulation Candidat × Manager × Poste</div>
-          <div class="verdict gold" style="margin:8px 0 0"><div class="vdot"></div>Alignement Conditionnel — Conditions à réunir</div>
+          <span class="pcard-ey">REVELIOM · Matching Final · Triangulation Candidat × Manager × Poste</span>
+          <div class="verdict gold"><div class="vd"></div>Alignement Conditionnel</div>
         </div>
-        <div class="scroll-hint-x" style="padding:12px 0 4px"><div class="shx-line"></div><span style="font-size:10px;color:var(--ink3)">Faites défiler</span><div class="shx-line"></div></div>
-        <div class="hscroll">
-          <div class="hcard"><div class="hc-title">📊 Verdict REVELIOM</div><div class="hc-txt">Le fonctionnement peut correspondre au poste, mais <strong>uniquement si certaines conditions sont réunies dès le départ.</strong> Ce matching n'est ni un oui automatique, ni un non définitif — c'est une boussole.</div><div class="hc-tags"><span class="htag o">Conditionnel</span><span class="htag o">Conditions claires</span></div></div>
-          <div class="hcard"><div class="hc-title">🔎 Lecture de compatibilité</div><div class="hc-txt">Le moteur repose sur <strong>l'impact humain et la transmission</strong>. Le poste peut devenir cohérent à condition que l'exposition commerciale soit <em>acceptée comme passage nécessaire</em>, pas comme cœur identitaire.</div><div class="hc-tags"><span class="htag v">Impact humain</span><span class="htag v">Long terme</span></div></div>
-          <div class="hcard teal-card"><div class="hc-title">🧭 Cadre requis pour réussir</div><div class="hc-txt">Cadre structurant et explicite · Objectifs clairs · Retour régulier · Responsabilités visibles. <strong>Sans ce cadre, la dispersion est un risque réel.</strong></div><div class="hc-tags"><span class="htag g">Cadre explicite</span><span class="htag g">Feedback</span></div></div>
-          <div class="hcard red-card"><div class="hc-title">⚠️ Zone de friction identifiée</div><div class="hc-txt">Friction sur l'<strong>autonomie commerciale pure</strong> : le moteur n'est pas naturellement orienté vente frontale répétée. Risque de dispersion si les objectifs sont trop abstraits et les retours trop rares.</div><div class="hc-tags"><span class="htag r">Friction commerciale</span><span class="htag r">Autonomie limitée</span></div></div>
-          <div class="hcard gold-card"><div class="hc-title">💼 Projection concrète</div><div class="hc-txt">La valeur se joue dans la <strong>capacité à structurer un portefeuille stable</strong>, puis à transmettre une méthode. Le levier financier devient réel quand il passe <em>de l'action individuelle à l'organisation collective.</em></div><div class="hc-tags"><span class="htag o">Long terme</span><span class="htag o">Transmission</span></div></div>
+        <div class="shx"><div class="shxl"></div><span>Faites défiler →</span><div class="shxl"></div></div>
+        <div class="hs">
+          <div class="hc"><div class="hct">📊 Verdict REVELIOM</div><div class="hctxt">Le fonctionnement peut correspondre au poste, mais <strong>uniquement si certaines conditions sont réunies.</strong> Ce n'est pas un oui automatique — c'est une boussole.</div><div class="htags"><span class="ht o">Conditionnel</span></div></div>
+          <div class="hc"><div class="hct">🔎 Compatibilité</div><div class="hctxt">Le moteur repose sur <strong>l'impact humain et la transmission</strong>. Le poste devient cohérent si l'exposition commerciale est acceptée.</div><div class="htags"><span class="ht v">Impact humain</span></div></div>
+          <div class="hc tc"><div class="hct">🧭 Cadre requis</div><div class="hctxt">Cadre structurant · Objectifs clairs · Retour régulier. <strong>Sans ce cadre, la dispersion est un risque réel.</strong></div><div class="htags"><span class="ht g">Cadre explicite</span></div></div>
+          <div class="hc rc"><div class="hct">⚠️ Zone de friction</div><div class="hctxt">Friction sur l'<strong>autonomie commerciale pure</strong> : le moteur n'est pas naturellement orienté vente frontale répétée.</div><div class="htags"><span class="ht r">Friction identifiée</span></div></div>
+          <div class="hc gc"><div class="hct">💼 Projection</div><div class="hctxt">La valeur se joue dans la <strong>capacité à structurer un portefeuille stable</strong>, puis transmettre une méthode.</div><div class="htags"><span class="ht o">Long terme</span></div></div>
         </div>
-        <div class="pcard-scores">
-          <div class="pscore v"><div class="pscoren">0,70</div><div class="pscorel">corrélation REVELIOM<br>vs 0,18 entretien classique</div></div>
-          <div class="pscore g"><div class="pscoren">15×</div><div class="pscorel">plus fiable<br>que le feeling</div></div>
-          <div class="pscore o"><div class="pscoren">−89%</div><div class="pscorel">risque échec tempérament<br>détecté en amont</div></div>
+        <div class="pscores">
+          <div class="ps vv"><span class="psn">0,70</span><span class="psl">corrélation REVELIOM vs 0,18 classique</span></div>
+          <div class="ps gv"><span class="psn">15×</span><span class="psl">plus fiable que le feeling</span></div>
+          <div class="ps ov"><span class="psn">−89%</span><span class="psl">risque échec tempérament détecté</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- VERBATIMS -->
-<section class="sec vb-sec">
+<!-- ════ 5. PRICING / OFFRES ════ -->
+<!-- Nommer sans jugement de valeur -->
+<section class="sec">
   <div class="si">
-    <div class="blk vis" style="opacity:1;transform:none">
-      <div class="ey">Premiers utilisateurs · Sessions réelles</div>
-      <h2 class="bh">Ils l'ont vécu.<br><em>Voici leurs mots.</em></h2>
-      <p class="bp2" style="margin-bottom:18px">REVELIOM crée quelque chose que les outils classiques ne créent pas — une expérience que les candidats recommandent spontanément.</p>
-      <div class="vs-grid">
-        <div class="vs g"><div class="vsn" data-n="67" data-s="%">0%</div><div class="vsl">"<span class="hl-teal">Captivant — je n'ai pas vu le temps passer</span>"</div></div>
-        <div class="vs v"><div class="vsn" data-n="100" data-s="%">0%</div><div class="vsl">recommandent l'expérience</div></div>
-        <div class="vs w"><div class="vsn" data-n="0" data-s="%">0%</div><div class="vsl">ont trouvé ça pénible</div></div>
+    <div class="rv" style="max-width:560px;margin-bottom:28px">
+      <div class="ey">Accès & tarifs</div>
+      <h2 class="h2">Simple.<br><em>Transparent.</em></h2>
+      <p class="lp">Pas d'abonnement caché. Pas de surprise. Un <span class="hl-g">tarif fondateur figé à vie</span> pour les 30 premiers.</p>
+    </div>
+    <div class="pricing rv d1">
+      <div class="pr-card">
+        <div class="pr-name">Découverte</div>
+        <div class="pr-desc">Pour tester REVELIOM sur votre prochain recrutement.</div>
+        <div class="pr-price"><b>2€</b></div>
+        <div class="pr-unit">par profil analysé · tarif fondateur garanti à vie</div>
+        <ul class="pr-list">
+          <li>Profil candidat complet</li>
+          <li>Analyse poste + manager</li>
+          <li>Matching triangulé</li>
+          <li>Verdict alignement</li>
+        </ul>
+        <button class="pr-btn out" onclick="sf()">Rejoindre la waitlist</button>
+        <p class="pr-note">Tarif garanti à vie pour les 30 premiers</p>
       </div>
-      <div class="ticker-wrap">
-        <div class="ticker">
-          <span class="tk">"La pression s'enlève."</span><span class="tks">◆</span>
-          <span class="tk">"Le CV est dépassé."</span><span class="tks">◆</span>
-          <span class="tk">"Je me reconnais exactement."</span><span class="tks">◆</span>
-          <span class="tk">"Approche atypique."</span><span class="tks">◆</span>
-          <span class="tk">"La sincérité de la démarche."</span><span class="tks">◆</span>
-          <span class="tk">"C'est comme ça que les recruteurs devraient agir."</span><span class="tks">◆</span>
-          <span class="tk">"Expérience unique."</span><span class="tks">◆</span>
-          <span class="tk">"On ne peut pas réduire une personne à un CV."</span><span class="tks">◆</span>
-          <span class="tk">"La pression s'enlève."</span><span class="tks">◆</span>
-          <span class="tk">"Le CV est dépassé."</span><span class="tks">◆</span>
-          <span class="tk">"Je me reconnais exactement."</span><span class="tks">◆</span>
-          <span class="tk">"Approche atypique."</span><span class="tks">◆</span>
-          <span class="tk">"La sincérité de la démarche."</span><span class="tks">◆</span>
-          <span class="tk">"C'est comme ça que les recruteurs devraient agir."</span><span class="tks">◆</span>
-          <span class="tk">"Expérience unique."</span><span class="tks">◆</span>
-          <span class="tk">"On ne peut pas réduire une personne à un CV."</span><span class="tks">◆</span>
-        </div>
+      <div class="pr-card feat">
+        <div class="pr-badge">⭐ Accès Fondateur</div>
+        <div class="pr-name">Fondateur</div>
+        <div class="pr-desc">Accès prioritaire. Tarif figé. Vous co-construisez REVELIOM.</div>
+        <div class="pr-price"><b>2€</b></div>
+        <div class="pr-unit">par profil · tarif figé à vie · accès prioritaire</div>
+        <ul class="pr-list">
+          <li>Tout le plan Découverte</li>
+          <li>Tarif fondateur garanti à vie</li>
+          <li>Accès avant lancement officiel</li>
+          <li>Vous façonnez le produit</li>
+          <li>Accompagnement direct par James</li>
+        </ul>
+        <button class="pr-btn main" onclick="sf()">Rejoindre les 50 premiers →</button>
+        <p class="pr-note">30 places · sélection en cours</p>
       </div>
-      <div class="avis-wrap">
-        <div class="avis-track">
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">J'ai eu l'impression d'avoir quelqu'un en face de moi qui me comprenait — et mieux encore qui m'apprenait à moi-même qui j'étais.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">L'approche est atypique. On enlève la pression du CV. Le questionnaire cherche vraiment à nous connaître — pas à nous trier.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Expérience unique. On ne peut pas réduire une personne à un CV. C'est comme ça que les recruteurs devraient agir.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">La sincérité de la démarche. J'ai répondu honnêtement parce que j'avais l'impression que c'était fait pour m'aider, pas pour me juger.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Pour la première fois dans un recrutement, j'ai senti qu'on cherchait à comprendre qui j'étais vraiment, pas juste ce que je savais faire.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Le questionnaire est captivant. Contrairement aux tests classiques, je n'avais pas l'impression d'être noté — mais d'être compris.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">J'ai eu l'impression d'avoir quelqu'un en face de moi qui me comprenait — et mieux encore qui m'apprenait à moi-même qui j'étais.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">L'approche est atypique. On enlève la pression du CV. Le questionnaire cherche vraiment à nous connaître — pas à nous trier.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Expérience unique. On ne peut pas réduire une personne à un CV. C'est comme ça que les recruteurs devraient agir.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">La sincérité de la démarche. J'ai répondu honnêtement parce que j'avais l'impression que c'était fait pour m'aider, pas pour me juger.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Pour la première fois dans un recrutement, j'ai senti qu'on cherchait à comprendre qui j'étais vraiment, pas juste ce que je savais faire.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-          <div class="avis-card"><div class="ac-q">"</div><p class="ac-txt">Le questionnaire est captivant. Contrairement aux tests classiques, je n'avais pas l'impression d'être noté — mais d'être compris.</p><div class="ac-meta"><div class="ac-dot"></div><span class="ac-src">Candidat · Session REVELIOM complète</span></div></div>
-        </div>
+      <div class="pr-card">
+        <div class="pr-name">Équipe</div>
+        <div class="pr-desc">Pour les PME avec des recrutements réguliers.</div>
+        <div class="pr-price" style="font-size:28px;letter-spacing:-1px">99–299€</div>
+        <div class="pr-unit">par mois · abonnement entreprise</div>
+        <ul class="pr-list">
+          <li>Managers & postes illimités</li>
+          <li>Profils inclus selon formule</li>
+          <li>Dashboard recruteur</li>
+          <li>Export PDF + QR code</li>
+          <li>Module ORCHESTRATEUR</li>
+        </ul>
+        <button class="pr-btn out" onclick="sf()">Nous contacter</button>
+        <p class="pr-note">Disponible au lancement officiel</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WAITLIST -->
-<div class="wl-sec" id="waitlist">
-  <div class="wl-inner">
-    <div class="wl-left">
-      <div class="wl-ey">50 accès · Fondateurs</div>
-      <h2 class="wl-h">Rejoignez les premiers.<br><em>Co-construisez.</em></h2>
-      <p class="wl-sub">REVELIOM est en cours de finalisation. <strong>Nous ouvrons 50 accès fondateurs</strong> avant le lancement officiel.</p>
-      <div class="founded-proof">
-        <div class="fp-item fp-item-1"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà déployé</strong> — Plus de 150 profils analysés sur de vrais recrutements</div></div>
-        <div class="fp-item fp-item-2"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà validé</strong> — 100% de recommandation · 0% de no-show depuis l'implémentation</div></div>
-        <div class="fp-item fp-item-3"><div class="fp-icon-wrap"><span class="fp-check">✓</span></div><div class="fp-txt"><strong>Déjà prouvé</strong> — Des recrutements ont déjà été réalisés grâce à REVELIOM. Ce n'est pas une promesse, c'est une réalité.</div></div>
-      </div>
-      <div class="perks">
-        <div class="perk perk-1"><div class="perk-num">01</div><div class="perk-body"><h4><span class="hl">Accès prioritaire à vie</span></h4><p>Votre accès est garanti avant toute ouverture publique — et le restera, quelle que soit la demande.</p><div class="perk-tag">Exclusif · Permanent</div></div></div>
-        <div class="perk perk-2"><div class="perk-num">02</div><div class="perk-body"><h4><span class="hl-gold">Tarif fondateur figé à vie</span></h4><p>Le tarif que vous obtenez aujourd'hui est le tarif que vous conservez pour toujours — quelle que soit l'évolution des prix.</p><div class="perk-tag">Meilleur tarif · Garanti à vie</div></div></div>
-        <div class="perk perk-3"><div class="perk-num">03</div><div class="perk-body"><h4>Vous co-construisez REVELIOM</h4><p>Vos retours déterminent directement les prochaines fonctionnalités. Vous ne testez pas un produit — vous le façonnez.</p><div class="perk-tag">Impact direct · Influence réelle</div></div></div>
-      </div>
-      <div class="spots-row">
-        <div class="spots-bar"><div class="spots-fill" id="sbar"></div></div>
-        <div class="spots-txt">Limité à <strong>50 fondateurs</strong></div>
+<!-- ════ 6. RÉASSURANCE N2 ════ -->
+<!-- Témoignages + use cases -->
+<section class="sec-alt">
+  <div class="si">
+    <div class="rv" style="max-width:560px;margin-bottom:24px">
+      <div class="ey">Témoignages · Sessions réelles</div>
+      <h2 class="h2">Ils l'ont vécu.<br><em>Voici leurs mots.</em></h2>
+      <p class="lp">100% des candidats recommandent l'expérience. <span class="hl-t">Captivant, sincère, unique.</span> Ces mots reviennent systématiquement.</p>
+    </div>
+
+    <div class="stats3 rv d1">
+      <div class="s3 g"><span class="s3n" data-n="67" data-s="%">0%</span><span class="s3l">"Captivant — je n'ai pas vu le temps passer"</span></div>
+      <div class="s3 v"><span class="s3n" data-n="100" data-s="%">0%</span><span class="s3l">recommandent l'expérience</span></div>
+      <div class="s3 w"><span class="s3n" data-n="0" data-s="%">0%</span><span class="s3l">ont trouvé ça pénible</span></div>
+    </div>
+
+    <div class="tkr rv d2">
+      <div class="tkk">
+        <span class="tk">"La pression s'enlève."</span><span class="tks">◆</span>
+        <span class="tk">"Le CV est dépassé."</span><span class="tks">◆</span>
+        <span class="tk">"Je me reconnais exactement."</span><span class="tks">◆</span>
+        <span class="tk">"Approche atypique."</span><span class="tks">◆</span>
+        <span class="tk">"La sincérité de la démarche."</span><span class="tks">◆</span>
+        <span class="tk">"C'est comme ça que les recruteurs devraient agir."</span><span class="tks">◆</span>
+        <span class="tk">"Expérience unique."</span><span class="tks">◆</span>
+        <span class="tk">"On ne peut pas réduire une personne à un CV."</span><span class="tks">◆</span>
+        <span class="tk">"La pression s'enlève."</span><span class="tks">◆</span>
+        <span class="tk">"Le CV est dépassé."</span><span class="tks">◆</span>
+        <span class="tk">"Je me reconnais exactement."</span><span class="tks">◆</span>
+        <span class="tk">"Approche atypique."</span><span class="tks">◆</span>
+        <span class="tk">"La sincérité de la démarche."</span><span class="tks">◆</span>
+        <span class="tk">"C'est comme ça que les recruteurs devraient agir."</span><span class="tks">◆</span>
+        <span class="tk">"Expérience unique."</span><span class="tks">◆</span>
+        <span class="tk">"On ne peut pas réduire une personne à un CV."</span><span class="tks">◆</span>
       </div>
     </div>
+
+    <div class="avis-w rv d3">
+      <div class="avis-t">
+        <div class="av"><div class="av-q">"</div><p class="av-txt">L'approche est atypique. On enlève la pression du CV. Le questionnaire cherche vraiment à nous connaître — pas à nous trier.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Expérience unique. On ne peut pas réduire une personne à un CV. C'est comme ça que les recruteurs devraient agir.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">La sincérité de la démarche. J'ai répondu honnêtement parce que j'avais l'impression que c'était fait pour m'aider, pas pour me juger.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Pour la première fois dans un recrutement, j'ai senti qu'on cherchait à comprendre qui j'étais vraiment, pas juste ce que je savais faire.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Le questionnaire est captivant. Contrairement aux tests classiques, je n'avais pas l'impression d'être noté — mais d'être compris.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <!-- repeat pour animation continue -->
+        <div class="av"><div class="av-q">"</div><p class="av-txt">L'approche est atypique. On enlève la pression du CV. Le questionnaire cherche vraiment à nous connaître — pas à nous trier.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Expérience unique. On ne peut pas réduire une personne à un CV. C'est comme ça que les recruteurs devraient agir.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">La sincérité de la démarche. J'ai répondu honnêtement parce que j'avais l'impression que c'était fait pour m'aider, pas pour me juger.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Pour la première fois dans un recrutement, j'ai senti qu'on cherchait à comprendre qui j'étais vraiment, pas juste ce que je savais faire.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+        <div class="av"><div class="av-q">"</div><p class="av-txt">Le questionnaire est captivant. Contrairement aux tests classiques, je n'avais pas l'impression d'être noté — mais d'être compris.</p><div class="av-meta"><div class="av-dot"></div><span class="av-src">Candidat · Session REVELIOM complète</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 7. RAPPEL CTA ════ -->
+<div class="wl" id="waitlist">
+  <div class="wl-in">
     <div>
-      <div class="form-card" id="fcard">
-        <div class="fc-head"><h3>Votre inscription.</h3><p>Rejoignez la liste d'accès fondateur. Accès limité — sur sélection.</p></div>
+      <div class="ey rv">Accès fondateur · 50 places</div>
+
+      <!-- histoire fondateur = réassurance autorité -->
+      <div class="origin rv d1">
+        <p class="origin-q">"J'ai développé REVELIOM pour mes propres recrutements. Non seulement j'ai eu un gain de temps et de précision inquantifiable — mais surtout : <em>j'ai réduit mes no-shows à zéro.</em> Les candidats se sont sentis écoutés, compris, valorisés. La qualité de l'entretien change totalement : on n'est plus là pour se tester, on est là pour comprendre <em>comment on va performer ensemble.</em>"</p>
+        <span class="origin-src">James Guerin · Fondateur · ElgaEnergy · Toulouse</span>
+      </div>
+
+      <h2 class="wl-h rv d2">Concentrez-vous sur<br><em>ce qui compte vraiment.</em></h2>
+      <p class="wl-sub rv d2">REVELIOM analyse ce qui anime chaque candidat, votre profil de manager et la réalité de votre poste. Il sélectionne pour vous les profils compatibles — <strong>de manière totalement impartiale, sans biais, sans temps de votre part.</strong> Je recherche 5 entreprises pilotes — j'en ai déjà 3.</p>
+
+      <!-- preuves scannables -->
+      <div class="wl-proof rv d3">
+        <div class="wlpi"><span class="wlpn">150+</span><span class="wlpt">profils analysés sur de vrais recrutements</span></div>
+        <div class="wlpi"><span class="wlpn">100%</span><span class="wlpt">recommandent l'expérience</span></div>
+        <div class="wlpi"><span class="wlpn">0</span><span class="wlpt">no-show depuis l'implémentation</span></div>
+      </div>
+
+      <!-- perks -->
+      <div class="perks rv d3">
+        <div class="perk"><span class="pk-n">01</span><div><strong><span class="hl">Accès prioritaire à vie</span></strong><p>Avant toute ouverture publique — garanti, quelle que soit la demande.</p></div></div>
+        <div class="perk"><span class="pk-n">02</span><div><strong><span class="hl-g">Tarif fondateur figé à vie</span></strong><p>Le meilleur prix que REVELIOM proposera jamais. Figé sur votre compte.</p></div></div>
+        <div class="perk"><span class="pk-n">03</span><div><strong>Vous façonnez le produit</strong><p>Vos retours déterminent directement les prochaines fonctionnalités.</p></div></div>
+      </div>
+
+      <!-- rareté -->
+      <div class="spots rv d4">
+        <div class="spots-bar"><div class="spots-fill" id="sbar"></div></div>
+        <div class="spots-txt">Il reste <strong>peu de places</strong></div>
+      </div>
+    </div>
+
+    <!-- formulaire -->
+    <div class="rv d1">
+      <div class="form-w">
+        <div class="fh">
+          <h3>On teste sur votre prochain recrutement ?</h3>
+          <p>5 entreprises pilotes · 3 déjà engagées · 2 places restantes</p>
+        </div>
         <div class="form" id="mainform">
-          <div class="frow">
+          <div class="fr2">
             <input class="fi" id="fp" type="text" placeholder="Prénom"/>
             <input class="fi" id="fn" type="text" placeholder="Nom"/>
           </div>
           <input class="fi" id="fe" type="email" placeholder="Email professionnel — requis"/>
-          <div class="frow">
+          <div class="fr2">
             <input class="fi" id="fco" type="text" placeholder="Entreprise"/>
             <input class="fi" id="fse" type="text" placeholder="Secteur"/>
           </div>
           <input class="fi" id="fph" type="tel" placeholder="Téléphone direct"/>
-          <div class="recall-q">Une question avant ?</div>
-          <div class="recall-opts">
-            <div class="ro on" id="ro1" onclick="setRecall('rappel')"><div class="ro-dot"></div><span class="ro-lbl">📞 James, appelez-moi</span></div>
-            <div class="ro" id="ro2" onclick="setRecall('inscrit')"><div class="ro-dot"></div><span class="ro-lbl">✉ Juste m'inscrire</span></div>
+          <div class="rq">Une question avant de valider ?</div>
+          <div class="ro-wrap">
+            <div class="ro on" id="ro1" onclick="setRecall('rappel')"><div class="ro-d"></div><span class="ro-l">📞 James, appelez-moi</span></div>
+            <div class="ro" id="ro2" onclick="setRecall('inscrit')"><div class="ro-d"></div><span class="ro-l">✉ Juste m'inscrire</span></div>
           </div>
-          <button class="form-submit" onclick="submitForm()">Réserver ma place sur la waitlist →</button>
-          <p class="form-note">Pas de spam · Pas d'engagement · 50 places maximum</p>
+          <button class="fsub" onclick="submitForm()">Réserver ma place sur la waitlist →</button>
+          <p class="fnote">Pas de spam · Pas d'engagement · 50 places</p>
         </div>
-        <div class="form-success" id="fsuccess">
-          <div class="fs-icon">✓</div>
+        <div class="fok" id="fok">
+          <div class="fok-icon">✓</div>
           <h3>C'est enregistré.</h3>
-          <p id="fsucc-msg">James vous contacte sous 24h pour un échange rapide de 15 minutes.</p>
+          <p id="fok-msg">James vous contacte sous 24h pour un échange de 15 minutes.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<footer><p>REVEL<span>I</span>OM — reveliom.com</p></footer>
+<!-- ════ 8. FOOTER ════ -->
+<footer>
+  <div class="f-logo">REVEL<em>I</em>OM</div>
+  <div class="f-right">Le recrutement qui révèle · reveliom.com</div>
+</footer>
 
 <script>
+// Nav scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20);
+  const st=document.getElementById('sticky');
+  const wl=document.getElementById('waitlist');
+  if(st&&wl){
+    const ft=wl.getBoundingClientRect().top+window.scrollY;
+    if(window.scrollY>400&&window.scrollY+window.innerHeight<ft+100)st.classList.add('show');
+    else st.classList.remove('show');
+  }
+});
+
+// Scroll reveal
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
-      e.target.classList.add('vis');
+      e.target.classList.add('on');
       e.target.querySelectorAll('[data-n]').forEach(animCount);
       obs.unobserve(e.target);
     }
   });
-},{threshold:.07,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.blk').forEach(b=>obs.observe(b));
+},{threshold:.06,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
 function animCount(el){
   const t=parseInt(el.dataset.n),s=el.dataset.s||'%';
   if(t===0){el.textContent='0'+s;return;}
   let c=0,step=Math.max(1,Math.ceil(t/55));
   const iv=setInterval(()=>{c=Math.min(c+step,t);el.textContent=c+s;if(c>=t)clearInterval(iv);},25);
 }
-window.addEventListener('scroll',()=>{
-  const st=document.getElementById('sticky');
-  const wl=document.getElementById('waitlist');
-  const ft=wl.getBoundingClientRect().top+window.scrollY;
-  if(window.scrollY>400&&window.scrollY+window.innerHeight<ft+100)st.classList.add('show');
-  else st.classList.remove('show');
-});
-const sobs=new IntersectionObserver(entries=>{
+
+// Spots bar
+const sObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
-    if(e.isIntersecting){setTimeout(()=>{document.getElementById('sbar').style.width='12%';},300);sobs.unobserve(e.target);}
+    if(e.isIntersecting){setTimeout(()=>{const sb=document.getElementById('sbar');if(sb)sb.style.width='14%';},300);sObs.unobserve(e.target);}
   });
 },{threshold:.5});
-const sb=document.getElementById('sbar');if(sb)sobs.observe(sb);
+const sb=document.getElementById('sbar');if(sb)sObs.observe(sb);
+
 function sf(){
   document.getElementById('waitlist').scrollIntoView({behavior:'smooth',block:'start'});
-  if(typeof gtag!=='undefined')gtag('event','click_cta_waitlist',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
+  try{gtag('event','click_cta_waitlist',{event_category:'CTA',send_to:'G-34J0PJJKDX'});}catch(e){}
 }
 function sp(){
   document.getElementById('profiles').scrollIntoView({behavior:'smooth',block:'start'});
-  if(typeof gtag!=='undefined')gtag('event','click_voir_profil',{event_category:'CTA',send_to:'G-34J0PJJKDX'});
-}
-function qS(gid,rid,btn){
-  document.querySelectorAll('#'+gid+' .qbtn').forEach(b=>b.classList.remove('sel'));
-  btn.classList.add('sel');
-  document.querySelectorAll('[id^="'+gid+'"].qrev').forEach(r=>r.style.display='none');
-  const rv=document.getElementById(rid);if(rv)rv.style.display='block';
+  try{gtag('event','click_voir_profil',{event_category:'CTA',send_to:'G-34J0PJJKDX'});}catch(e){}
 }
 function showP(id,btn){
   document.querySelectorAll('.ppanel').forEach(p=>p.classList.remove('on'));
@@ -952,32 +1519,27 @@ function setRecall(m){
 function submitForm(){
   const email=document.getElementById('fe').value;
   if(!email){alert('Merci d\'entrer votre email.');return;}
-  const data={
-    prenom:document.getElementById('fp').value,
-    nom:document.getElementById('fn').value,
-    email,
-    entreprise:document.getElementById('fco').value,
-    secteur:document.getElementById('fse').value,
-    telephone:document.getElementById('fph').value,
-    rappel:recall==='rappel'?'Oui':'Non'
-  };
   fetch('https://formspree.io/f/xojynpyo',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
-      prenom:data.prenom,nom:data.nom,email:data.email,
-      entreprise:data.entreprise,secteur:data.secteur,
-      telephone:data.telephone,rappel:data.rappel,
-      _subject:'Nouvelle inscription REVELIOM Waitlist — '+data.prenom+' '+data.nom
+      prenom:document.getElementById('fp').value,
+      nom:document.getElementById('fn').value,
+      email:email,
+      entreprise:document.getElementById('fco').value,
+      secteur:document.getElementById('fse').value,
+      telephone:document.getElementById('fph').value,
+      rappel:recall==='rappel'?'Oui':'Non',
+      _subject:'Nouvelle inscription REVELIOM — '+document.getElementById('fp').value+' '+document.getElementById('fn').value
     })
-  }).then(r=>{if(!r.ok)console.error('Formspree error',r.status);}).catch(err=>console.error('Submit error',err));
+  }).then(r=>{if(!r.ok)console.error('Formspree',r.status);}).catch(e=>console.error(e));
   document.getElementById('mainform').style.display='none';
-  if(typeof gtag!=='undefined')gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall,send_to:'G-34J0PJJKDX'});
-  const msg=document.getElementById('fsucc-msg');
+  const msg=document.getElementById('fok-msg');
   if(recall==='inscrit')msg.textContent='Vous êtes sur la liste. Nous vous contacterons avant le lancement officiel.';
-  document.getElementById('fsuccess').style.display='block';
+  document.getElementById('fok').style.display='block';
   document.getElementById('sticky').classList.remove('show');
-  document.getElementById('sbar').style.width='16%';
+  const sfb=document.getElementById('sbar');if(sfb)sfb.style.width='18%';
+  try{gtag('event','inscription_waitlist',{event_category:'Conversion',event_label:recall,send_to:'G-34J0PJJKDX'});}catch(e){}
 }
 </script>
 </body>
